@@ -3,39 +3,57 @@ name: codebase-ast-rag-indexer
 description: AST chunking, call/type hierarchy & RAG indexer.
 ---
 
-# Codebase AST, Call/Type Hierarchy & Vectorless/PagedAttention RAG Indexer
+# Codebase AST, Knowledge Graph, Vectorless RAG & KV-Cache/PagedAttention Indexer
 
-Use this skill whenever the user wants to clone/scan any **GitHub URL or local codebase** and build a complete, deterministic **AST + Symbol Relation + RAG + KV-Cache** index:
+Clone any GitHub URL or scan a local repository to build an IDE/LSP-grade **AST Knowledge Graph & RAG Index** with zero external dependencies (pure Python 3 stdlib).
 
-- **AST Tree Chunking (`index/chunks.jsonl`):** Exact Python AST and multi-language structural chunks (`Java`, `TypeScript`, `JavaScript`, `Go`, `Rust`, `Kotlin`, `C#`) with `chunk_id`, `parent_id`, `signature`, `docstring`, `token_count`, and `sha256` content hashes.
-- **LSP/IDE-Grade Code Relations:**
-  - **Call Hierarchy (`index/call_graph.json`):** Incoming callers and outgoing callees for every function/method.
-  - **Type Hierarchy (`index/type_hierarchy.json`):** `super_types` (`extends` / `implements`), `sub_types`, concrete `implementations`, method **`super_implementations`** (`Child.method -> Parent.method`), and **`type_definitions`** from annotations.
-  - **Cross-File References (`index/references.json`):** Every call site and inheritance reference with `file:line`.
-  - **Test Traceability (`index/test_map.json`):** Automatic mapping from production classes/functions to unit tests (`direct_call` and `name_match`).
-- **Four Retrieval & Inference Pipelines:**
-  1. **Vectorless RAG (`index/tree_index.json` + `docs/01-TREE-INDEX-VECTORLESS-RAG.md`):** PageIndex-style hierarchical tree navigation with zero embedding drift.
-  2. **Hybrid Vector + BM25 RAG (`index/chunks.jsonl` + `index/pgvector_schema.sql`):** Ready-to-run PostgreSQL `pgvector 0.8+` (`halfvec(1536)` HNSW + `tsvector` GIN) schema.
-  3. **KV-Cache Prefix-Stable & PagedAttention Packing (`index/kv_paged_blocks.json` + `scripts/query_rag.py --mode kv-pack`):** Canonically orders AST chunks into fixed-size virtual token pages (`512` tokens/page, zero mid-function splits) with deterministic `prefix_hash` values for maximum Anthropic / Gemini / vLLM Automatic Prefix Caching reuse.
+## Synthesized Reference Architecture
+- **Knowledge Graph & Traversal** (inspired by [`Graphify-Labs/graphify`](https://github.com/Graphify-Labs/graphify)): Confidence-tagged edges (`EXTRACTED`, `INFERRED`, `AMBIGUOUS`), God Nodes, zero-dependency subsystem community clustering, surprising cross-community bridges, `# WHY:` / `# NOTE:` rationale extraction, `05-GRAPH-REPORT.md`, interactive `graph.html`, plus `explain` and shortest `path` queries.
+- **Dual-Embedding & Flexible Chunking** (inspired by [`OshanKHZ/bee2bee-indexer`](https://github.com/OshanKHZ/bee2bee-indexer)): `--chunk-strategy hybrid|function|class|file`, dual `nlp_text` + `code_text` payloads per chunk, and dual-vector `pgvector` HNSW schema (`nlp_embedding` + `code_embedding`).
+- **Incremental Local Hybrid Search** (inspired by [`rawveg/code-rag`](https://github.com/rawveg/code-rag)): `--priority-paths`, `--exclude-dirs`, incremental SHA-256 `file_manifest.json` delta tracking, and local zero-server SQLite FTS5 BM25 search (`rag_index.sqlite`).
+- **KV-Cache & PagedAttention Context Packing**: Deterministic canonical chunk sorting into fixed-size virtual token pages (`--page-size 512`) with `prefix_hash` stability and `<<<STATIC_KV_PREFIX_START>>>` / `<<<DYNAMIC_QUERY_SUFFIX>>>` prompt framing.
 
-## Quick Commands
+## Commands
 
-### 1. Index Any GitHub URL or Local Repository
-```powershell
-python "skills/codebase-ast-rag-indexer/scripts/ast_rag_indexer.py" `
-  --repo "https://github.com/pgvector/pgvector-python" `
-  --output "./rag-output" `
-  --page-size 512
+### 1. Index a GitHub Repo or Local Path
+```bash
+python scripts/ast_rag_indexer.py \
+  --repo https://github.com/pgvector/pgvector-python \
+  --output ./rag_out \
+  --page-size 512 \
+  --chunk-strategy hybrid \
+  --priority-paths pgvector \
+  --incremental
 ```
 
-### 2. Query the Index (Vectorless RAG, Full Symbol Card, or KV-Cache Packed Context)
-```powershell
-# Vectorless tree-based retrieval
-python "skills/codebase-ast-rag-indexer/scripts/query_rag.py" --index "./rag-output/index" --query "HalfVector" --mode vectorless
+### 2. Query the Index (6 Modes)
+```bash
+# Vectorless RAG tree retrieval (no embeddings)
+python scripts/query_rag.py --index ./rag_out/index --query "Vector" --mode vectorless
 
-# Full IDE/LSP symbol card (definition, callers, callees, supertypes, subtypes, super_impl, refs, tests)
-python "skills/codebase-ast-rag-indexer/scripts/query_rag.py" --index "./rag-output/index" --query "HalfVector" --mode symbol
+# Full IDE/LSP symbol card (definition, callers, callees, super_types, sub_types, super_impl, refs, tests)
+python scripts/query_rag.py --index ./rag_out/index --query "Vector" --mode symbol
 
 # KV-Cache prefix-stable & PagedAttention-aligned prompt packet
-python "skills/codebase-ast-rag-indexer/scripts/query_rag.py" --index "./rag-output/index" --query "HalfVector" --mode kv-pack
+python scripts/query_rag.py --index ./rag_out/index --query "halfvec" --mode kv-pack
+
+# Knowledge Graph node explanation (community, degree, confidence-tagged edges, rationale)
+python scripts/query_rag.py --index ./rag_out/index --query "Vector" --mode explain
+
+# Shortest path between two symbols with weakest-hop confidence
+python scripts/query_rag.py --index ./rag_out/index --query "Vector" --target "HalfVector" --mode path
+
+# Local SQLite FTS5 BM25 + priority-path boosted search
+python scripts/query_rag.py --index ./rag_out/index --query "register vector async" --mode fts
 ```
+
+## Generated Artifacts
+- `index/chunks.jsonl` — AST chunks with `nlp_text`, `code_text`, `kv_page_id`, `community_id`, `callers`, `callees`, `super_types`, `sub_types`, `super_implementation`, `type_definitions`, `rationale`, `tests`
+- `index/graph.json` — Knowledge graph with `god_nodes`, `communities`, `surprising_bridges`, and confidence-tagged `edges`
+- `index/tree_index.json` — PageIndex hierarchical tree for Vectorless RAG
+- `index/call_graph.json`, `index/type_hierarchy.json`, `index/references.json`, `index/test_map.json`
+- `index/kv_paged_blocks.json` — PagedAttention virtual token pages with SHA-256 `prefix_hash`
+- `index/rag_index.sqlite` — Local SQLite FTS5 + BM25 search database
+- `index/file_manifest.json` — SHA-256 file hashes for incremental delta indexing
+- `index/pgvector_schema.sql` — PostgreSQL `pgvector` 0.8+ dual-embedding HNSW + GIN hybrid RRF schema
+- `docs/00-INDEX.md` → `docs/05-GRAPH-REPORT.md` + interactive `docs/graph.html`

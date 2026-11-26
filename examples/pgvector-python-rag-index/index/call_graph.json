@@ -135,7 +135,8 @@
     "pgvector.django.bit.BitField.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.django.bit.BitField.deconstruct": [
       "pgvector.django.halfvec.HalfVectorField.deconstruct",
@@ -155,7 +156,8 @@
     "pgvector.django.extensions.VectorExtension.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.django.functions.DistanceBase.__init__": [
       "pgvector.bit.Bit.__init__",
@@ -163,6 +165,7 @@
       "pgvector.halfvec.HalfVector.__init__",
       "pgvector.halfvec.HalfVector.to_text",
       "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27",
       "pgvector.sparsevec.SparseVector.to_text",
       "pgvector.vector.Vector",
       "pgvector.vector.Vector.to_text"
@@ -170,12 +173,14 @@
     "pgvector.django.functions.BitDistanceBase.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.django.halfvec.HalfVectorField.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.django.halfvec.HalfVectorField.deconstruct": [
       "pgvector.django.bit.BitField.deconstruct",
@@ -215,7 +220,8 @@
     "pgvector.django.indexes.IvfflatIndex.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.django.indexes.IvfflatIndex.deconstruct": [
       "pgvector.django.bit.BitField.deconstruct",
@@ -225,7 +231,8 @@
     "pgvector.django.indexes.HnswIndex.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.django.indexes.HnswIndex.deconstruct": [
       "pgvector.django.bit.BitField.deconstruct",
@@ -235,7 +242,8 @@
     "pgvector.django.sparsevec.SparseVectorField.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.django.sparsevec.SparseVectorField.deconstruct": [
       "pgvector.django.bit.BitField.deconstruct",
@@ -283,7 +291,8 @@
     "pgvector.django.vector.VectorField.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.django.vector.VectorField.deconstruct": [
       "pgvector.django.bit.BitField.deconstruct",
@@ -325,7 +334,8 @@
     "pgvector.peewee.bit.FixedBitField.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.peewee.bit.FixedBitField.hamming_distance": [
       "pgvector.peewee.bit.FixedBitField._distance",
@@ -342,7 +352,8 @@
     "pgvector.peewee.halfvec.HalfVectorField.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.peewee.halfvec.HalfVectorField.db_value": [
       "pgvector.halfvec.HalfVector._to_db",
@@ -381,7 +392,8 @@
     "pgvector.peewee.sparsevec.SparseVectorField.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.peewee.sparsevec.SparseVectorField.db_value": [
       "pgvector.halfvec.HalfVector._to_db",
@@ -420,7 +432,8 @@
     "pgvector.peewee.vector.VectorField.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.peewee.vector.VectorField.db_value": [
       "pgvector.halfvec.HalfVector._to_db",
@@ -639,7 +652,8 @@
     "pgvector.sqlalchemy.halfvec.HALFVEC.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.sqlalchemy.halfvec.HALFVEC.bind_processor": [
       "pgvector.halfvec.HalfVector._to_db",
@@ -659,7 +673,8 @@
     "pgvector.sqlalchemy.sparsevec.SPARSEVEC.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.sqlalchemy.sparsevec.SPARSEVEC.bind_processor": [
       "pgvector.halfvec.HalfVector._to_db",
@@ -679,7 +694,8 @@
     "pgvector.sqlalchemy.vector.VECTOR.__init__": [
       "pgvector.bit.Bit.__init__",
       "pgvector.halfvec.HalfVector.__init__",
-      "pgvector.sparsevec.SparseVector.__init__"
+      "pgvector.sparsevec.SparseVector.__init__",
+      "pgvector.sparsevec.SparseVector.__init__#L27"
     ],
     "pgvector.sqlalchemy.vector.VECTOR.bind_processor": [
       "pgvector.halfvec.HalfVector._to_db",
@@ -3614,6 +3630,24 @@
       "pgvector.sqlalchemy.vector.VECTOR.__init__"
     ],
     "pgvector.sparsevec.SparseVector.__init__": [
+      "pgvector.django.bit.BitField.__init__",
+      "pgvector.django.extensions.VectorExtension.__init__",
+      "pgvector.django.functions.BitDistanceBase.__init__",
+      "pgvector.django.functions.DistanceBase.__init__",
+      "pgvector.django.halfvec.HalfVectorField.__init__",
+      "pgvector.django.indexes.HnswIndex.__init__",
+      "pgvector.django.indexes.IvfflatIndex.__init__",
+      "pgvector.django.sparsevec.SparseVectorField.__init__",
+      "pgvector.django.vector.VectorField.__init__",
+      "pgvector.peewee.bit.FixedBitField.__init__",
+      "pgvector.peewee.halfvec.HalfVectorField.__init__",
+      "pgvector.peewee.sparsevec.SparseVectorField.__init__",
+      "pgvector.peewee.vector.VectorField.__init__",
+      "pgvector.sqlalchemy.halfvec.HALFVEC.__init__",
+      "pgvector.sqlalchemy.sparsevec.SPARSEVEC.__init__",
+      "pgvector.sqlalchemy.vector.VECTOR.__init__"
+    ],
+    "pgvector.sparsevec.SparseVector.__init__#L27": [
       "pgvector.django.bit.BitField.__init__",
       "pgvector.django.extensions.VectorExtension.__init__",
       "pgvector.django.functions.BitDistanceBase.__init__",

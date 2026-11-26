@@ -5,68 +5,17 @@
     {
       "kv_page_id": 0,
       "capacity_tokens": 512,
-      "used_tokens": 466,
+      "used_tokens": 321,
       "chunks": [
-        "examples.cohere.example.embed",
-        "examples.colpali.exact.generate_embeddings",
-        "examples.colpali.exact.binary_quantize",
-        "examples.hybrid_search.cross_encoder.create_schema",
-        "examples.hybrid_search.cross_encoder.insert_data",
-        "examples.hybrid_search.cross_encoder.semantic_search",
-        "examples.hybrid_search.cross_encoder.keyword_search"
+        "pgvector._utils.is_ndarray",
+        "pgvector._utils.is_sparse_array",
+        "pgvector.asyncpg.register.register_vector"
       ],
-      "prefix_hash": "e6c28879c49c420b",
-      "utilization_pct": 91.0
+      "prefix_hash": "ac48a7d6d99d09c3",
+      "utilization_pct": 62.7
     },
     {
       "kv_page_id": 1,
-      "capacity_tokens": 512,
-      "used_tokens": 483,
-      "chunks": [
-        "examples.hybrid_search.cross_encoder.rerank",
-        "examples.hybrid_search.cross_encoder.main",
-        "examples.image_search.example.generate_embeddings",
-        "examples.imagehash.example.hash_image",
-        "examples.implicit.example.Base",
-        "examples.implicit.example.User",
-        "examples.implicit.example.Item",
-        "examples.lightfm.example.Base",
-        "examples.lightfm.example.User",
-        "examples.lightfm.example.Item",
-        "examples.openai.example.embed"
-      ],
-      "prefix_hash": "e046af3a151d8593",
-      "utilization_pct": 94.3
-    },
-    {
-      "kv_page_id": 2,
-      "capacity_tokens": 512,
-      "used_tokens": 365,
-      "chunks": [
-        "examples.openai.halfvec.embed",
-        "examples.rdkit.example.generate_fingerprint",
-        "examples.sparse_search.example.embed",
-        "examples.surprise.example.Base",
-        "examples.surprise.example.User",
-        "examples.surprise.example.Item",
-        "pgvector._utils.is_ndarray",
-        "pgvector._utils.is_sparse_array"
-      ],
-      "prefix_hash": "0be2ee888e358fdb",
-      "utilization_pct": 71.3
-    },
-    {
-      "kv_page_id": 3,
-      "capacity_tokens": 512,
-      "used_tokens": 237,
-      "chunks": [
-        "pgvector.asyncpg.register.register_vector"
-      ],
-      "prefix_hash": "0e0e294726139468",
-      "utilization_pct": 46.3
-    },
-    {
-      "kv_page_id": 4,
       "capacity_tokens": 512,
       "used_tokens": 512,
       "chunks": [
@@ -76,7 +25,7 @@
       "utilization_pct": 100.0
     },
     {
-      "kv_page_id": 5,
+      "kv_page_id": 2,
       "capacity_tokens": 512,
       "used_tokens": 508,
       "chunks": [
@@ -89,7 +38,7 @@
       "utilization_pct": 99.2
     },
     {
-      "kv_page_id": 6,
+      "kv_page_id": 3,
       "capacity_tokens": 512,
       "used_tokens": 490,
       "chunks": [
@@ -105,7 +54,7 @@
       "utilization_pct": 95.7
     },
     {
-      "kv_page_id": 7,
+      "kv_page_id": 4,
       "capacity_tokens": 512,
       "used_tokens": 367,
       "chunks": [
@@ -121,7 +70,7 @@
       "utilization_pct": 71.7
     },
     {
-      "kv_page_id": 8,
+      "kv_page_id": 5,
       "capacity_tokens": 512,
       "used_tokens": 509,
       "chunks": [
@@ -139,7 +88,7 @@
       "utilization_pct": 99.4
     },
     {
-      "kv_page_id": 9,
+      "kv_page_id": 6,
       "capacity_tokens": 512,
       "used_tokens": 509,
       "chunks": [
@@ -152,7 +101,7 @@
       "utilization_pct": 99.4
     },
     {
-      "kv_page_id": 10,
+      "kv_page_id": 7,
       "capacity_tokens": 512,
       "used_tokens": 506,
       "chunks": [
@@ -170,7 +119,7 @@
       "utilization_pct": 98.8
     },
     {
-      "kv_page_id": 11,
+      "kv_page_id": 8,
       "capacity_tokens": 512,
       "used_tokens": 504,
       "chunks": [
@@ -185,7 +134,7 @@
       "utilization_pct": 98.4
     },
     {
-      "kv_page_id": 12,
+      "kv_page_id": 9,
       "capacity_tokens": 512,
       "used_tokens": 488,
       "chunks": [
@@ -197,7 +146,7 @@
       "utilization_pct": 95.3
     },
     {
-      "kv_page_id": 13,
+      "kv_page_id": 10,
       "capacity_tokens": 512,
       "used_tokens": 503,
       "chunks": [
@@ -217,7 +166,7 @@
       "utilization_pct": 98.2
     },
     {
-      "kv_page_id": 14,
+      "kv_page_id": 11,
       "capacity_tokens": 512,
       "used_tokens": 482,
       "chunks": [
@@ -229,7 +178,7 @@
       "utilization_pct": 94.1
     },
     {
-      "kv_page_id": 15,
+      "kv_page_id": 12,
       "capacity_tokens": 512,
       "used_tokens": 342,
       "chunks": [
@@ -246,7 +195,7 @@
       "utilization_pct": 66.8
     },
     {
-      "kv_page_id": 16,
+      "kv_page_id": 13,
       "capacity_tokens": 512,
       "used_tokens": 512,
       "chunks": [
@@ -256,7 +205,7 @@
       "utilization_pct": 100.0
     },
     {
-      "kv_page_id": 17,
+      "kv_page_id": 14,
       "capacity_tokens": 512,
       "used_tokens": 447,
       "chunks": [
@@ -274,7 +223,7 @@
       "utilization_pct": 87.3
     },
     {
-      "kv_page_id": 18,
+      "kv_page_id": 15,
       "capacity_tokens": 512,
       "used_tokens": 511,
       "chunks": [
@@ -288,7 +237,7 @@
       "utilization_pct": 99.8
     },
     {
-      "kv_page_id": 19,
+      "kv_page_id": 16,
       "capacity_tokens": 512,
       "used_tokens": 507,
       "chunks": [
@@ -305,7 +254,7 @@
       "utilization_pct": 99.0
     },
     {
-      "kv_page_id": 20,
+      "kv_page_id": 17,
       "capacity_tokens": 512,
       "used_tokens": 511,
       "chunks": [
@@ -323,7 +272,7 @@
       "utilization_pct": 99.8
     },
     {
-      "kv_page_id": 21,
+      "kv_page_id": 18,
       "capacity_tokens": 512,
       "used_tokens": 493,
       "chunks": [
@@ -341,7 +290,7 @@
       "utilization_pct": 96.3
     },
     {
-      "kv_page_id": 22,
+      "kv_page_id": 19,
       "capacity_tokens": 512,
       "used_tokens": 258,
       "chunks": [
@@ -359,7 +308,7 @@
       "utilization_pct": 50.4
     },
     {
-      "kv_page_id": 23,
+      "kv_page_id": 20,
       "capacity_tokens": 512,
       "used_tokens": 506,
       "chunks": [
@@ -375,7 +324,7 @@
       "utilization_pct": 98.8
     },
     {
-      "kv_page_id": 24,
+      "kv_page_id": 21,
       "capacity_tokens": 512,
       "used_tokens": 490,
       "chunks": [
@@ -395,7 +344,7 @@
       "utilization_pct": 95.7
     },
     {
-      "kv_page_id": 25,
+      "kv_page_id": 22,
       "capacity_tokens": 512,
       "used_tokens": 466,
       "chunks": [
@@ -412,7 +361,7 @@
       "utilization_pct": 91.0
     },
     {
-      "kv_page_id": 26,
+      "kv_page_id": 23,
       "capacity_tokens": 512,
       "used_tokens": 477,
       "chunks": [
@@ -430,7 +379,7 @@
       "utilization_pct": 93.2
     },
     {
-      "kv_page_id": 27,
+      "kv_page_id": 24,
       "capacity_tokens": 512,
       "used_tokens": 494,
       "chunks": [
@@ -448,7 +397,7 @@
       "utilization_pct": 96.5
     },
     {
-      "kv_page_id": 28,
+      "kv_page_id": 25,
       "capacity_tokens": 512,
       "used_tokens": 475,
       "chunks": [
@@ -462,7 +411,7 @@
       "utilization_pct": 92.8
     },
     {
-      "kv_page_id": 29,
+      "kv_page_id": 26,
       "capacity_tokens": 512,
       "used_tokens": 442,
       "chunks": [
@@ -480,7 +429,7 @@
       "utilization_pct": 86.3
     },
     {
-      "kv_page_id": 30,
+      "kv_page_id": 27,
       "capacity_tokens": 512,
       "used_tokens": 133,
       "chunks": [
@@ -491,7 +440,7 @@
       "utilization_pct": 26.0
     },
     {
-      "kv_page_id": 31,
+      "kv_page_id": 28,
       "capacity_tokens": 512,
       "used_tokens": 512,
       "chunks": [
@@ -501,13 +450,13 @@
       "utilization_pct": 100.0
     },
     {
-      "kv_page_id": 32,
+      "kv_page_id": 29,
       "capacity_tokens": 512,
       "used_tokens": 463,
       "chunks": [
         "pgvector.sparsevec.SparseVector.__init__",
-        "pgvector.sparsevec.SparseVector.__init__",
-        "pgvector.sparsevec.SparseVector.__init__",
+        "pgvector.sparsevec.SparseVector.__init__#L27",
+        "pgvector.sparsevec.SparseVector.__init__#L29",
         "pgvector.sparsevec.SparseVector.__repr__",
         "pgvector.sparsevec.SparseVector.__eq__",
         "pgvector.sparsevec.SparseVector.dimensions",
@@ -516,11 +465,11 @@
         "pgvector.sparsevec.SparseVector.to_coo",
         "pgvector.sparsevec.SparseVector.to_list"
       ],
-      "prefix_hash": "5de03ba7995b49fc",
+      "prefix_hash": "0dddc5e56d9fcc8c",
       "utilization_pct": 90.4
     },
     {
-      "kv_page_id": 33,
+      "kv_page_id": 30,
       "capacity_tokens": 512,
       "used_tokens": 504,
       "chunks": [
@@ -534,7 +483,7 @@
       "utilization_pct": 98.4
     },
     {
-      "kv_page_id": 34,
+      "kv_page_id": 31,
       "capacity_tokens": 512,
       "used_tokens": 444,
       "chunks": [
@@ -548,7 +497,7 @@
       "utilization_pct": 86.7
     },
     {
-      "kv_page_id": 35,
+      "kv_page_id": 32,
       "capacity_tokens": 512,
       "used_tokens": 446,
       "chunks": [
@@ -562,7 +511,7 @@
       "utilization_pct": 87.1
     },
     {
-      "kv_page_id": 36,
+      "kv_page_id": 33,
       "capacity_tokens": 512,
       "used_tokens": 167,
       "chunks": [
@@ -575,7 +524,7 @@
       "utilization_pct": 32.6
     },
     {
-      "kv_page_id": 37,
+      "kv_page_id": 34,
       "capacity_tokens": 512,
       "used_tokens": 504,
       "chunks": [
@@ -588,7 +537,7 @@
       "utilization_pct": 98.4
     },
     {
-      "kv_page_id": 38,
+      "kv_page_id": 35,
       "capacity_tokens": 512,
       "used_tokens": 390,
       "chunks": [
@@ -604,7 +553,7 @@
       "utilization_pct": 76.2
     },
     {
-      "kv_page_id": 39,
+      "kv_page_id": 36,
       "capacity_tokens": 512,
       "used_tokens": 509,
       "chunks": [
@@ -617,7 +566,7 @@
       "utilization_pct": 99.4
     },
     {
-      "kv_page_id": 40,
+      "kv_page_id": 37,
       "capacity_tokens": 512,
       "used_tokens": 391,
       "chunks": [
@@ -633,7 +582,7 @@
       "utilization_pct": 76.4
     },
     {
-      "kv_page_id": 41,
+      "kv_page_id": 38,
       "capacity_tokens": 512,
       "used_tokens": 499,
       "chunks": [
@@ -646,7 +595,7 @@
       "utilization_pct": 97.5
     },
     {
-      "kv_page_id": 42,
+      "kv_page_id": 39,
       "capacity_tokens": 512,
       "used_tokens": 388,
       "chunks": [
@@ -662,7 +611,7 @@
       "utilization_pct": 75.8
     },
     {
-      "kv_page_id": 43,
+      "kv_page_id": 40,
       "capacity_tokens": 512,
       "used_tokens": 512,
       "chunks": [
@@ -672,7 +621,7 @@
       "utilization_pct": 100.0
     },
     {
-      "kv_page_id": 44,
+      "kv_page_id": 41,
       "capacity_tokens": 512,
       "used_tokens": 416,
       "chunks": [
@@ -690,17 +639,68 @@
       "utilization_pct": 81.2
     },
     {
-      "kv_page_id": 45,
+      "kv_page_id": 42,
       "capacity_tokens": 512,
-      "used_tokens": 332,
+      "used_tokens": 446,
       "chunks": [
         "pgvector.vector.Vector.from_binary",
         "pgvector.vector.Vector._from_text",
         "pgvector.vector.Vector._to_db",
-        "pgvector.vector.Vector._from_db"
+        "pgvector.vector.Vector._from_db",
+        "examples.cohere.example.embed",
+        "examples.colpali.exact.generate_embeddings",
+        "examples.colpali.exact.binary_quantize"
       ],
-      "prefix_hash": "f8802660232ba280",
-      "utilization_pct": 64.8
+      "prefix_hash": "5f1e3fe3b70f49fa",
+      "utilization_pct": 87.1
+    },
+    {
+      "kv_page_id": 43,
+      "capacity_tokens": 512,
+      "used_tokens": 430,
+      "chunks": [
+        "examples.hybrid_search.cross_encoder.create_schema",
+        "examples.hybrid_search.cross_encoder.insert_data",
+        "examples.hybrid_search.cross_encoder.semantic_search",
+        "examples.hybrid_search.cross_encoder.keyword_search",
+        "examples.hybrid_search.cross_encoder.rerank"
+      ],
+      "prefix_hash": "ef75526e0ab57020",
+      "utilization_pct": 84.0
+    },
+    {
+      "kv_page_id": 44,
+      "capacity_tokens": 512,
+      "used_tokens": 485,
+      "chunks": [
+        "examples.hybrid_search.cross_encoder.main",
+        "examples.image_search.example.generate_embeddings",
+        "examples.imagehash.example.hash_image",
+        "examples.implicit.example.Base",
+        "examples.implicit.example.User",
+        "examples.implicit.example.Item",
+        "examples.lightfm.example.Base",
+        "examples.lightfm.example.User",
+        "examples.lightfm.example.Item",
+        "examples.openai.example.embed",
+        "examples.openai.halfvec.embed",
+        "examples.rdkit.example.generate_fingerprint"
+      ],
+      "prefix_hash": "8f677c1089cc25e8",
+      "utilization_pct": 94.7
+    },
+    {
+      "kv_page_id": 45,
+      "capacity_tokens": 512,
+      "used_tokens": 201,
+      "chunks": [
+        "examples.sparse_search.example.embed",
+        "examples.surprise.example.Base",
+        "examples.surprise.example.User",
+        "examples.surprise.example.Item"
+      ],
+      "prefix_hash": "30c1d696b27cc9fd",
+      "utilization_pct": 39.3
     },
     {
       "kv_page_id": 46,

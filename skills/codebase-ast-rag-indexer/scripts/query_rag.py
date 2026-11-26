@@ -330,7 +330,7 @@ def main():
         print(json.dumps(out, indent=2))
 
     elif args.mode == "vectorless":
-        # Vectorless Tree + 1-hop Knowledge Graph Subgraph expansion (graphify pattern)
+        # Vectorless Tree + 1-hop Knowledge Graph Subgraph expansion
         graph_edges = json.loads((idx_dir / "graph.json").read_text(encoding="utf-8"))["edges"] if (idx_dir / "graph.json").exists() else []
         print(f"# Vectorless Tree + 1-Hop Graph Subgraph for: '{args.query}'\n")
         for h in hits:

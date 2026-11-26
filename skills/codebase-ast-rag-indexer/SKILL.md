@@ -9,8 +9,8 @@ Clone any GitHub URL or scan a local repository to generate **BOTH Vectorless RA
 
 ## Supported RAG Modes (`--rag-mode`)
 - **`both` (default):** Generates complete Vectorless RAG (`tree_index.json`, `graph.json`, `graph.html`) AND Vector RAG (`vectors.jsonl`, `vector_meta.json`, `qdrant_points.jsonl`, `rag_index.sqlite` FTS5 + vectors, `pgvector_schema.sql`).
-- **`vectorless`:** Zero-embedding AST Tree + Knowledge Graph (inspired by `Graphify-Labs/graphify`).
-- **`vector`:** Dual NLP + Code embeddings via `--embedding-provider tfidf|sentence-transformers|openai|ollama` (inspired by `rawveg/code-rag` and `OshanKHZ/bee2bee-indexer`).
+- **`vectorless`:** Zero-embedding AST Tree + confidence-tagged Knowledge Graph.
+- **`vector`:** Dual NLP + Code embeddings via `--embedding-provider tfidf|sentence-transformers|openai|ollama` with SQLite FTS5, Qdrant, and `pgvector` exports.
 
 ## Commands
 

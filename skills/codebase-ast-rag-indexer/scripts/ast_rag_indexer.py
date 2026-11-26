@@ -13,7 +13,7 @@ Supports BOTH:
   - Hybrid RRF     : Reciprocal Rank Fusion combining Vector Cosine + SQLite FTS5 BM25 + Graph signals.
   - KV-Cache / PA  : Prefix-stable canonical chunk packing into fixed-size PagedAttention token pages.
 
-Synthesizes patterns from Graphify-Labs/graphify, OshanKHZ/bee2bee-indexer, and rawveg/code-rag.
+Zero external dependencies (pure Python 3 standard library).
 """
 import argparse
 import ast
@@ -359,7 +359,7 @@ def parse_generic_file(rel_path: str, source: str, ext: str, is_test: bool):
 
 
 def find_import_cycles(module_imports: dict[str, set[str]]) -> list[list[str]]:
-    """Detect directed module import cycles (graphify/analyze.py pattern)."""
+    """Detect directed module import cycles."""
     visited, on_stack, stack = set(), set(), []
     cycles, seen_keys = [], set()
 
@@ -650,7 +650,7 @@ def build_full_rag_index(
         if s["kind"] == "method" and s.get("parent_class"):
             class_methods[s["parent_class"]][s["name"]] = s["id"]
 
-    # Build module-level import graph & detect import cycles (graphify pattern)
+    # Build module-level import graph & detect import cycles
     module_imports = defaultdict(set)
     file_imported_tokens = defaultdict(set)
     for rel_file, imps in file_imports.items():
@@ -919,7 +919,7 @@ def build_full_rag_index(
 
 
 def write_sqlite_store(chunks: list[dict], vector_bundle: dict, db_path: Path):
-    """Build local zero-server SQLite FTS5 + Dual-Vector store (code-rag + bee2bee pattern)."""
+    """Build local zero-server SQLite FTS5 + Dual-Vector store."""
     if db_path.exists():
         db_path.unlink()
     conn = sqlite3.connect(str(db_path))
@@ -1008,7 +1008,7 @@ def write_outputs(bundle: dict, out_dir: Path, output_format: str = "full"):
         with (idx_dir / "vectors.jsonl").open("w", encoding="utf-8") as vf:
             for r in vbundle["records"]:
                 vf.write(json.dumps(r) + "\n")
-        # Qdrant-ready export (rawveg/code-rag pattern)
+        # Qdrant-ready export
         with (idx_dir / "qdrant_points.jsonl").open("w", encoding="utf-8") as qf:
             for idx_num, r in enumerate(vbundle["records"], 1):
                 qf.write(json.dumps({

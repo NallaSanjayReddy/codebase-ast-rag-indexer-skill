@@ -1,12 +1,51 @@
 name: CI
-on: [push, pull_request]
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  validate-and-test:
+    name: Test (${{ matrix.os }} / Python ${{ matrix.python-version }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ["3.11", "3.12", "3.13"]
+        exclude:
+          - os: macos-latest
+            python-version: "3.11"
+          - os: windows-latest
+            python-version: "3.11"
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-      - name: Run AST & RAG Indexer Unit Tests
+          python-version: ${{ matrix.python-version }}
+
+      - name: Validate plugin manifests & SKILL.md contracts
+        run: python scripts/validate_manifests.py
+
+      - name: Run unit test suite
         run: python -m unittest discover -s tests -v
+
+      - name: CLI end-to-end smoke test (all 8 query modes)
+        run: |
+          python skills/codebase-ast-rag-indexer/scripts/ast_rag_indexer.py --repo . --output ./tmp_ci_index --rag-mode both --embedding-provider tfidf --page-size 512 --incremental
+          python skills/codebase-ast-rag-indexer/scripts/query_rag.py --index ./tmp_ci_index/index --query "build_full_rag_index" --mode hybrid --top-k 3
+          python skills/codebase-ast-rag-indexer/scripts/query_rag.py --index ./tmp_ci_index/index --query "build_full_rag_index" --mode vector --top-k 3
+          python skills/codebase-ast-rag-indexer/scripts/query_rag.py --index ./tmp_ci_index/index --query "build_full_rag_index" --mode vectorless --top-k 3
+          python skills/codebase-ast-rag-indexer/scripts/query_rag.py --index ./tmp_ci_index/index --query "build_full_rag_index" --mode fts --top-k 3
+          python skills/codebase-ast-rag-indexer/scripts/query_rag.py --index ./tmp_ci_index/index --query "build_full_rag_index" --mode explain
+          python skills/codebase-ast-rag-indexer/scripts/query_rag.py --index ./tmp_ci_index/index --query "build_full_rag_index" --mode symbol --top-k 2
+          python skills/codebase-ast-rag-indexer/scripts/query_rag.py --index ./tmp_ci_index/index --query "build_full_rag_index" --mode kv-pack --top-k 2

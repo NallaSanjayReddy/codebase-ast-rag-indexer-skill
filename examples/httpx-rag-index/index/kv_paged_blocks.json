@@ -1,0 +1,4099 @@
+{
+  "page_size_tokens": 512,
+  "total_pages": 327,
+  "pages": [
+    {
+      "kv_page_id": 0,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._api.request"
+      ],
+      "prefix_hash": "bad00ed527d895e4",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 1,
+      "capacity_tokens": 512,
+      "used_tokens": 342,
+      "chunks": [
+        "httpx._api.stream"
+      ],
+      "prefix_hash": "330e670d1a884181",
+      "utilization_pct": 66.8
+    },
+    {
+      "kv_page_id": 2,
+      "capacity_tokens": 512,
+      "used_tokens": 476,
+      "chunks": [
+        "httpx._api.get",
+        "httpx._api.options"
+      ],
+      "prefix_hash": "80e4a7fda7a87b73",
+      "utilization_pct": 93.0
+    },
+    {
+      "kv_page_id": 3,
+      "capacity_tokens": 512,
+      "used_tokens": 493,
+      "chunks": [
+        "httpx._api.head",
+        "httpx._api.post"
+      ],
+      "prefix_hash": "53744b1f7d9c99b0",
+      "utilization_pct": 96.3
+    },
+    {
+      "kv_page_id": 4,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._api.put",
+        "httpx._api.patch"
+      ],
+      "prefix_hash": "77c7195bdd1f3e7d",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 5,
+      "capacity_tokens": 512,
+      "used_tokens": 239,
+      "chunks": [
+        "httpx._api.delete"
+      ],
+      "prefix_hash": "3e296eaf7126883b",
+      "utilization_pct": 46.7
+    },
+    {
+      "kv_page_id": 6,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._auth.Auth"
+      ],
+      "prefix_hash": "0a068cc27c980399",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 7,
+      "capacity_tokens": 512,
+      "used_tokens": 347,
+      "chunks": [
+        "httpx._auth.Auth.auth_flow",
+        "httpx._auth.Auth.sync_auth_flow"
+      ],
+      "prefix_hash": "93fb456e54ef4a4d",
+      "utilization_pct": 67.8
+    },
+    {
+      "kv_page_id": 8,
+      "capacity_tokens": 512,
+      "used_tokens": 349,
+      "chunks": [
+        "httpx._auth.Auth.async_auth_flow",
+        "httpx._auth.FunctionAuth",
+        "httpx._auth.FunctionAuth.__init__",
+        "httpx._auth.FunctionAuth.auth_flow"
+      ],
+      "prefix_hash": "35c397bfc15c1d7e",
+      "utilization_pct": 68.2
+    },
+    {
+      "kv_page_id": 9,
+      "capacity_tokens": 512,
+      "used_tokens": 319,
+      "chunks": [
+        "httpx._auth.BasicAuth",
+        "httpx._auth.BasicAuth.__init__",
+        "httpx._auth.BasicAuth.auth_flow",
+        "httpx._auth.BasicAuth._build_auth_header"
+      ],
+      "prefix_hash": "b34dfa0f95c18a44",
+      "utilization_pct": 62.3
+    },
+    {
+      "kv_page_id": 10,
+      "capacity_tokens": 512,
+      "used_tokens": 503,
+      "chunks": [
+        "httpx._auth.NetRCAuth",
+        "httpx._auth.NetRCAuth.__init__",
+        "httpx._auth.NetRCAuth.auth_flow"
+      ],
+      "prefix_hash": "cd303c248ac4252a",
+      "utilization_pct": 98.2
+    },
+    {
+      "kv_page_id": 11,
+      "capacity_tokens": 512,
+      "used_tokens": 59,
+      "chunks": [
+        "httpx._auth.NetRCAuth._build_auth_header"
+      ],
+      "prefix_hash": "05afbb5b2760dc84",
+      "utilization_pct": 11.5
+    },
+    {
+      "kv_page_id": 12,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._auth.DigestAuth"
+      ],
+      "prefix_hash": "e8c07440c59d9e72",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 13,
+      "capacity_tokens": 512,
+      "used_tokens": 367,
+      "chunks": [
+        "httpx._auth.DigestAuth.__init__",
+        "httpx._auth.DigestAuth.auth_flow"
+      ],
+      "prefix_hash": "98d7b8c7eb202517",
+      "utilization_pct": 71.7
+    },
+    {
+      "kv_page_id": 14,
+      "capacity_tokens": 512,
+      "used_tokens": 338,
+      "chunks": [
+        "httpx._auth.DigestAuth._parse_challenge"
+      ],
+      "prefix_hash": "d03c6d1202fb403d",
+      "utilization_pct": 66.0
+    },
+    {
+      "kv_page_id": 15,
+      "capacity_tokens": 512,
+      "used_tokens": 488,
+      "chunks": [
+        "httpx._auth.DigestAuth._build_auth_header",
+        "httpx._auth.DigestAuth._get_client_nonce"
+      ],
+      "prefix_hash": "2551a6dd021fc1df",
+      "utilization_pct": 95.3
+    },
+    {
+      "kv_page_id": 16,
+      "capacity_tokens": 512,
+      "used_tokens": 504,
+      "chunks": [
+        "httpx._auth.DigestAuth._get_header_value",
+        "httpx._auth.DigestAuth._resolve_qop",
+        "httpx._auth._DigestAuthChallenge",
+        "httpx._client._is_https_redirect",
+        "httpx._client._port_or_default",
+        "httpx._client._same_origin"
+      ],
+      "prefix_hash": "f5c36fdd65573dcb",
+      "utilization_pct": 98.4
+    },
+    {
+      "kv_page_id": 17,
+      "capacity_tokens": 512,
+      "used_tokens": 499,
+      "chunks": [
+        "httpx._client.UseClientDefault",
+        "httpx._client.ClientState",
+        "httpx._client.BoundSyncStream"
+      ],
+      "prefix_hash": "fe3cdb8973199bef",
+      "utilization_pct": 97.5
+    },
+    {
+      "kv_page_id": 18,
+      "capacity_tokens": 512,
+      "used_tokens": 432,
+      "chunks": [
+        "httpx._client.BoundSyncStream.__init__",
+        "httpx._client.BoundSyncStream.__iter__",
+        "httpx._client.BoundSyncStream.close",
+        "httpx._client.BoundAsyncStream",
+        "httpx._client.BoundAsyncStream.__init__",
+        "httpx._client.BoundAsyncStream.__aiter__",
+        "httpx._client.BoundAsyncStream.aclose"
+      ],
+      "prefix_hash": "04e4185096092e8d",
+      "utilization_pct": 84.4
+    },
+    {
+      "kv_page_id": 19,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._client.BaseClient"
+      ],
+      "prefix_hash": "ac401b1dedf030b7",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 20,
+      "capacity_tokens": 512,
+      "used_tokens": 429,
+      "chunks": [
+        "httpx._client.BaseClient.__init__",
+        "httpx._client.BaseClient.is_closed",
+        "httpx._client.BaseClient.trust_env",
+        "httpx._client.BaseClient._enforce_trailing_slash"
+      ],
+      "prefix_hash": "67ad9d29ec2a7b84",
+      "utilization_pct": 83.8
+    },
+    {
+      "kv_page_id": 21,
+      "capacity_tokens": 512,
+      "used_tokens": 437,
+      "chunks": [
+        "httpx._client.BaseClient._get_proxy_map",
+        "httpx._client.BaseClient.timeout",
+        "httpx._client.BaseClient.timeout#L258",
+        "httpx._client.BaseClient.event_hooks",
+        "httpx._client.BaseClient.event_hooks#L266",
+        "httpx._client.BaseClient.auth",
+        "httpx._client.BaseClient.auth#L284",
+        "httpx._client.BaseClient.base_url",
+        "httpx._client.BaseClient.base_url#L295",
+        "httpx._client.BaseClient.headers"
+      ],
+      "prefix_hash": "d7268abb812fbc6b",
+      "utilization_pct": 85.4
+    },
+    {
+      "kv_page_id": 22,
+      "capacity_tokens": 512,
+      "used_tokens": 228,
+      "chunks": [
+        "httpx._client.BaseClient.headers#L306",
+        "httpx._client.BaseClient.cookies",
+        "httpx._client.BaseClient.cookies#L326",
+        "httpx._client.BaseClient.params",
+        "httpx._client.BaseClient.params#L337"
+      ],
+      "prefix_hash": "6f24c191ce9acbd6",
+      "utilization_pct": 44.5
+    },
+    {
+      "kv_page_id": 23,
+      "capacity_tokens": 512,
+      "used_tokens": 425,
+      "chunks": [
+        "httpx._client.BaseClient.build_request"
+      ],
+      "prefix_hash": "e706eb7ef50bb690",
+      "utilization_pct": 83.0
+    },
+    {
+      "kv_page_id": 24,
+      "capacity_tokens": 512,
+      "used_tokens": 451,
+      "chunks": [
+        "httpx._client.BaseClient._merge_url",
+        "httpx._client.BaseClient._merge_cookies",
+        "httpx._client.BaseClient._merge_headers"
+      ],
+      "prefix_hash": "6da6124348980255",
+      "utilization_pct": 88.1
+    },
+    {
+      "kv_page_id": 25,
+      "capacity_tokens": 512,
+      "used_tokens": 352,
+      "chunks": [
+        "httpx._client.BaseClient._merge_queryparams",
+        "httpx._client.BaseClient._build_auth",
+        "httpx._client.BaseClient._build_request_auth"
+      ],
+      "prefix_hash": "2b70296f3f5ee78e",
+      "utilization_pct": 68.8
+    },
+    {
+      "kv_page_id": 26,
+      "capacity_tokens": 512,
+      "used_tokens": 398,
+      "chunks": [
+        "httpx._client.BaseClient._build_redirect_request",
+        "httpx._client.BaseClient._redirect_method"
+      ],
+      "prefix_hash": "8f95c463bf7796b5",
+      "utilization_pct": 77.7
+    },
+    {
+      "kv_page_id": 27,
+      "capacity_tokens": 512,
+      "used_tokens": 272,
+      "chunks": [
+        "httpx._client.BaseClient._redirect_url"
+      ],
+      "prefix_hash": "4ef4f3111bde4149",
+      "utilization_pct": 53.1
+    },
+    {
+      "kv_page_id": 28,
+      "capacity_tokens": 512,
+      "used_tokens": 456,
+      "chunks": [
+        "httpx._client.BaseClient._redirect_headers",
+        "httpx._client.BaseClient._redirect_stream",
+        "httpx._client.BaseClient._set_timeout"
+      ],
+      "prefix_hash": "9b094601d4a81238",
+      "utilization_pct": 89.1
+    },
+    {
+      "kv_page_id": 29,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._client.Client"
+      ],
+      "prefix_hash": "785cf1d396c267b2",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 30,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._client.Client.__init__"
+      ],
+      "prefix_hash": "fdfef4f4d11bbcee",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 31,
+      "capacity_tokens": 512,
+      "used_tokens": 391,
+      "chunks": [
+        "httpx._client.Client._init_transport",
+        "httpx._client.Client._init_proxy_transport",
+        "httpx._client.Client._transport_for_url"
+      ],
+      "prefix_hash": "de205385a8ab3a17",
+      "utilization_pct": 76.4
+    },
+    {
+      "kv_page_id": 32,
+      "capacity_tokens": 512,
+      "used_tokens": 479,
+      "chunks": [
+        "httpx._client.Client.request"
+      ],
+      "prefix_hash": "77fc8409eb9360f5",
+      "utilization_pct": 93.6
+    },
+    {
+      "kv_page_id": 33,
+      "capacity_tokens": 512,
+      "used_tokens": 394,
+      "chunks": [
+        "httpx._client.Client.stream"
+      ],
+      "prefix_hash": "fac3fd377f943d85",
+      "utilization_pct": 77.0
+    },
+    {
+      "kv_page_id": 34,
+      "capacity_tokens": 512,
+      "used_tokens": 367,
+      "chunks": [
+        "httpx._client.Client.send"
+      ],
+      "prefix_hash": "d287ac4d4c06d079",
+      "utilization_pct": 71.7
+    },
+    {
+      "kv_page_id": 35,
+      "capacity_tokens": 512,
+      "used_tokens": 256,
+      "chunks": [
+        "httpx._client.Client._send_handling_auth"
+      ],
+      "prefix_hash": "1bfcbc4b20618900",
+      "utilization_pct": 50.0
+    },
+    {
+      "kv_page_id": 36,
+      "capacity_tokens": 512,
+      "used_tokens": 291,
+      "chunks": [
+        "httpx._client.Client._send_handling_redirects"
+      ],
+      "prefix_hash": "28077d918985b1fc",
+      "utilization_pct": 56.8
+    },
+    {
+      "kv_page_id": 37,
+      "capacity_tokens": 512,
+      "used_tokens": 500,
+      "chunks": [
+        "httpx._client.Client._send_single_request",
+        "httpx._client.Client.get"
+      ],
+      "prefix_hash": "ea320fe6970f8c7f",
+      "utilization_pct": 97.7
+    },
+    {
+      "kv_page_id": 38,
+      "capacity_tokens": 512,
+      "used_tokens": 440,
+      "chunks": [
+        "httpx._client.Client.options",
+        "httpx._client.Client.head"
+      ],
+      "prefix_hash": "c390f0fec5a79ede",
+      "utilization_pct": 85.9
+    },
+    {
+      "kv_page_id": 39,
+      "capacity_tokens": 512,
+      "used_tokens": 286,
+      "chunks": [
+        "httpx._client.Client.post"
+      ],
+      "prefix_hash": "c3578fb91bac195b",
+      "utilization_pct": 55.9
+    },
+    {
+      "kv_page_id": 40,
+      "capacity_tokens": 512,
+      "used_tokens": 286,
+      "chunks": [
+        "httpx._client.Client.put"
+      ],
+      "prefix_hash": "365c1a91f0c07034",
+      "utilization_pct": 55.9
+    },
+    {
+      "kv_page_id": 41,
+      "capacity_tokens": 512,
+      "used_tokens": 507,
+      "chunks": [
+        "httpx._client.Client.patch",
+        "httpx._client.Client.delete"
+      ],
+      "prefix_hash": "9d8b364112d647e9",
+      "utilization_pct": 99.0
+    },
+    {
+      "kv_page_id": 42,
+      "capacity_tokens": 512,
+      "used_tokens": 354,
+      "chunks": [
+        "httpx._client.Client.close",
+        "httpx._client.Client.__enter__",
+        "httpx._client.Client.__exit__"
+      ],
+      "prefix_hash": "67b8efe76811ed79",
+      "utilization_pct": 69.1
+    },
+    {
+      "kv_page_id": 43,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._client.AsyncClient"
+      ],
+      "prefix_hash": "75aac6f4eab8ffe3",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 44,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._client.AsyncClient.__init__"
+      ],
+      "prefix_hash": "96d83929f855a8fb",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 45,
+      "capacity_tokens": 512,
+      "used_tokens": 399,
+      "chunks": [
+        "httpx._client.AsyncClient._init_transport",
+        "httpx._client.AsyncClient._init_proxy_transport",
+        "httpx._client.AsyncClient._transport_for_url"
+      ],
+      "prefix_hash": "4dcb948571e2ca5c",
+      "utilization_pct": 77.9
+    },
+    {
+      "kv_page_id": 46,
+      "capacity_tokens": 512,
+      "used_tokens": 491,
+      "chunks": [
+        "httpx._client.AsyncClient.request"
+      ],
+      "prefix_hash": "a042e36c199bd915",
+      "utilization_pct": 95.9
+    },
+    {
+      "kv_page_id": 47,
+      "capacity_tokens": 512,
+      "used_tokens": 400,
+      "chunks": [
+        "httpx._client.AsyncClient.stream"
+      ],
+      "prefix_hash": "c74fab9fafb18887",
+      "utilization_pct": 78.1
+    },
+    {
+      "kv_page_id": 48,
+      "capacity_tokens": 512,
+      "used_tokens": 374,
+      "chunks": [
+        "httpx._client.AsyncClient.send"
+      ],
+      "prefix_hash": "493fbe42fc8a33ec",
+      "utilization_pct": 73.0
+    },
+    {
+      "kv_page_id": 49,
+      "capacity_tokens": 512,
+      "used_tokens": 271,
+      "chunks": [
+        "httpx._client.AsyncClient._send_handling_auth"
+      ],
+      "prefix_hash": "eab8ff1a681f5e01",
+      "utilization_pct": 52.9
+    },
+    {
+      "kv_page_id": 50,
+      "capacity_tokens": 512,
+      "used_tokens": 301,
+      "chunks": [
+        "httpx._client.AsyncClient._send_handling_redirects"
+      ],
+      "prefix_hash": "4de35b6805d6b26a",
+      "utilization_pct": 58.8
+    },
+    {
+      "kv_page_id": 51,
+      "capacity_tokens": 512,
+      "used_tokens": 508,
+      "chunks": [
+        "httpx._client.AsyncClient._send_single_request",
+        "httpx._client.AsyncClient.get"
+      ],
+      "prefix_hash": "42c49f906e695423",
+      "utilization_pct": 99.2
+    },
+    {
+      "kv_page_id": 52,
+      "capacity_tokens": 512,
+      "used_tokens": 446,
+      "chunks": [
+        "httpx._client.AsyncClient.options",
+        "httpx._client.AsyncClient.head"
+      ],
+      "prefix_hash": "3d6c7796afe81018",
+      "utilization_pct": 87.1
+    },
+    {
+      "kv_page_id": 53,
+      "capacity_tokens": 512,
+      "used_tokens": 289,
+      "chunks": [
+        "httpx._client.AsyncClient.post"
+      ],
+      "prefix_hash": "e70c2715ed2a659a",
+      "utilization_pct": 56.4
+    },
+    {
+      "kv_page_id": 54,
+      "capacity_tokens": 512,
+      "used_tokens": 289,
+      "chunks": [
+        "httpx._client.AsyncClient.put"
+      ],
+      "prefix_hash": "650e32052cc5abc9",
+      "utilization_pct": 56.4
+    },
+    {
+      "kv_page_id": 55,
+      "capacity_tokens": 512,
+      "used_tokens": 290,
+      "chunks": [
+        "httpx._client.AsyncClient.patch"
+      ],
+      "prefix_hash": "de257d07b5d91bc5",
+      "utilization_pct": 56.6
+    },
+    {
+      "kv_page_id": 56,
+      "capacity_tokens": 512,
+      "used_tokens": 468,
+      "chunks": [
+        "httpx._client.AsyncClient.delete",
+        "httpx._client.AsyncClient.aclose",
+        "httpx._client.AsyncClient.__aenter__"
+      ],
+      "prefix_hash": "dd4211752e0d0211",
+      "utilization_pct": 91.4
+    },
+    {
+      "kv_page_id": 57,
+      "capacity_tokens": 512,
+      "used_tokens": 128,
+      "chunks": [
+        "httpx._client.AsyncClient.__aexit__",
+        "httpx._config.UnsetType"
+      ],
+      "prefix_hash": "2c795f3079064e5c",
+      "utilization_pct": 25.0
+    },
+    {
+      "kv_page_id": 58,
+      "capacity_tokens": 512,
+      "used_tokens": 432,
+      "chunks": [
+        "httpx._config.create_ssl_context"
+      ],
+      "prefix_hash": "07fc1f78f731f520",
+      "utilization_pct": 84.4
+    },
+    {
+      "kv_page_id": 59,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._config.Timeout"
+      ],
+      "prefix_hash": "6baada33a76eb23b",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 60,
+      "capacity_tokens": 512,
+      "used_tokens": 492,
+      "chunks": [
+        "httpx._config.Timeout.__init__"
+      ],
+      "prefix_hash": "871d6b02785b09e7",
+      "utilization_pct": 96.1
+    },
+    {
+      "kv_page_id": 61,
+      "capacity_tokens": 512,
+      "used_tokens": 214,
+      "chunks": [
+        "httpx._config.Timeout.as_dict",
+        "httpx._config.Timeout.__eq__",
+        "httpx._config.Timeout.__repr__"
+      ],
+      "prefix_hash": "ad76226168e89d3e",
+      "utilization_pct": 41.8
+    },
+    {
+      "kv_page_id": 62,
+      "capacity_tokens": 512,
+      "used_tokens": 466,
+      "chunks": [
+        "httpx._config.Limits",
+        "httpx._config.Limits.__init__"
+      ],
+      "prefix_hash": "d646ec6a60e9a1d7",
+      "utilization_pct": 91.0
+    },
+    {
+      "kv_page_id": 63,
+      "capacity_tokens": 512,
+      "used_tokens": 159,
+      "chunks": [
+        "httpx._config.Limits.__eq__",
+        "httpx._config.Limits.__repr__"
+      ],
+      "prefix_hash": "a7293da5a904bc43",
+      "utilization_pct": 31.1
+    },
+    {
+      "kv_page_id": 64,
+      "capacity_tokens": 512,
+      "used_tokens": 373,
+      "chunks": [
+        "httpx._config.Proxy"
+      ],
+      "prefix_hash": "6d3022f1a286aa3c",
+      "utilization_pct": 72.9
+    },
+    {
+      "kv_page_id": 65,
+      "capacity_tokens": 512,
+      "used_tokens": 495,
+      "chunks": [
+        "httpx._config.Proxy.__init__",
+        "httpx._config.Proxy.raw_auth",
+        "httpx._config.Proxy.__repr__",
+        "httpx._content.ByteStream",
+        "httpx._content.ByteStream.__init__",
+        "httpx._content.ByteStream.__iter__",
+        "httpx._content.ByteStream.__aiter__"
+      ],
+      "prefix_hash": "660edfa6d559707c",
+      "utilization_pct": 96.7
+    },
+    {
+      "kv_page_id": 66,
+      "capacity_tokens": 512,
+      "used_tokens": 391,
+      "chunks": [
+        "httpx._content.IteratorByteStream",
+        "httpx._content.IteratorByteStream.__init__",
+        "httpx._content.IteratorByteStream.__iter__"
+      ],
+      "prefix_hash": "926ae61a40c9e351",
+      "utilization_pct": 76.4
+    },
+    {
+      "kv_page_id": 67,
+      "capacity_tokens": 512,
+      "used_tokens": 411,
+      "chunks": [
+        "httpx._content.AsyncIteratorByteStream",
+        "httpx._content.AsyncIteratorByteStream.__init__",
+        "httpx._content.AsyncIteratorByteStream.__aiter__"
+      ],
+      "prefix_hash": "2b59e6b636d2d50f",
+      "utilization_pct": 80.3
+    },
+    {
+      "kv_page_id": 68,
+      "capacity_tokens": 512,
+      "used_tokens": 494,
+      "chunks": [
+        "httpx._content.UnattachedStream",
+        "httpx._content.UnattachedStream.__iter__",
+        "httpx._content.UnattachedStream.__aiter__",
+        "httpx._content.encode_content"
+      ],
+      "prefix_hash": "40f56e94e7344b13",
+      "utilization_pct": 96.5
+    },
+    {
+      "kv_page_id": 69,
+      "capacity_tokens": 512,
+      "used_tokens": 469,
+      "chunks": [
+        "httpx._content.encode_urlencoded_data",
+        "httpx._content.encode_multipart_data",
+        "httpx._content.encode_text",
+        "httpx._content.encode_html",
+        "httpx._content.encode_json"
+      ],
+      "prefix_hash": "aacfd503f672b460",
+      "utilization_pct": 91.6
+    },
+    {
+      "kv_page_id": 70,
+      "capacity_tokens": 512,
+      "used_tokens": 488,
+      "chunks": [
+        "httpx._content.encode_request",
+        "httpx._content.encode_response"
+      ],
+      "prefix_hash": "7a5d1bdafc41841e",
+      "utilization_pct": 95.3
+    },
+    {
+      "kv_page_id": 71,
+      "capacity_tokens": 512,
+      "used_tokens": 424,
+      "chunks": [
+        "httpx._decoders.ContentDecoder",
+        "httpx._decoders.ContentDecoder.decode",
+        "httpx._decoders.ContentDecoder.flush",
+        "httpx._decoders.IdentityDecoder",
+        "httpx._decoders.IdentityDecoder.decode",
+        "httpx._decoders.IdentityDecoder.flush",
+        "httpx._decoders.DeflateDecoder",
+        "httpx._decoders.DeflateDecoder.__init__"
+      ],
+      "prefix_hash": "02dd077990d3df1c",
+      "utilization_pct": 82.8
+    },
+    {
+      "kv_page_id": 72,
+      "capacity_tokens": 512,
+      "used_tokens": 432,
+      "chunks": [
+        "httpx._decoders.DeflateDecoder.decode",
+        "httpx._decoders.DeflateDecoder.flush",
+        "httpx._decoders.GZipDecoder",
+        "httpx._decoders.GZipDecoder.__init__",
+        "httpx._decoders.GZipDecoder.decode",
+        "httpx._decoders.GZipDecoder.flush"
+      ],
+      "prefix_hash": "c23a56118b0fe9f1",
+      "utilization_pct": 84.4
+    },
+    {
+      "kv_page_id": 73,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._decoders.BrotliDecoder"
+      ],
+      "prefix_hash": "bc92a5a380170815",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 74,
+      "capacity_tokens": 512,
+      "used_tokens": 421,
+      "chunks": [
+        "httpx._decoders.BrotliDecoder.__init__",
+        "httpx._decoders.BrotliDecoder.decode",
+        "httpx._decoders.BrotliDecoder.flush"
+      ],
+      "prefix_hash": "f32bc453374c0b21",
+      "utilization_pct": 82.2
+    },
+    {
+      "kv_page_id": 75,
+      "capacity_tokens": 512,
+      "used_tokens": 484,
+      "chunks": [
+        "httpx._decoders.ZStandardDecoder",
+        "httpx._decoders.ZStandardDecoder.__init__"
+      ],
+      "prefix_hash": "bc30a30d62286c1e",
+      "utilization_pct": 94.5
+    },
+    {
+      "kv_page_id": 76,
+      "capacity_tokens": 512,
+      "used_tokens": 488,
+      "chunks": [
+        "httpx._decoders.ZStandardDecoder.decode",
+        "httpx._decoders.ZStandardDecoder.flush",
+        "httpx._decoders.MultiDecoder",
+        "httpx._decoders.MultiDecoder.__init__"
+      ],
+      "prefix_hash": "49ac63efef014d8c",
+      "utilization_pct": 95.3
+    },
+    {
+      "kv_page_id": 77,
+      "capacity_tokens": 512,
+      "used_tokens": 409,
+      "chunks": [
+        "httpx._decoders.MultiDecoder.decode",
+        "httpx._decoders.MultiDecoder.flush",
+        "httpx._decoders.ByteChunker",
+        "httpx._decoders.ByteChunker.__init__"
+      ],
+      "prefix_hash": "a959b47ac8a7b1bc",
+      "utilization_pct": 79.9
+    },
+    {
+      "kv_page_id": 78,
+      "capacity_tokens": 512,
+      "used_tokens": 242,
+      "chunks": [
+        "httpx._decoders.ByteChunker.decode",
+        "httpx._decoders.ByteChunker.flush"
+      ],
+      "prefix_hash": "a7ae4ad40816dd5c",
+      "utilization_pct": 47.3
+    },
+    {
+      "kv_page_id": 79,
+      "capacity_tokens": 512,
+      "used_tokens": 334,
+      "chunks": [
+        "httpx._decoders.TextChunker",
+        "httpx._decoders.TextChunker.__init__"
+      ],
+      "prefix_hash": "b9db83430c22cbd8",
+      "utilization_pct": 65.2
+    },
+    {
+      "kv_page_id": 80,
+      "capacity_tokens": 512,
+      "used_tokens": 411,
+      "chunks": [
+        "httpx._decoders.TextChunker.decode",
+        "httpx._decoders.TextChunker.flush",
+        "httpx._decoders.TextDecoder",
+        "httpx._decoders.TextDecoder.__init__",
+        "httpx._decoders.TextDecoder.decode",
+        "httpx._decoders.TextDecoder.flush"
+      ],
+      "prefix_hash": "f33038cde35151f9",
+      "utilization_pct": 80.3
+    },
+    {
+      "kv_page_id": 81,
+      "capacity_tokens": 512,
+      "used_tokens": 505,
+      "chunks": [
+        "httpx._decoders.LineDecoder",
+        "httpx._decoders.LineDecoder.__init__"
+      ],
+      "prefix_hash": "2c06a7a51889c6ce",
+      "utilization_pct": 98.6
+    },
+    {
+      "kv_page_id": 82,
+      "capacity_tokens": 512,
+      "used_tokens": 406,
+      "chunks": [
+        "httpx._decoders.LineDecoder.decode",
+        "httpx._decoders.LineDecoder.flush"
+      ],
+      "prefix_hash": "6d7f2e51ce6c609c",
+      "utilization_pct": 79.3
+    },
+    {
+      "kv_page_id": 83,
+      "capacity_tokens": 512,
+      "used_tokens": 459,
+      "chunks": [
+        "httpx._exceptions.HTTPError",
+        "httpx._exceptions.HTTPError.__init__",
+        "httpx._exceptions.HTTPError.request",
+        "httpx._exceptions.HTTPError.request#L103",
+        "httpx._exceptions.RequestError"
+      ],
+      "prefix_hash": "dc7c49377d1b62cc",
+      "utilization_pct": 89.6
+    },
+    {
+      "kv_page_id": 84,
+      "capacity_tokens": 512,
+      "used_tokens": 493,
+      "chunks": [
+        "httpx._exceptions.RequestError.__init__",
+        "httpx._exceptions.TransportError",
+        "httpx._exceptions.TimeoutException",
+        "httpx._exceptions.ConnectTimeout",
+        "httpx._exceptions.ReadTimeout",
+        "httpx._exceptions.WriteTimeout",
+        "httpx._exceptions.PoolTimeout",
+        "httpx._exceptions.NetworkError",
+        "httpx._exceptions.ReadError",
+        "httpx._exceptions.WriteError",
+        "httpx._exceptions.ConnectError",
+        "httpx._exceptions.CloseError",
+        "httpx._exceptions.ProxyError",
+        "httpx._exceptions.UnsupportedProtocol"
+      ],
+      "prefix_hash": "6582d9140efd427e",
+      "utilization_pct": 96.3
+    },
+    {
+      "kv_page_id": 85,
+      "capacity_tokens": 512,
+      "used_tokens": 462,
+      "chunks": [
+        "httpx._exceptions.ProtocolError",
+        "httpx._exceptions.LocalProtocolError",
+        "httpx._exceptions.RemoteProtocolError",
+        "httpx._exceptions.DecodingError",
+        "httpx._exceptions.TooManyRedirects",
+        "httpx._exceptions.HTTPStatusError",
+        "httpx._exceptions.HTTPStatusError.__init__",
+        "httpx._exceptions.InvalidURL",
+        "httpx._exceptions.InvalidURL.__init__",
+        "httpx._exceptions.CookieConflict",
+        "httpx._exceptions.CookieConflict.__init__"
+      ],
+      "prefix_hash": "371bd3ac29504a09",
+      "utilization_pct": 90.2
+    },
+    {
+      "kv_page_id": 86,
+      "capacity_tokens": 512,
+      "used_tokens": 500,
+      "chunks": [
+        "httpx._exceptions.StreamError",
+        "httpx._exceptions.StreamError.__init__",
+        "httpx._exceptions.StreamConsumed",
+        "httpx._exceptions.StreamConsumed.__init__",
+        "httpx._exceptions.StreamClosed",
+        "httpx._exceptions.StreamClosed.__init__"
+      ],
+      "prefix_hash": "43ee1f74ae1967bc",
+      "utilization_pct": 97.7
+    },
+    {
+      "kv_page_id": 87,
+      "capacity_tokens": 512,
+      "used_tokens": 370,
+      "chunks": [
+        "httpx._exceptions.ResponseNotRead",
+        "httpx._exceptions.ResponseNotRead.__init__",
+        "httpx._exceptions.RequestNotRead",
+        "httpx._exceptions.RequestNotRead.__init__",
+        "httpx._exceptions.request_context"
+      ],
+      "prefix_hash": "98387d01d05740cb",
+      "utilization_pct": 72.3
+    },
+    {
+      "kv_page_id": 88,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._main.print_help"
+      ],
+      "prefix_hash": "327c2ca796b59147",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 89,
+      "capacity_tokens": 512,
+      "used_tokens": 465,
+      "chunks": [
+        "httpx._main.get_lexer_for_response",
+        "httpx._main.format_request_headers",
+        "httpx._main.format_response_headers",
+        "httpx._main.print_request_headers"
+      ],
+      "prefix_hash": "839e445e9aba06b3",
+      "utilization_pct": 90.8
+    },
+    {
+      "kv_page_id": 90,
+      "capacity_tokens": 512,
+      "used_tokens": 462,
+      "chunks": [
+        "httpx._main.print_response_headers",
+        "httpx._main.print_response",
+        "httpx._main.format_certificate"
+      ],
+      "prefix_hash": "c06cb2682e407e31",
+      "utilization_pct": 90.2
+    },
+    {
+      "kv_page_id": 91,
+      "capacity_tokens": 512,
+      "used_tokens": 488,
+      "chunks": [
+        "httpx._main.trace"
+      ],
+      "prefix_hash": "c28f1fc385057f29",
+      "utilization_pct": 95.3
+    },
+    {
+      "kv_page_id": 92,
+      "capacity_tokens": 512,
+      "used_tokens": 442,
+      "chunks": [
+        "httpx._main.download_response",
+        "httpx._main.validate_json",
+        "httpx._main.validate_auth",
+        "httpx._main.handle_help"
+      ],
+      "prefix_hash": "36b92d46fb48e5ef",
+      "utilization_pct": 86.3
+    },
+    {
+      "kv_page_id": 93,
+      "capacity_tokens": 512,
+      "used_tokens": 480,
+      "chunks": [
+        "httpx._main.main",
+        "httpx._models._is_known_encoding"
+      ],
+      "prefix_hash": "a0b575c1d22a6f9b",
+      "utilization_pct": 93.8
+    },
+    {
+      "kv_page_id": 94,
+      "capacity_tokens": 512,
+      "used_tokens": 236,
+      "chunks": [
+        "httpx._models._normalize_header_key",
+        "httpx._models._normalize_header_value",
+        "httpx._models._parse_content_type_charset"
+      ],
+      "prefix_hash": "e1cc4b03cf62945b",
+      "utilization_pct": 46.1
+    },
+    {
+      "kv_page_id": 95,
+      "capacity_tokens": 512,
+      "used_tokens": 392,
+      "chunks": [
+        "httpx._models._parse_header_links",
+        "httpx._models._obfuscate_sensitive_headers"
+      ],
+      "prefix_hash": "10519e983fcfb236",
+      "utilization_pct": 76.6
+    },
+    {
+      "kv_page_id": 96,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._models.Headers"
+      ],
+      "prefix_hash": "5b94323dda7ed848",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 97,
+      "capacity_tokens": 512,
+      "used_tokens": 476,
+      "chunks": [
+        "httpx._models.Headers.__init__",
+        "httpx._models.Headers.encoding",
+        "httpx._models.Headers.encoding#L192"
+      ],
+      "prefix_hash": "9f693a4fea09927e",
+      "utilization_pct": 93.0
+    },
+    {
+      "kv_page_id": 98,
+      "capacity_tokens": 512,
+      "used_tokens": 439,
+      "chunks": [
+        "httpx._models.Headers.raw",
+        "httpx._models.Headers.keys",
+        "httpx._models.Headers.values",
+        "httpx._models.Headers.items",
+        "httpx._models.Headers.multi_items"
+      ],
+      "prefix_hash": "ab6fe1afb000f5d6",
+      "utilization_pct": 85.7
+    },
+    {
+      "kv_page_id": 99,
+      "capacity_tokens": 512,
+      "used_tokens": 496,
+      "chunks": [
+        "httpx._models.Headers.get",
+        "httpx._models.Headers.get_list",
+        "httpx._models.Headers.update",
+        "httpx._models.Headers.copy",
+        "httpx._models.Headers.__getitem__"
+      ],
+      "prefix_hash": "1c0ec31781db3892",
+      "utilization_pct": 96.9
+    },
+    {
+      "kv_page_id": 100,
+      "capacity_tokens": 512,
+      "used_tokens": 476,
+      "chunks": [
+        "httpx._models.Headers.__setitem__",
+        "httpx._models.Headers.__delitem__",
+        "httpx._models.Headers.__contains__",
+        "httpx._models.Headers.__iter__",
+        "httpx._models.Headers.__len__",
+        "httpx._models.Headers.__eq__"
+      ],
+      "prefix_hash": "d10c68bdf81c2ab7",
+      "utilization_pct": 93.0
+    },
+    {
+      "kv_page_id": 101,
+      "capacity_tokens": 512,
+      "used_tokens": 128,
+      "chunks": [
+        "httpx._models.Headers.__repr__"
+      ],
+      "prefix_hash": "64c64b748d4822bc",
+      "utilization_pct": 25.0
+    },
+    {
+      "kv_page_id": 102,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._models.Request"
+      ],
+      "prefix_hash": "6e2f2ee5079fe4aa",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 103,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._models.Request.__init__"
+      ],
+      "prefix_hash": "108fd0ad0ed1ab1a",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 104,
+      "capacity_tokens": 512,
+      "used_tokens": 415,
+      "chunks": [
+        "httpx._models.Request._prepare",
+        "httpx._models.Request.content",
+        "httpx._models.Request.read"
+      ],
+      "prefix_hash": "a063807273833b4c",
+      "utilization_pct": 81.1
+    },
+    {
+      "kv_page_id": 105,
+      "capacity_tokens": 512,
+      "used_tokens": 314,
+      "chunks": [
+        "httpx._models.Request.aread",
+        "httpx._models.Request.__repr__",
+        "httpx._models.Request.__getstate__",
+        "httpx._models.Request.__setstate__"
+      ],
+      "prefix_hash": "bf56217f18d2fa42",
+      "utilization_pct": 61.3
+    },
+    {
+      "kv_page_id": 106,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._models.Response"
+      ],
+      "prefix_hash": "390922099401df6b",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 107,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._models.Response.__init__"
+      ],
+      "prefix_hash": "87c1a2446e8827e6",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 108,
+      "capacity_tokens": 512,
+      "used_tokens": 478,
+      "chunks": [
+        "httpx._models.Response._prepare",
+        "httpx._models.Response.elapsed",
+        "httpx._models.Response.elapsed#L592",
+        "httpx._models.Response.request",
+        "httpx._models.Response.request#L607",
+        "httpx._models.Response.http_version",
+        "httpx._models.Response.reason_phrase",
+        "httpx._models.Response.url"
+      ],
+      "prefix_hash": "243048ef9859d7ee",
+      "utilization_pct": 93.4
+    },
+    {
+      "kv_page_id": 109,
+      "capacity_tokens": 512,
+      "used_tokens": 491,
+      "chunks": [
+        "httpx._models.Response.content",
+        "httpx._models.Response.text",
+        "httpx._models.Response.encoding",
+        "httpx._models.Response.encoding#L675"
+      ],
+      "prefix_hash": "7b7bbe36683b55c3",
+      "utilization_pct": 95.9
+    },
+    {
+      "kv_page_id": 110,
+      "capacity_tokens": 512,
+      "used_tokens": 508,
+      "chunks": [
+        "httpx._models.Response.charset_encoding",
+        "httpx._models.Response._get_content_decoder",
+        "httpx._models.Response.is_informational",
+        "httpx._models.Response.is_success",
+        "httpx._models.Response.is_redirect"
+      ],
+      "prefix_hash": "a5ffbe1258b1e260",
+      "utilization_pct": 99.2
+    },
+    {
+      "kv_page_id": 111,
+      "capacity_tokens": 512,
+      "used_tokens": 347,
+      "chunks": [
+        "httpx._models.Response.is_client_error",
+        "httpx._models.Response.is_server_error",
+        "httpx._models.Response.is_error",
+        "httpx._models.Response.has_redirect_location"
+      ],
+      "prefix_hash": "2f9c92731566a4a6",
+      "utilization_pct": 67.8
+    },
+    {
+      "kv_page_id": 112,
+      "capacity_tokens": 512,
+      "used_tokens": 435,
+      "chunks": [
+        "httpx._models.Response.raise_for_status",
+        "httpx._models.Response.json",
+        "httpx._models.Response.cookies"
+      ],
+      "prefix_hash": "e26dfc58e2bc3cc3",
+      "utilization_pct": 85.0
+    },
+    {
+      "kv_page_id": 113,
+      "capacity_tokens": 512,
+      "used_tokens": 318,
+      "chunks": [
+        "httpx._models.Response.links",
+        "httpx._models.Response.num_bytes_downloaded",
+        "httpx._models.Response.__repr__",
+        "httpx._models.Response.__getstate__",
+        "httpx._models.Response.__setstate__",
+        "httpx._models.Response.read"
+      ],
+      "prefix_hash": "8668aad0c5693e8d",
+      "utilization_pct": 62.1
+    },
+    {
+      "kv_page_id": 114,
+      "capacity_tokens": 512,
+      "used_tokens": 488,
+      "chunks": [
+        "httpx._models.Response.iter_bytes",
+        "httpx._models.Response.iter_text"
+      ],
+      "prefix_hash": "57896e52b57cf26f",
+      "utilization_pct": 95.3
+    },
+    {
+      "kv_page_id": 115,
+      "capacity_tokens": 512,
+      "used_tokens": 497,
+      "chunks": [
+        "httpx._models.Response.iter_lines",
+        "httpx._models.Response.iter_raw",
+        "httpx._models.Response.close",
+        "httpx._models.Response.aread"
+      ],
+      "prefix_hash": "d37f89bc76017e7a",
+      "utilization_pct": 97.1
+    },
+    {
+      "kv_page_id": 116,
+      "capacity_tokens": 512,
+      "used_tokens": 505,
+      "chunks": [
+        "httpx._models.Response.aiter_bytes",
+        "httpx._models.Response.aiter_text"
+      ],
+      "prefix_hash": "c417eb9a846036d9",
+      "utilization_pct": 98.6
+    },
+    {
+      "kv_page_id": 117,
+      "capacity_tokens": 512,
+      "used_tokens": 450,
+      "chunks": [
+        "httpx._models.Response.aiter_lines",
+        "httpx._models.Response.aiter_raw",
+        "httpx._models.Response.aclose"
+      ],
+      "prefix_hash": "18daae695e60eeb0",
+      "utilization_pct": 87.9
+    },
+    {
+      "kv_page_id": 118,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._models.Cookies"
+      ],
+      "prefix_hash": "c3b4f16566c776fa",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 119,
+      "capacity_tokens": 512,
+      "used_tokens": 321,
+      "chunks": [
+        "httpx._models.Cookies.__init__",
+        "httpx._models.Cookies.extract_cookies",
+        "httpx._models.Cookies.set_cookie_header"
+      ],
+      "prefix_hash": "1059d82a8ccd49e1",
+      "utilization_pct": 62.7
+    },
+    {
+      "kv_page_id": 120,
+      "capacity_tokens": 512,
+      "used_tokens": 431,
+      "chunks": [
+        "httpx._models.Cookies.set",
+        "httpx._models.Cookies.get"
+      ],
+      "prefix_hash": "95301728f9f9159b",
+      "utilization_pct": 84.2
+    },
+    {
+      "kv_page_id": 121,
+      "capacity_tokens": 512,
+      "used_tokens": 489,
+      "chunks": [
+        "httpx._models.Cookies.delete",
+        "httpx._models.Cookies.clear",
+        "httpx._models.Cookies.update",
+        "httpx._models.Cookies.__setitem__",
+        "httpx._models.Cookies.__getitem__",
+        "httpx._models.Cookies.__delitem__",
+        "httpx._models.Cookies.__len__",
+        "httpx._models.Cookies.__iter__",
+        "httpx._models.Cookies.__bool__"
+      ],
+      "prefix_hash": "9f7ad3c5e01957e6",
+      "utilization_pct": 95.5
+    },
+    {
+      "kv_page_id": 122,
+      "capacity_tokens": 512,
+      "used_tokens": 334,
+      "chunks": [
+        "httpx._models.Cookies.__repr__",
+        "httpx._models.Cookies._CookieCompatRequest",
+        "httpx._models.Cookies._CookieCompatRequest.__init__",
+        "httpx._models.Cookies._CookieCompatRequest.add_unredirected_header"
+      ],
+      "prefix_hash": "1374e014b959174b",
+      "utilization_pct": 65.2
+    },
+    {
+      "kv_page_id": 123,
+      "capacity_tokens": 512,
+      "used_tokens": 486,
+      "chunks": [
+        "httpx._models.Cookies._CookieCompatResponse",
+        "httpx._models.Cookies._CookieCompatResponse.__init__",
+        "httpx._models.Cookies._CookieCompatResponse.info",
+        "httpx._multipart._format_form_param",
+        "httpx._multipart._guess_content_type"
+      ],
+      "prefix_hash": "c4dfa01bbd846ccf",
+      "utilization_pct": 94.9
+    },
+    {
+      "kv_page_id": 124,
+      "capacity_tokens": 512,
+      "used_tokens": 491,
+      "chunks": [
+        "httpx._multipart.get_multipart_boundary_from_content_type",
+        "httpx._multipart.DataField"
+      ],
+      "prefix_hash": "4bd75163ad289509",
+      "utilization_pct": 95.9
+    },
+    {
+      "kv_page_id": 125,
+      "capacity_tokens": 512,
+      "used_tokens": 336,
+      "chunks": [
+        "httpx._multipart.DataField.__init__",
+        "httpx._multipart.DataField.render_headers",
+        "httpx._multipart.DataField.render_data",
+        "httpx._multipart.DataField.get_length",
+        "httpx._multipart.DataField.render"
+      ],
+      "prefix_hash": "0e76da2f1275b5ee",
+      "utilization_pct": 65.6
+    },
+    {
+      "kv_page_id": 126,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._multipart.FileField"
+      ],
+      "prefix_hash": "6912aec0aff47915",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 127,
+      "capacity_tokens": 512,
+      "used_tokens": 503,
+      "chunks": [
+        "httpx._multipart.FileField.__init__"
+      ],
+      "prefix_hash": "617f405bc50c5ba0",
+      "utilization_pct": 98.2
+    },
+    {
+      "kv_page_id": 128,
+      "capacity_tokens": 512,
+      "used_tokens": 442,
+      "chunks": [
+        "httpx._multipart.FileField.get_length",
+        "httpx._multipart.FileField.render_headers",
+        "httpx._multipart.FileField.render_data",
+        "httpx._multipart.FileField.render"
+      ],
+      "prefix_hash": "cdbb0215804cce99",
+      "utilization_pct": 86.3
+    },
+    {
+      "kv_page_id": 129,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._multipart.MultipartStream"
+      ],
+      "prefix_hash": "520d0501d582fd58",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 130,
+      "capacity_tokens": 512,
+      "used_tokens": 473,
+      "chunks": [
+        "httpx._multipart.MultipartStream.__init__",
+        "httpx._multipart.MultipartStream._iter_fields",
+        "httpx._multipart.MultipartStream.iter_chunks",
+        "httpx._multipart.MultipartStream.get_content_length"
+      ],
+      "prefix_hash": "42e5e7ddbf07100c",
+      "utilization_pct": 92.4
+    },
+    {
+      "kv_page_id": 131,
+      "capacity_tokens": 512,
+      "used_tokens": 146,
+      "chunks": [
+        "httpx._multipart.MultipartStream.get_headers",
+        "httpx._multipart.MultipartStream.__iter__",
+        "httpx._multipart.MultipartStream.__aiter__"
+      ],
+      "prefix_hash": "fff628538b2c6f15",
+      "utilization_pct": 28.5
+    },
+    {
+      "kv_page_id": 132,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._status_codes.codes"
+      ],
+      "prefix_hash": "2f06cce82ce24484",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 133,
+      "capacity_tokens": 512,
+      "used_tokens": 484,
+      "chunks": [
+        "httpx._status_codes.codes.__new__",
+        "httpx._status_codes.codes.__str__",
+        "httpx._status_codes.codes.get_reason_phrase",
+        "httpx._status_codes.codes.is_informational",
+        "httpx._status_codes.codes.is_success",
+        "httpx._status_codes.codes.is_redirect",
+        "httpx._status_codes.codes.is_client_error",
+        "httpx._status_codes.codes.is_server_error",
+        "httpx._status_codes.codes.is_error",
+        "httpx._transports.asgi.is_running_trio",
+        "httpx._transports.asgi.create_event"
+      ],
+      "prefix_hash": "84845126fdf509e2",
+      "utilization_pct": 94.5
+    },
+    {
+      "kv_page_id": 134,
+      "capacity_tokens": 512,
+      "used_tokens": 98,
+      "chunks": [
+        "httpx._transports.asgi.ASGIResponseStream",
+        "httpx._transports.asgi.ASGIResponseStream.__init__",
+        "httpx._transports.asgi.ASGIResponseStream.__aiter__"
+      ],
+      "prefix_hash": "b03ed48f45204a58",
+      "utilization_pct": 19.1
+    },
+    {
+      "kv_page_id": 135,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._transports.asgi.ASGITransport"
+      ],
+      "prefix_hash": "1e4bef368d66650b",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 136,
+      "capacity_tokens": 512,
+      "used_tokens": 85,
+      "chunks": [
+        "httpx._transports.asgi.ASGITransport.__init__"
+      ],
+      "prefix_hash": "0328e7bd7a00e50e",
+      "utilization_pct": 16.6
+    },
+    {
+      "kv_page_id": 137,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._transports.asgi.ASGITransport.handle_async_request"
+      ],
+      "prefix_hash": "f8635925edd8511c",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 138,
+      "capacity_tokens": 512,
+      "used_tokens": 479,
+      "chunks": [
+        "httpx._transports.base.BaseTransport",
+        "httpx._transports.base.BaseTransport.__enter__",
+        "httpx._transports.base.BaseTransport.__exit__"
+      ],
+      "prefix_hash": "bd0e0d5f158f6634",
+      "utilization_pct": 93.6
+    },
+    {
+      "kv_page_id": 139,
+      "capacity_tokens": 512,
+      "used_tokens": 504,
+      "chunks": [
+        "httpx._transports.base.BaseTransport.handle_request",
+        "httpx._transports.base.BaseTransport.close",
+        "httpx._transports.base.AsyncBaseTransport",
+        "httpx._transports.base.AsyncBaseTransport.__aenter__"
+      ],
+      "prefix_hash": "cd18f43b0e2ba939",
+      "utilization_pct": 98.4
+    },
+    {
+      "kv_page_id": 140,
+      "capacity_tokens": 512,
+      "used_tokens": 324,
+      "chunks": [
+        "httpx._transports.base.AsyncBaseTransport.__aexit__",
+        "httpx._transports.base.AsyncBaseTransport.handle_async_request",
+        "httpx._transports.base.AsyncBaseTransport.aclose",
+        "httpx._transports.default._load_httpcore_exceptions"
+      ],
+      "prefix_hash": "4ed9ba0feb1710b3",
+      "utilization_pct": 63.3
+    },
+    {
+      "kv_page_id": 141,
+      "capacity_tokens": 512,
+      "used_tokens": 425,
+      "chunks": [
+        "httpx._transports.default.map_httpcore_exceptions",
+        "httpx._transports.default.ResponseStream",
+        "httpx._transports.default.ResponseStream.__init__",
+        "httpx._transports.default.ResponseStream.__iter__",
+        "httpx._transports.default.ResponseStream.close"
+      ],
+      "prefix_hash": "e0978ef75ed5a531",
+      "utilization_pct": 83.0
+    },
+    {
+      "kv_page_id": 142,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._transports.default.HTTPTransport"
+      ],
+      "prefix_hash": "6f3e9d19c1c8951d",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 143,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._transports.default.HTTPTransport.__init__"
+      ],
+      "prefix_hash": "10ee2ff09bb7ca37",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 144,
+      "capacity_tokens": 512,
+      "used_tokens": 506,
+      "chunks": [
+        "httpx._transports.default.HTTPTransport.__enter__",
+        "httpx._transports.default.HTTPTransport.__exit__",
+        "httpx._transports.default.HTTPTransport.handle_request",
+        "httpx._transports.default.HTTPTransport.close",
+        "httpx._transports.default.AsyncResponseStream",
+        "httpx._transports.default.AsyncResponseStream.__init__"
+      ],
+      "prefix_hash": "36dac1ee762557dd",
+      "utilization_pct": 98.8
+    },
+    {
+      "kv_page_id": 145,
+      "capacity_tokens": 512,
+      "used_tokens": 81,
+      "chunks": [
+        "httpx._transports.default.AsyncResponseStream.__aiter__",
+        "httpx._transports.default.AsyncResponseStream.aclose"
+      ],
+      "prefix_hash": "23710fa45786e69c",
+      "utilization_pct": 15.8
+    },
+    {
+      "kv_page_id": 146,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._transports.default.AsyncHTTPTransport"
+      ],
+      "prefix_hash": "c338c76d15d4ab5c",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 147,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._transports.default.AsyncHTTPTransport.__init__"
+      ],
+      "prefix_hash": "bac2e74a44878b7e",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 148,
+      "capacity_tokens": 512,
+      "used_tokens": 371,
+      "chunks": [
+        "httpx._transports.default.AsyncHTTPTransport.__aenter__",
+        "httpx._transports.default.AsyncHTTPTransport.__aexit__",
+        "httpx._transports.default.AsyncHTTPTransport.handle_async_request",
+        "httpx._transports.default.AsyncHTTPTransport.aclose"
+      ],
+      "prefix_hash": "64343c26c7f35fd4",
+      "utilization_pct": 72.5
+    },
+    {
+      "kv_page_id": 149,
+      "capacity_tokens": 512,
+      "used_tokens": 500,
+      "chunks": [
+        "httpx._transports.mock.MockTransport",
+        "httpx._transports.mock.MockTransport.__init__",
+        "httpx._transports.mock.MockTransport.handle_request",
+        "httpx._transports.mock.MockTransport.handle_async_request",
+        "httpx._transports.wsgi._skip_leading_empty_chunks"
+      ],
+      "prefix_hash": "3574c904250bf0fe",
+      "utilization_pct": 97.7
+    },
+    {
+      "kv_page_id": 150,
+      "capacity_tokens": 512,
+      "used_tokens": 197,
+      "chunks": [
+        "httpx._transports.wsgi.WSGIByteStream",
+        "httpx._transports.wsgi.WSGIByteStream.__init__",
+        "httpx._transports.wsgi.WSGIByteStream.__iter__",
+        "httpx._transports.wsgi.WSGIByteStream.close"
+      ],
+      "prefix_hash": "b06a9dee37835ba5",
+      "utilization_pct": 38.5
+    },
+    {
+      "kv_page_id": 151,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._transports.wsgi.WSGITransport"
+      ],
+      "prefix_hash": "9bd2c1c8231f5db3",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 152,
+      "capacity_tokens": 512,
+      "used_tokens": 110,
+      "chunks": [
+        "httpx._transports.wsgi.WSGITransport.__init__"
+      ],
+      "prefix_hash": "3e2b490b7e88dc99",
+      "utilization_pct": 21.5
+    },
+    {
+      "kv_page_id": 153,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._transports.wsgi.WSGITransport.handle_request"
+      ],
+      "prefix_hash": "975f784880c523da",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 154,
+      "capacity_tokens": 512,
+      "used_tokens": 337,
+      "chunks": [
+        "httpx._types.SyncByteStream",
+        "httpx._types.SyncByteStream.__iter__",
+        "httpx._types.SyncByteStream.close",
+        "httpx._types.AsyncByteStream",
+        "httpx._types.AsyncByteStream.__aiter__",
+        "httpx._types.AsyncByteStream.aclose"
+      ],
+      "prefix_hash": "e4dbde0d3bbd1123",
+      "utilization_pct": 65.8
+    },
+    {
+      "kv_page_id": 155,
+      "capacity_tokens": 512,
+      "used_tokens": 510,
+      "chunks": [
+        "httpx._urlparse.ParseResult",
+        "httpx._urlparse.ParseResult.authority",
+        "httpx._urlparse.ParseResult.netloc"
+      ],
+      "prefix_hash": "58110122bbe25096",
+      "utilization_pct": 99.6
+    },
+    {
+      "kv_page_id": 156,
+      "capacity_tokens": 512,
+      "used_tokens": 200,
+      "chunks": [
+        "httpx._urlparse.ParseResult.copy_with",
+        "httpx._urlparse.ParseResult.__str__"
+      ],
+      "prefix_hash": "e016b431bf6d8602",
+      "utilization_pct": 39.1
+    },
+    {
+      "kv_page_id": 157,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._urlparse.urlparse"
+      ],
+      "prefix_hash": "f5bd95a5cc7aca33",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 158,
+      "capacity_tokens": 512,
+      "used_tokens": 422,
+      "chunks": [
+        "httpx._urlparse.encode_host"
+      ],
+      "prefix_hash": "be28342404f08231",
+      "utilization_pct": 82.4
+    },
+    {
+      "kv_page_id": 159,
+      "capacity_tokens": 512,
+      "used_tokens": 253,
+      "chunks": [
+        "httpx._urlparse.normalize_port"
+      ],
+      "prefix_hash": "f46476a5fbdfdb94",
+      "utilization_pct": 49.4
+    },
+    {
+      "kv_page_id": 160,
+      "capacity_tokens": 512,
+      "used_tokens": 491,
+      "chunks": [
+        "httpx._urlparse.validate_path",
+        "httpx._urlparse.normalize_path"
+      ],
+      "prefix_hash": "f9f5c6099ee9b0e0",
+      "utilization_pct": 95.9
+    },
+    {
+      "kv_page_id": 161,
+      "capacity_tokens": 512,
+      "used_tokens": 446,
+      "chunks": [
+        "httpx._urlparse.PERCENT",
+        "httpx._urlparse.percent_encoded",
+        "httpx._urlparse.quote"
+      ],
+      "prefix_hash": "c46576430a25af98",
+      "utilization_pct": 87.1
+    },
+    {
+      "kv_page_id": 162,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._urls.URL"
+      ],
+      "prefix_hash": "327e625a93789c21",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 163,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._urls.URL.__init__"
+      ],
+      "prefix_hash": "e1023645c403f72f",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 164,
+      "capacity_tokens": 512,
+      "used_tokens": 467,
+      "chunks": [
+        "httpx._urls.URL.scheme",
+        "httpx._urls.URL.raw_scheme",
+        "httpx._urls.URL.userinfo",
+        "httpx._urls.URL.username",
+        "httpx._urls.URL.password",
+        "httpx._urls.URL.host"
+      ],
+      "prefix_hash": "9e0b8cd6fcdb5bf1",
+      "utilization_pct": 91.2
+    },
+    {
+      "kv_page_id": 165,
+      "capacity_tokens": 512,
+      "used_tokens": 458,
+      "chunks": [
+        "httpx._urls.URL.raw_host",
+        "httpx._urls.URL.port",
+        "httpx._urls.URL.netloc",
+        "httpx._urls.URL.path"
+      ],
+      "prefix_hash": "00cb569881cdf067",
+      "utilization_pct": 89.5
+    },
+    {
+      "kv_page_id": 166,
+      "capacity_tokens": 512,
+      "used_tokens": 506,
+      "chunks": [
+        "httpx._urls.URL.query",
+        "httpx._urls.URL.params",
+        "httpx._urls.URL.raw_path",
+        "httpx._urls.URL.fragment",
+        "httpx._urls.URL.is_absolute_url"
+      ],
+      "prefix_hash": "6d719b1ff15cd53a",
+      "utilization_pct": 98.8
+    },
+    {
+      "kv_page_id": 167,
+      "capacity_tokens": 512,
+      "used_tokens": 486,
+      "chunks": [
+        "httpx._urls.URL.is_relative_url",
+        "httpx._urls.URL.copy_with",
+        "httpx._urls.URL.copy_set_param",
+        "httpx._urls.URL.copy_add_param",
+        "httpx._urls.URL.copy_remove_param",
+        "httpx._urls.URL.copy_merge_params",
+        "httpx._urls.URL.join",
+        "httpx._urls.URL.__hash__",
+        "httpx._urls.URL.__eq__",
+        "httpx._urls.URL.__str__"
+      ],
+      "prefix_hash": "afa8e4090b8f000f",
+      "utilization_pct": 94.9
+    },
+    {
+      "kv_page_id": 168,
+      "capacity_tokens": 512,
+      "used_tokens": 328,
+      "chunks": [
+        "httpx._urls.URL.__repr__",
+        "httpx._urls.URL.raw"
+      ],
+      "prefix_hash": "1b3290ab3930b06e",
+      "utilization_pct": 64.1
+    },
+    {
+      "kv_page_id": 169,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._urls.QueryParams"
+      ],
+      "prefix_hash": "6dd2823803693b91",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 170,
+      "capacity_tokens": 512,
+      "used_tokens": 459,
+      "chunks": [
+        "httpx._urls.QueryParams.__init__"
+      ],
+      "prefix_hash": "838f5ac69a6cb4f5",
+      "utilization_pct": 89.6
+    },
+    {
+      "kv_page_id": 171,
+      "capacity_tokens": 512,
+      "used_tokens": 492,
+      "chunks": [
+        "httpx._urls.QueryParams.keys",
+        "httpx._urls.QueryParams.values",
+        "httpx._urls.QueryParams.items",
+        "httpx._urls.QueryParams.multi_items",
+        "httpx._urls.QueryParams.get"
+      ],
+      "prefix_hash": "b3007a811ef44713",
+      "utilization_pct": 96.1
+    },
+    {
+      "kv_page_id": 172,
+      "capacity_tokens": 512,
+      "used_tokens": 397,
+      "chunks": [
+        "httpx._urls.QueryParams.get_list",
+        "httpx._urls.QueryParams.set",
+        "httpx._urls.QueryParams.add",
+        "httpx._urls.QueryParams.remove"
+      ],
+      "prefix_hash": "47c73fbfb5163df6",
+      "utilization_pct": 77.5
+    },
+    {
+      "kv_page_id": 173,
+      "capacity_tokens": 512,
+      "used_tokens": 465,
+      "chunks": [
+        "httpx._urls.QueryParams.merge",
+        "httpx._urls.QueryParams.__getitem__",
+        "httpx._urls.QueryParams.__contains__",
+        "httpx._urls.QueryParams.__iter__",
+        "httpx._urls.QueryParams.__len__",
+        "httpx._urls.QueryParams.__bool__",
+        "httpx._urls.QueryParams.__hash__",
+        "httpx._urls.QueryParams.__eq__",
+        "httpx._urls.QueryParams.__str__",
+        "httpx._urls.QueryParams.__repr__",
+        "httpx._urls.QueryParams.update",
+        "httpx._urls.QueryParams.__setitem__"
+      ],
+      "prefix_hash": "8c70c6bae4415e06",
+      "utilization_pct": 90.8
+    },
+    {
+      "kv_page_id": 174,
+      "capacity_tokens": 512,
+      "used_tokens": 90,
+      "chunks": [
+        "httpx._utils.primitive_value_to_str"
+      ],
+      "prefix_hash": "5058cc109434b325",
+      "utilization_pct": 17.6
+    },
+    {
+      "kv_page_id": 175,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._utils.get_environment_proxies"
+      ],
+      "prefix_hash": "8f263016f3d9a049",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 176,
+      "capacity_tokens": 512,
+      "used_tokens": 342,
+      "chunks": [
+        "httpx._utils.to_bytes",
+        "httpx._utils.to_str",
+        "httpx._utils.to_bytes_or_str",
+        "httpx._utils.unquote",
+        "httpx._utils.peek_filelike_length"
+      ],
+      "prefix_hash": "ae73045fb17c5397",
+      "utilization_pct": 66.8
+    },
+    {
+      "kv_page_id": 177,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "httpx._utils.URLPattern"
+      ],
+      "prefix_hash": "5a5f50a9cd35ea9f",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 178,
+      "capacity_tokens": 512,
+      "used_tokens": 424,
+      "chunks": [
+        "httpx._utils.URLPattern.__init__",
+        "httpx._utils.URLPattern.matches"
+      ],
+      "prefix_hash": "d32087798857ac06",
+      "utilization_pct": 82.8
+    },
+    {
+      "kv_page_id": 179,
+      "capacity_tokens": 512,
+      "used_tokens": 454,
+      "chunks": [
+        "httpx._utils.URLPattern.priority",
+        "httpx._utils.URLPattern.__hash__",
+        "httpx._utils.URLPattern.__lt__",
+        "httpx._utils.URLPattern.__eq__",
+        "httpx._utils.is_ipv4_hostname",
+        "httpx._utils.is_ipv6_hostname",
+        "tests.client.test_async_client.test_get",
+        "tests.client.test_async_client.test_get_invalid_url"
+      ],
+      "prefix_hash": "84252e961ce34565",
+      "utilization_pct": 88.7
+    },
+    {
+      "kv_page_id": 180,
+      "capacity_tokens": 512,
+      "used_tokens": 449,
+      "chunks": [
+        "tests.client.test_async_client.test_build_request",
+        "tests.client.test_async_client.test_post",
+        "tests.client.test_async_client.test_post_json",
+        "tests.client.test_async_client.test_stream_response",
+        "tests.client.test_async_client.test_access_content_stream_response",
+        "tests.client.test_async_client.test_stream_request"
+      ],
+      "prefix_hash": "30d2d63a0b29db43",
+      "utilization_pct": 87.7
+    },
+    {
+      "kv_page_id": 181,
+      "capacity_tokens": 512,
+      "used_tokens": 475,
+      "chunks": [
+        "tests.client.test_async_client.test_cannot_stream_sync_request",
+        "tests.client.test_async_client.test_raise_for_status",
+        "tests.client.test_async_client.test_options",
+        "tests.client.test_async_client.test_head",
+        "tests.client.test_async_client.test_put",
+        "tests.client.test_async_client.test_patch",
+        "tests.client.test_async_client.test_delete"
+      ],
+      "prefix_hash": "115f9abefadfcf36",
+      "utilization_pct": 92.8
+    },
+    {
+      "kv_page_id": 182,
+      "capacity_tokens": 512,
+      "used_tokens": 354,
+      "chunks": [
+        "tests.client.test_async_client.test_100_continue",
+        "tests.client.test_async_client.test_context_managed_transport"
+      ],
+      "prefix_hash": "2f899f9041652dbd",
+      "utilization_pct": 69.1
+    },
+    {
+      "kv_page_id": 183,
+      "capacity_tokens": 512,
+      "used_tokens": 505,
+      "chunks": [
+        "tests.client.test_async_client.test_context_managed_transport_and_mount",
+        "tests.client.test_async_client.hello_world",
+        "tests.client.test_async_client.test_client_closed_state_using_implicit_open"
+      ],
+      "prefix_hash": "32f5ff8cb5a3d2b3",
+      "utilization_pct": 98.6
+    },
+    {
+      "kv_page_id": 184,
+      "capacity_tokens": 512,
+      "used_tokens": 395,
+      "chunks": [
+        "tests.client.test_async_client.test_client_closed_state_using_with_block",
+        "tests.client.test_async_client.unmounted",
+        "tests.client.test_async_client.mounted",
+        "tests.client.test_async_client.test_mounted_transport",
+        "tests.client.test_async_client.test_async_mock_transport"
+      ],
+      "prefix_hash": "8f1a2f648779fdeb",
+      "utilization_pct": 77.1
+    },
+    {
+      "kv_page_id": 185,
+      "capacity_tokens": 512,
+      "used_tokens": 506,
+      "chunks": [
+        "tests.client.test_async_client.test_cancellation_during_stream",
+        "tests.client.test_async_client.test_server_extensions",
+        "tests.client.test_auth.App"
+      ],
+      "prefix_hash": "50b3724341af4b6a",
+      "utilization_pct": 98.8
+    },
+    {
+      "kv_page_id": 186,
+      "capacity_tokens": 512,
+      "used_tokens": 111,
+      "chunks": [
+        "tests.client.test_auth.App.__init__",
+        "tests.client.test_auth.App.__call__"
+      ],
+      "prefix_hash": "c4d204a75dd6b176",
+      "utilization_pct": 21.7
+    },
+    {
+      "kv_page_id": 187,
+      "capacity_tokens": 512,
+      "used_tokens": 411,
+      "chunks": [
+        "tests.client.test_auth.DigestApp"
+      ],
+      "prefix_hash": "502e97f7cd2931b6",
+      "utilization_pct": 80.3
+    },
+    {
+      "kv_page_id": 188,
+      "capacity_tokens": 512,
+      "used_tokens": 407,
+      "chunks": [
+        "tests.client.test_auth.DigestApp.__init__",
+        "tests.client.test_auth.DigestApp.__call__",
+        "tests.client.test_auth.DigestApp.challenge_send"
+      ],
+      "prefix_hash": "2dccf1858ae93b4f",
+      "utilization_pct": 79.5
+    },
+    {
+      "kv_page_id": 189,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "tests.client.test_auth.RepeatAuth",
+        "tests.client.test_auth.RepeatAuth.__init__",
+        "tests.client.test_auth.RepeatAuth.auth_flow",
+        "tests.client.test_auth.ResponseBodyAuth"
+      ],
+      "prefix_hash": "ac1a6554048fe8b8",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 190,
+      "capacity_tokens": 512,
+      "used_tokens": 431,
+      "chunks": [
+        "tests.client.test_auth.ResponseBodyAuth.__init__",
+        "tests.client.test_auth.ResponseBodyAuth.auth_flow",
+        "tests.client.test_auth.SyncOrAsyncAuth",
+        "tests.client.test_auth.SyncOrAsyncAuth.__init__",
+        "tests.client.test_auth.SyncOrAsyncAuth.sync_auth_flow",
+        "tests.client.test_auth.SyncOrAsyncAuth.async_auth_flow"
+      ],
+      "prefix_hash": "912edd75cf5f021c",
+      "utilization_pct": 84.2
+    },
+    {
+      "kv_page_id": 191,
+      "capacity_tokens": 512,
+      "used_tokens": 404,
+      "chunks": [
+        "tests.client.test_auth.test_basic_auth",
+        "tests.client.test_auth.test_basic_auth_with_stream",
+        "tests.client.test_auth.test_basic_auth_in_url",
+        "tests.client.test_auth.test_basic_auth_on_session"
+      ],
+      "prefix_hash": "cb7e6c6218d4c153",
+      "utilization_pct": 78.9
+    },
+    {
+      "kv_page_id": 192,
+      "capacity_tokens": 512,
+      "used_tokens": 509,
+      "chunks": [
+        "tests.client.test_auth.test_custom_auth",
+        "tests.client.test_auth.test_netrc_auth_credentials_exist",
+        "tests.client.test_auth.test_netrc_auth_credentials_do_not_exist",
+        "tests.client.test_auth.test_netrc_auth_nopassword_parse_error"
+      ],
+      "prefix_hash": "33b1c5a2f7e6f788",
+      "utilization_pct": 99.4
+    },
+    {
+      "kv_page_id": 193,
+      "capacity_tokens": 512,
+      "used_tokens": 507,
+      "chunks": [
+        "tests.client.test_auth.test_auth_disable_per_request",
+        "tests.client.test_auth.test_auth_hidden_url",
+        "tests.client.test_auth.test_auth_hidden_header",
+        "tests.client.test_auth.test_auth_property",
+        "tests.client.test_auth.test_auth_invalid_type"
+      ],
+      "prefix_hash": "69485932bb4340ed",
+      "utilization_pct": 99.0
+    },
+    {
+      "kv_page_id": 194,
+      "capacity_tokens": 512,
+      "used_tokens": 503,
+      "chunks": [
+        "tests.client.test_auth.test_digest_auth_returns_no_auth_if_no_digest_header_in_response",
+        "tests.client.test_auth.test_digest_auth_returns_no_auth_if_alternate_auth_scheme",
+        "tests.client.test_auth.test_digest_auth_200_response_including_digest_auth_header",
+        "tests.client.test_auth.test_digest_auth_401_response_without_digest_auth_header"
+      ],
+      "prefix_hash": "c92a5661794d447b",
+      "utilization_pct": 98.2
+    },
+    {
+      "kv_page_id": 195,
+      "capacity_tokens": 512,
+      "used_tokens": 323,
+      "chunks": [
+        "tests.client.test_auth.test_digest_auth"
+      ],
+      "prefix_hash": "35d657db0ca4ebe6",
+      "utilization_pct": 63.1
+    },
+    {
+      "kv_page_id": 196,
+      "capacity_tokens": 512,
+      "used_tokens": 496,
+      "chunks": [
+        "tests.client.test_auth.test_digest_auth_no_specified_qop",
+        "tests.client.test_auth.test_digest_auth_qop_including_spaces_and_auth_returns_auth",
+        "tests.client.test_auth.test_digest_auth_qop_auth_int_not_implemented"
+      ],
+      "prefix_hash": "4fdd7041c41bd39f",
+      "utilization_pct": 96.9
+    },
+    {
+      "kv_page_id": 197,
+      "capacity_tokens": 512,
+      "used_tokens": 338,
+      "chunks": [
+        "tests.client.test_auth.test_digest_auth_qop_must_be_auth_or_auth_int",
+        "tests.client.test_auth.test_digest_auth_incorrect_credentials",
+        "tests.client.test_auth.test_digest_auth_reuses_challenge"
+      ],
+      "prefix_hash": "1df14d3381ed9077",
+      "utilization_pct": 66.0
+    },
+    {
+      "kv_page_id": 198,
+      "capacity_tokens": 512,
+      "used_tokens": 482,
+      "chunks": [
+        "tests.client.test_auth.test_digest_auth_resets_nonce_count_after_401",
+        "tests.client.test_auth.test_async_digest_auth_raises_protocol_error_on_malformed_header"
+      ],
+      "prefix_hash": "d32a03af54f7bfea",
+      "utilization_pct": 94.1
+    },
+    {
+      "kv_page_id": 199,
+      "capacity_tokens": 512,
+      "used_tokens": 491,
+      "chunks": [
+        "tests.client.test_auth.test_sync_digest_auth_raises_protocol_error_on_malformed_header",
+        "tests.client.test_auth.test_async_auth_history",
+        "tests.client.test_auth.test_sync_auth_history"
+      ],
+      "prefix_hash": "67fb164d0e186c33",
+      "utilization_pct": 95.9
+    },
+    {
+      "kv_page_id": 200,
+      "capacity_tokens": 512,
+      "used_tokens": 507,
+      "chunks": [
+        "tests.client.test_auth.ConsumeBodyTransport",
+        "tests.client.test_auth.ConsumeBodyTransport.handle_async_request",
+        "tests.client.test_auth.test_digest_auth_unavailable_streaming_body",
+        "tests.client.test_auth.test_async_auth_reads_response_body",
+        "tests.client.test_auth.test_sync_auth_reads_response_body"
+      ],
+      "prefix_hash": "48bb7705415cc0d3",
+      "utilization_pct": 99.0
+    },
+    {
+      "kv_page_id": 201,
+      "capacity_tokens": 512,
+      "used_tokens": 461,
+      "chunks": [
+        "tests.client.test_auth.test_async_auth",
+        "tests.client.test_auth.test_sync_auth",
+        "tests.client.test_client.autodetect",
+        "tests.client.test_client.test_get",
+        "tests.client.test_client.test_get_invalid_url"
+      ],
+      "prefix_hash": "76cbe95b217ffced",
+      "utilization_pct": 90.0
+    },
+    {
+      "kv_page_id": 202,
+      "capacity_tokens": 512,
+      "used_tokens": 468,
+      "chunks": [
+        "tests.client.test_client.test_build_request",
+        "tests.client.test_client.test_build_post_request",
+        "tests.client.test_client.test_post",
+        "tests.client.test_client.test_post_json",
+        "tests.client.test_client.test_stream_response",
+        "tests.client.test_client.test_stream_iterator"
+      ],
+      "prefix_hash": "432935bd96a58d40",
+      "utilization_pct": 91.4
+    },
+    {
+      "kv_page_id": 203,
+      "capacity_tokens": 512,
+      "used_tokens": 508,
+      "chunks": [
+        "tests.client.test_client.test_raw_iterator",
+        "tests.client.test_client.test_cannot_stream_async_request",
+        "tests.client.test_client.test_raise_for_status",
+        "tests.client.test_client.test_options",
+        "tests.client.test_client.test_head",
+        "tests.client.test_client.test_put",
+        "tests.client.test_client.test_patch"
+      ],
+      "prefix_hash": "e676209ec008162f",
+      "utilization_pct": 99.2
+    },
+    {
+      "kv_page_id": 204,
+      "capacity_tokens": 512,
+      "used_tokens": 508,
+      "chunks": [
+        "tests.client.test_client.test_delete",
+        "tests.client.test_client.test_base_url",
+        "tests.client.test_client.test_merge_absolute_url",
+        "tests.client.test_client.test_merge_relative_url",
+        "tests.client.test_client.test_merge_relative_url_with_path",
+        "tests.client.test_client.test_merge_relative_url_with_dotted_path",
+        "tests.client.test_client.test_merge_relative_url_with_path_including_colon",
+        "tests.client.test_client.test_merge_relative_url_with_encoded_slashes"
+      ],
+      "prefix_hash": "5a48b53d4e6bfab9",
+      "utilization_pct": 99.2
+    },
+    {
+      "kv_page_id": 205,
+      "capacity_tokens": 512,
+      "used_tokens": 244,
+      "chunks": [
+        "tests.client.test_client.test_context_managed_transport"
+      ],
+      "prefix_hash": "40507472b56ca8a0",
+      "utilization_pct": 47.7
+    },
+    {
+      "kv_page_id": 206,
+      "capacity_tokens": 512,
+      "used_tokens": 474,
+      "chunks": [
+        "tests.client.test_client.test_context_managed_transport_and_mount",
+        "tests.client.test_client.hello_world",
+        "tests.client.test_client.test_client_closed_state_using_implicit_open"
+      ],
+      "prefix_hash": "5f09e5ef51894aa9",
+      "utilization_pct": 92.6
+    },
+    {
+      "kv_page_id": 207,
+      "capacity_tokens": 512,
+      "used_tokens": 483,
+      "chunks": [
+        "tests.client.test_client.test_client_closed_state_using_with_block",
+        "tests.client.test_client.echo_raw_headers",
+        "tests.client.test_client.test_raw_client_header",
+        "tests.client.test_client.unmounted",
+        "tests.client.test_client.mounted",
+        "tests.client.test_client.test_mounted_transport"
+      ],
+      "prefix_hash": "efca12c894ccb3c4",
+      "utilization_pct": 94.3
+    },
+    {
+      "kv_page_id": 208,
+      "capacity_tokens": 512,
+      "used_tokens": 446,
+      "chunks": [
+        "tests.client.test_client.test_all_mounted_transport",
+        "tests.client.test_client.test_server_extensions",
+        "tests.client.test_client.test_client_decode_text_using_autodetect"
+      ],
+      "prefix_hash": "f71749769af605ed",
+      "utilization_pct": 87.1
+    },
+    {
+      "kv_page_id": 209,
+      "capacity_tokens": 512,
+      "used_tokens": 408,
+      "chunks": [
+        "tests.client.test_client.test_client_decode_text_using_explicit_encoding",
+        "tests.client.test_cookies.get_and_set_cookies"
+      ],
+      "prefix_hash": "02fd23613744f2cf",
+      "utilization_pct": 79.7
+    },
+    {
+      "kv_page_id": 210,
+      "capacity_tokens": 512,
+      "used_tokens": 473,
+      "chunks": [
+        "tests.client.test_cookies.test_set_cookie",
+        "tests.client.test_cookies.test_set_per_request_cookie_is_deprecated",
+        "tests.client.test_cookies.test_set_cookie_with_cookiejar"
+      ],
+      "prefix_hash": "2b2e3f72023426b3",
+      "utilization_pct": 92.4
+    },
+    {
+      "kv_page_id": 211,
+      "capacity_tokens": 512,
+      "used_tokens": 451,
+      "chunks": [
+        "tests.client.test_cookies.test_setting_client_cookies_to_cookiejar",
+        "tests.client.test_cookies.test_set_cookie_with_cookies_model",
+        "tests.client.test_cookies.test_get_cookie"
+      ],
+      "prefix_hash": "9b3f11bd4a14fb21",
+      "utilization_pct": 88.1
+    },
+    {
+      "kv_page_id": 212,
+      "capacity_tokens": 512,
+      "used_tokens": 291,
+      "chunks": [
+        "tests.client.test_cookies.test_cookie_persistence",
+        "tests.client.test_event_hooks.app"
+      ],
+      "prefix_hash": "db3a0e0c20544043",
+      "utilization_pct": 56.8
+    },
+    {
+      "kv_page_id": 213,
+      "capacity_tokens": 512,
+      "used_tokens": 373,
+      "chunks": [
+        "tests.client.test_event_hooks.test_event_hooks",
+        "tests.client.test_event_hooks.test_event_hooks_raising_exception"
+      ],
+      "prefix_hash": "411d192462a23ed9",
+      "utilization_pct": 72.9
+    },
+    {
+      "kv_page_id": 214,
+      "capacity_tokens": 512,
+      "used_tokens": 390,
+      "chunks": [
+        "tests.client.test_event_hooks.test_async_event_hooks",
+        "tests.client.test_event_hooks.test_async_event_hooks_raising_exception"
+      ],
+      "prefix_hash": "5e86abbfb6653920",
+      "utilization_pct": 76.2
+    },
+    {
+      "kv_page_id": 215,
+      "capacity_tokens": 512,
+      "used_tokens": 437,
+      "chunks": [
+        "tests.client.test_event_hooks.test_event_hooks_with_redirect"
+      ],
+      "prefix_hash": "e312c75c1edbe0ac",
+      "utilization_pct": 85.4
+    },
+    {
+      "kv_page_id": 216,
+      "capacity_tokens": 512,
+      "used_tokens": 484,
+      "chunks": [
+        "tests.client.test_event_hooks.test_async_event_hooks_with_redirect",
+        "tests.client.test_headers.echo_headers"
+      ],
+      "prefix_hash": "6a97f704ef33b7c3",
+      "utilization_pct": 94.5
+    },
+    {
+      "kv_page_id": 217,
+      "capacity_tokens": 512,
+      "used_tokens": 436,
+      "chunks": [
+        "tests.client.test_headers.echo_repeated_headers_multi_items",
+        "tests.client.test_headers.echo_repeated_headers_items",
+        "tests.client.test_headers.test_client_header",
+        "tests.client.test_headers.test_header_merge"
+      ],
+      "prefix_hash": "d706fe9b9a4efd87",
+      "utilization_pct": 85.2
+    },
+    {
+      "kv_page_id": 218,
+      "capacity_tokens": 512,
+      "used_tokens": 444,
+      "chunks": [
+        "tests.client.test_headers.test_header_merge_conflicting_headers",
+        "tests.client.test_headers.test_header_update"
+      ],
+      "prefix_hash": "835ae9226a715dbe",
+      "utilization_pct": 86.7
+    },
+    {
+      "kv_page_id": 219,
+      "capacity_tokens": 512,
+      "used_tokens": 491,
+      "chunks": [
+        "tests.client.test_headers.test_header_repeated_items",
+        "tests.client.test_headers.test_header_repeated_multi_items",
+        "tests.client.test_headers.test_remove_default_header",
+        "tests.client.test_headers.test_header_does_not_exist",
+        "tests.client.test_headers.test_header_with_incorrect_value"
+      ],
+      "prefix_hash": "acf29437c6f14dbd",
+      "utilization_pct": 95.9
+    },
+    {
+      "kv_page_id": 220,
+      "capacity_tokens": 512,
+      "used_tokens": 484,
+      "chunks": [
+        "tests.client.test_headers.test_host_with_auth_and_port_in_url",
+        "tests.client.test_headers.test_host_with_non_default_port_in_url",
+        "tests.client.test_headers.test_request_auto_headers",
+        "tests.client.test_headers.test_same_origin"
+      ],
+      "prefix_hash": "9e548d2c0339e486",
+      "utilization_pct": 94.5
+    },
+    {
+      "kv_page_id": 221,
+      "capacity_tokens": 512,
+      "used_tokens": 491,
+      "chunks": [
+        "tests.client.test_headers.test_not_same_origin",
+        "tests.client.test_headers.test_is_https_redirect",
+        "tests.client.test_headers.test_is_not_https_redirect",
+        "tests.client.test_headers.test_is_not_https_redirect_if_not_default_ports",
+        "tests.client.test_properties.test_client_base_url",
+        "tests.client.test_properties.test_client_base_url_without_trailing_slash",
+        "tests.client.test_properties.test_client_base_url_with_trailing_slash"
+      ],
+      "prefix_hash": "1a3f23c021720ff1",
+      "utilization_pct": 95.9
+    },
+    {
+      "kv_page_id": 222,
+      "capacity_tokens": 512,
+      "used_tokens": 385,
+      "chunks": [
+        "tests.client.test_properties.test_client_headers",
+        "tests.client.test_properties.test_client_cookies",
+        "tests.client.test_properties.test_client_timeout",
+        "tests.client.test_properties.test_client_event_hooks",
+        "tests.client.test_properties.test_client_trust_env",
+        "tests.client.test_proxies.url_to_origin"
+      ],
+      "prefix_hash": "05fa7e4ad563bda6",
+      "utilization_pct": 75.2
+    },
+    {
+      "kv_page_id": 223,
+      "capacity_tokens": 512,
+      "used_tokens": 438,
+      "chunks": [
+        "tests.client.test_proxies.test_socks_proxy",
+        "tests.client.test_proxies.test_transport_for_request",
+        "tests.client.test_proxies.test_async_proxy_close",
+        "tests.client.test_proxies.test_sync_proxy_close",
+        "tests.client.test_proxies.test_unsupported_proxy_scheme"
+      ],
+      "prefix_hash": "bf240e2839780227",
+      "utilization_pct": 85.5
+    },
+    {
+      "kv_page_id": 224,
+      "capacity_tokens": 512,
+      "used_tokens": 505,
+      "chunks": [
+        "tests.client.test_proxies.test_proxies_environ",
+        "tests.client.test_proxies.test_for_deprecated_proxy_params",
+        "tests.client.test_proxies.test_proxy_with_mounts",
+        "tests.client.test_queryparams.hello_world",
+        "tests.client.test_queryparams.test_client_queryparams",
+        "tests.client.test_queryparams.test_client_queryparams_string",
+        "tests.client.test_queryparams.test_client_queryparams_echo"
+      ],
+      "prefix_hash": "aebfe537fbe3e067",
+      "utilization_pct": 98.6
+    },
+    {
+      "kv_page_id": 225,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "tests.client.test_redirects.redirects"
+      ],
+      "prefix_hash": "792a8efa0f59ac50",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 226,
+      "capacity_tokens": 512,
+      "used_tokens": 390,
+      "chunks": [
+        "tests.client.test_redirects.test_redirect_301",
+        "tests.client.test_redirects.test_redirect_302",
+        "tests.client.test_redirects.test_redirect_303",
+        "tests.client.test_redirects.test_next_request"
+      ],
+      "prefix_hash": "d5d81bfabec2ce7b",
+      "utilization_pct": 76.2
+    },
+    {
+      "kv_page_id": 227,
+      "capacity_tokens": 512,
+      "used_tokens": 480,
+      "chunks": [
+        "tests.client.test_redirects.test_async_next_request",
+        "tests.client.test_redirects.test_head_redirect",
+        "tests.client.test_redirects.test_relative_redirect",
+        "tests.client.test_redirects.test_malformed_redirect"
+      ],
+      "prefix_hash": "887404035b37131b",
+      "utilization_pct": 93.8
+    },
+    {
+      "kv_page_id": 228,
+      "capacity_tokens": 512,
+      "used_tokens": 473,
+      "chunks": [
+        "tests.client.test_redirects.test_invalid_redirect",
+        "tests.client.test_redirects.test_no_scheme_redirect",
+        "tests.client.test_redirects.test_fragment_redirect",
+        "tests.client.test_redirects.test_multiple_redirects",
+        "tests.client.test_redirects.test_async_too_many_redirects"
+      ],
+      "prefix_hash": "a9e56c5d0ad3b630",
+      "utilization_pct": 92.4
+    },
+    {
+      "kv_page_id": 229,
+      "capacity_tokens": 512,
+      "used_tokens": 416,
+      "chunks": [
+        "tests.client.test_redirects.test_sync_too_many_redirects",
+        "tests.client.test_redirects.test_redirect_loop",
+        "tests.client.test_redirects.test_cross_domain_redirect_with_auth_header",
+        "tests.client.test_redirects.test_cross_domain_https_redirect_with_auth_header",
+        "tests.client.test_redirects.test_cross_domain_redirect_with_auth"
+      ],
+      "prefix_hash": "907861689d771ef0",
+      "utilization_pct": 81.2
+    },
+    {
+      "kv_page_id": 230,
+      "capacity_tokens": 512,
+      "used_tokens": 451,
+      "chunks": [
+        "tests.client.test_redirects.test_same_domain_redirect",
+        "tests.client.test_redirects.test_same_domain_https_redirect_with_auth_header",
+        "tests.client.test_redirects.test_body_redirect",
+        "tests.client.test_redirects.test_no_body_redirect"
+      ],
+      "prefix_hash": "a94dc05f1ac3a94c",
+      "utilization_pct": 88.1
+    },
+    {
+      "kv_page_id": 231,
+      "capacity_tokens": 512,
+      "used_tokens": 387,
+      "chunks": [
+        "tests.client.test_redirects.test_can_stream_if_no_redirect",
+        "tests.client.test_redirects.ConsumeBodyTransport",
+        "tests.client.test_redirects.ConsumeBodyTransport.handle_request",
+        "tests.client.test_redirects.test_cannot_redirect_streaming_body",
+        "tests.client.test_redirects.test_cross_subdomain_redirect"
+      ],
+      "prefix_hash": "6eae802d191e29cd",
+      "utilization_pct": 75.6
+    },
+    {
+      "kv_page_id": 232,
+      "capacity_tokens": 512,
+      "used_tokens": 265,
+      "chunks": [
+        "tests.client.test_redirects.cookie_sessions"
+      ],
+      "prefix_hash": "2a3070f08dff2bc4",
+      "utilization_pct": 51.8
+    },
+    {
+      "kv_page_id": 233,
+      "capacity_tokens": 512,
+      "used_tokens": 479,
+      "chunks": [
+        "tests.client.test_redirects.test_redirect_cookie_behavior",
+        "tests.client.test_redirects.test_redirect_custom_scheme",
+        "tests.client.test_redirects.test_async_invalid_redirect",
+        "tests.concurrency.sleep"
+      ],
+      "prefix_hash": "acbbeadb805807a7",
+      "utilization_pct": 93.6
+    },
+    {
+      "kv_page_id": 234,
+      "capacity_tokens": 512,
+      "used_tokens": 487,
+      "chunks": [
+        "tests.conftest.clean_environ",
+        "tests.conftest.app",
+        "tests.conftest.hello_world",
+        "tests.conftest.hello_world_json"
+      ],
+      "prefix_hash": "b074880d48b3a0d5",
+      "utilization_pct": 95.1
+    },
+    {
+      "kv_page_id": 235,
+      "capacity_tokens": 512,
+      "used_tokens": 442,
+      "chunks": [
+        "tests.conftest.slow_response",
+        "tests.conftest.status_code",
+        "tests.conftest.echo_body",
+        "tests.conftest.echo_binary"
+      ],
+      "prefix_hash": "7ac8d847b8849906",
+      "utilization_pct": 86.3
+    },
+    {
+      "kv_page_id": 236,
+      "capacity_tokens": 512,
+      "used_tokens": 406,
+      "chunks": [
+        "tests.conftest.echo_headers",
+        "tests.conftest.redirect_301",
+        "tests.conftest.cert_authority",
+        "tests.conftest.localhost_cert",
+        "tests.conftest.cert_pem_file",
+        "tests.conftest.cert_private_key_file",
+        "tests.conftest.cert_encrypted_private_key_file"
+      ],
+      "prefix_hash": "ca3aaf650e98d9b7",
+      "utilization_pct": 79.3
+    },
+    {
+      "kv_page_id": 237,
+      "capacity_tokens": 512,
+      "used_tokens": 471,
+      "chunks": [
+        "tests.conftest.TestServer",
+        "tests.conftest.TestServer.url"
+      ],
+      "prefix_hash": "e27066a9e5a38473",
+      "utilization_pct": 92.0
+    },
+    {
+      "kv_page_id": 238,
+      "capacity_tokens": 512,
+      "used_tokens": 495,
+      "chunks": [
+        "tests.conftest.TestServer.install_signal_handlers",
+        "tests.conftest.TestServer.serve",
+        "tests.conftest.TestServer.restart",
+        "tests.conftest.TestServer.watch_restarts",
+        "tests.conftest.serve_in_thread",
+        "tests.conftest.server"
+      ],
+      "prefix_hash": "981b0ab1557854b1",
+      "utilization_pct": 96.7
+    },
+    {
+      "kv_page_id": 239,
+      "capacity_tokens": 512,
+      "used_tokens": 352,
+      "chunks": [
+        "tests.models.test_cookies.test_cookies",
+        "tests.models.test_cookies.test_cookies_update",
+        "tests.models.test_cookies.test_cookies_with_domain",
+        "tests.models.test_cookies.test_cookies_with_domain_and_path"
+      ],
+      "prefix_hash": "1395b468b1a77898",
+      "utilization_pct": 68.8
+    },
+    {
+      "kv_page_id": 240,
+      "capacity_tokens": 512,
+      "used_tokens": 364,
+      "chunks": [
+        "tests.models.test_cookies.test_multiple_set_cookie",
+        "tests.models.test_cookies.test_cookies_can_be_a_list_of_tuples",
+        "tests.models.test_cookies.test_cookies_repr"
+      ],
+      "prefix_hash": "793fea891bee6d4e",
+      "utilization_pct": 71.1
+    },
+    {
+      "kv_page_id": 241,
+      "capacity_tokens": 512,
+      "used_tokens": 478,
+      "chunks": [
+        "tests.models.test_headers.test_headers",
+        "tests.models.test_headers.test_header_mutations",
+        "tests.models.test_headers.test_copy_headers_method",
+        "tests.models.test_headers.test_copy_headers_init"
+      ],
+      "prefix_hash": "f0396f6009ebfbec",
+      "utilization_pct": 93.4
+    },
+    {
+      "kv_page_id": 242,
+      "capacity_tokens": 512,
+      "used_tokens": 444,
+      "chunks": [
+        "tests.models.test_headers.test_headers_insert_retains_ordering",
+        "tests.models.test_headers.test_headers_insert_appends_if_new",
+        "tests.models.test_headers.test_headers_insert_removes_all_existing",
+        "tests.models.test_headers.test_headers_delete_removes_all_existing",
+        "tests.models.test_headers.test_headers_dict_repr",
+        "tests.models.test_headers.test_headers_encoding_in_repr",
+        "tests.models.test_headers.test_headers_list_repr",
+        "tests.models.test_headers.test_headers_decode_ascii"
+      ],
+      "prefix_hash": "f4d381f8920963d2",
+      "utilization_pct": 86.7
+    },
+    {
+      "kv_page_id": 243,
+      "capacity_tokens": 512,
+      "used_tokens": 483,
+      "chunks": [
+        "tests.models.test_headers.test_headers_decode_utf_8",
+        "tests.models.test_headers.test_headers_decode_iso_8859_1",
+        "tests.models.test_headers.test_headers_decode_explicit_encoding",
+        "tests.models.test_headers.test_multiple_headers",
+        "tests.models.test_headers.test_sensitive_headers",
+        "tests.models.test_headers.test_obfuscate_sensitive_headers"
+      ],
+      "prefix_hash": "f1786b3e19acc3ae",
+      "utilization_pct": 94.3
+    },
+    {
+      "kv_page_id": 244,
+      "capacity_tokens": 512,
+      "used_tokens": 395,
+      "chunks": [
+        "tests.models.test_headers.test_parse_header_links",
+        "tests.models.test_headers.test_parse_header_links_no_link",
+        "tests.models.test_queryparams.test_queryparams"
+      ],
+      "prefix_hash": "522638e109d9921f",
+      "utilization_pct": 77.1
+    },
+    {
+      "kv_page_id": 245,
+      "capacity_tokens": 512,
+      "used_tokens": 488,
+      "chunks": [
+        "tests.models.test_queryparams.test_queryparam_types",
+        "tests.models.test_queryparams.test_empty_query_params",
+        "tests.models.test_queryparams.test_queryparam_update_is_hard_deprecated",
+        "tests.models.test_queryparams.test_queryparam_setter_is_hard_deprecated",
+        "tests.models.test_queryparams.test_queryparam_set",
+        "tests.models.test_queryparams.test_queryparam_add",
+        "tests.models.test_queryparams.test_queryparam_remove",
+        "tests.models.test_queryparams.test_queryparam_merge",
+        "tests.models.test_queryparams.test_queryparams_are_hashable"
+      ],
+      "prefix_hash": "bc04e43326291984",
+      "utilization_pct": 95.3
+    },
+    {
+      "kv_page_id": 246,
+      "capacity_tokens": 512,
+      "used_tokens": 476,
+      "chunks": [
+        "tests.models.test_requests.test_request_repr",
+        "tests.models.test_requests.test_no_content",
+        "tests.models.test_requests.test_content_length_header",
+        "tests.models.test_requests.test_iterable_content",
+        "tests.models.test_requests.test_generator_with_transfer_encoding_header",
+        "tests.models.test_requests.test_generator_with_content_length_header",
+        "tests.models.test_requests.test_url_encoded_data",
+        "tests.models.test_requests.test_json_encoded_data"
+      ],
+      "prefix_hash": "091933828b0f3557",
+      "utilization_pct": 93.0
+    },
+    {
+      "kv_page_id": 247,
+      "capacity_tokens": 512,
+      "used_tokens": 480,
+      "chunks": [
+        "tests.models.test_requests.test_headers",
+        "tests.models.test_requests.test_read_and_stream_data",
+        "tests.models.test_requests.test_aread_and_stream_data",
+        "tests.models.test_requests.test_cannot_access_streaming_content_without_read",
+        "tests.models.test_requests.test_transfer_encoding_header"
+      ],
+      "prefix_hash": "6773d5710b5b2276",
+      "utilization_pct": 93.8
+    },
+    {
+      "kv_page_id": 248,
+      "capacity_tokens": 512,
+      "used_tokens": 470,
+      "chunks": [
+        "tests.models.test_requests.test_ignore_transfer_encoding_header_if_content_length_exists",
+        "tests.models.test_requests.test_override_host_header",
+        "tests.models.test_requests.test_override_accept_encoding_header",
+        "tests.models.test_requests.test_override_content_length_header",
+        "tests.models.test_requests.test_url"
+      ],
+      "prefix_hash": "e2e36967da6010ce",
+      "utilization_pct": 91.8
+    },
+    {
+      "kv_page_id": 249,
+      "capacity_tokens": 512,
+      "used_tokens": 477,
+      "chunks": [
+        "tests.models.test_requests.test_request_picklable",
+        "tests.models.test_requests.test_request_async_streaming_content_picklable",
+        "tests.models.test_requests.test_request_generator_content_picklable"
+      ],
+      "prefix_hash": "240c5baf87f467dc",
+      "utilization_pct": 93.2
+    },
+    {
+      "kv_page_id": 250,
+      "capacity_tokens": 512,
+      "used_tokens": 477,
+      "chunks": [
+        "tests.models.test_requests.test_request_params",
+        "tests.models.test_responses.StreamingBody",
+        "tests.models.test_responses.StreamingBody.__iter__",
+        "tests.models.test_responses.streaming_body",
+        "tests.models.test_responses.async_streaming_body",
+        "tests.models.test_responses.autodetect",
+        "tests.models.test_responses.test_response",
+        "tests.models.test_responses.test_response_content",
+        "tests.models.test_responses.test_response_text"
+      ],
+      "prefix_hash": "be92e2955bc2aac6",
+      "utilization_pct": 93.2
+    },
+    {
+      "kv_page_id": 251,
+      "capacity_tokens": 512,
+      "used_tokens": 181,
+      "chunks": [
+        "tests.models.test_responses.test_response_html",
+        "tests.models.test_responses.test_response_json"
+      ],
+      "prefix_hash": "9f0e4a2403f769ca",
+      "utilization_pct": 35.4
+    },
+    {
+      "kv_page_id": 252,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "tests.models.test_responses.test_raise_for_status"
+      ],
+      "prefix_hash": "0aa0f0117f388653",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 253,
+      "capacity_tokens": 512,
+      "used_tokens": 454,
+      "chunks": [
+        "tests.models.test_responses.test_response_repr",
+        "tests.models.test_responses.test_response_content_type_encoding",
+        "tests.models.test_responses.test_response_default_to_utf8_encoding",
+        "tests.models.test_responses.test_response_fallback_to_utf8_encoding",
+        "tests.models.test_responses.test_response_no_charset_with_ascii_content"
+      ],
+      "prefix_hash": "3da5f00aee24051d",
+      "utilization_pct": 88.7
+    },
+    {
+      "kv_page_id": 254,
+      "capacity_tokens": 512,
+      "used_tokens": 484,
+      "chunks": [
+        "tests.models.test_responses.test_response_no_charset_with_utf8_content",
+        "tests.models.test_responses.test_response_no_charset_with_iso_8859_1_content",
+        "tests.models.test_responses.test_response_no_charset_with_cp_1252_content",
+        "tests.models.test_responses.test_response_non_text_encoding"
+      ],
+      "prefix_hash": "cea98a0b472b8660",
+      "utilization_pct": 94.5
+    },
+    {
+      "kv_page_id": 255,
+      "capacity_tokens": 512,
+      "used_tokens": 480,
+      "chunks": [
+        "tests.models.test_responses.test_response_set_explicit_encoding",
+        "tests.models.test_responses.test_response_force_encoding",
+        "tests.models.test_responses.test_response_force_encoding_after_text_accessed",
+        "tests.models.test_responses.test_read",
+        "tests.models.test_responses.test_empty_read"
+      ],
+      "prefix_hash": "b30cbee0e377351d",
+      "utilization_pct": 93.8
+    },
+    {
+      "kv_page_id": 256,
+      "capacity_tokens": 512,
+      "used_tokens": 498,
+      "chunks": [
+        "tests.models.test_responses.test_aread",
+        "tests.models.test_responses.test_empty_aread",
+        "tests.models.test_responses.test_iter_raw",
+        "tests.models.test_responses.test_iter_raw_with_chunksize",
+        "tests.models.test_responses.test_iter_raw_doesnt_return_empty_chunks"
+      ],
+      "prefix_hash": "7dee4c8fa10cce9f",
+      "utilization_pct": 97.3
+    },
+    {
+      "kv_page_id": 257,
+      "capacity_tokens": 512,
+      "used_tokens": 484,
+      "chunks": [
+        "tests.models.test_responses.test_iter_raw_on_iterable",
+        "tests.models.test_responses.test_iter_raw_on_async",
+        "tests.models.test_responses.test_close_on_async",
+        "tests.models.test_responses.test_iter_raw_increments_updates_counter",
+        "tests.models.test_responses.test_aiter_raw",
+        "tests.models.test_responses.test_aiter_raw_with_chunksize",
+        "tests.models.test_responses.test_aiter_raw_on_sync"
+      ],
+      "prefix_hash": "dfa5eaac48a40359",
+      "utilization_pct": 94.5
+    },
+    {
+      "kv_page_id": 258,
+      "capacity_tokens": 512,
+      "used_tokens": 506,
+      "chunks": [
+        "tests.models.test_responses.test_aclose_on_sync",
+        "tests.models.test_responses.test_aiter_raw_increments_updates_counter",
+        "tests.models.test_responses.test_iter_bytes",
+        "tests.models.test_responses.test_iter_bytes_with_chunk_size",
+        "tests.models.test_responses.test_iter_bytes_with_empty_response",
+        "tests.models.test_responses.test_iter_bytes_doesnt_return_empty_chunks",
+        "tests.models.test_responses.test_aiter_bytes"
+      ],
+      "prefix_hash": "bc2f8f4204c78f08",
+      "utilization_pct": 98.8
+    },
+    {
+      "kv_page_id": 259,
+      "capacity_tokens": 512,
+      "used_tokens": 468,
+      "chunks": [
+        "tests.models.test_responses.test_aiter_bytes_with_chunk_size",
+        "tests.models.test_responses.test_iter_text",
+        "tests.models.test_responses.test_iter_text_with_chunk_size",
+        "tests.models.test_responses.test_aiter_text"
+      ],
+      "prefix_hash": "881656298b871191",
+      "utilization_pct": 91.4
+    },
+    {
+      "kv_page_id": 260,
+      "capacity_tokens": 512,
+      "used_tokens": 501,
+      "chunks": [
+        "tests.models.test_responses.test_aiter_text_with_chunk_size",
+        "tests.models.test_responses.test_iter_lines",
+        "tests.models.test_responses.test_aiter_lines",
+        "tests.models.test_responses.test_sync_streaming_response",
+        "tests.models.test_responses.test_async_streaming_response",
+        "tests.models.test_responses.test_cannot_read_after_stream_consumed"
+      ],
+      "prefix_hash": "f0de535259bc8d93",
+      "utilization_pct": 97.9
+    },
+    {
+      "kv_page_id": 261,
+      "capacity_tokens": 512,
+      "used_tokens": 478,
+      "chunks": [
+        "tests.models.test_responses.test_cannot_aread_after_stream_consumed",
+        "tests.models.test_responses.test_cannot_read_after_response_closed",
+        "tests.models.test_responses.test_cannot_aread_after_response_closed",
+        "tests.models.test_responses.test_elapsed_not_available_until_closed",
+        "tests.models.test_responses.test_unknown_status_code",
+        "tests.models.test_responses.test_json_with_specified_encoding",
+        "tests.models.test_responses.test_json_with_options"
+      ],
+      "prefix_hash": "809b6c3306eb1b06",
+      "utilization_pct": 93.4
+    },
+    {
+      "kv_page_id": 262,
+      "capacity_tokens": 512,
+      "used_tokens": 492,
+      "chunks": [
+        "tests.models.test_responses.test_json_without_specified_charset",
+        "tests.models.test_responses.test_json_with_specified_charset",
+        "tests.models.test_responses.test_link_headers",
+        "tests.models.test_responses.test_decode_error_with_request",
+        "tests.models.test_responses.test_value_error_without_request",
+        "tests.models.test_responses.test_response_with_unset_request"
+      ],
+      "prefix_hash": "56e25bca87434c83",
+      "utilization_pct": 96.1
+    },
+    {
+      "kv_page_id": 263,
+      "capacity_tokens": 512,
+      "used_tokens": 425,
+      "chunks": [
+        "tests.models.test_responses.test_set_request_after_init",
+        "tests.models.test_responses.test_cannot_access_unset_request",
+        "tests.models.test_responses.test_generator_with_transfer_encoding_header",
+        "tests.models.test_responses.test_generator_with_content_length_header",
+        "tests.models.test_responses.test_response_picklable"
+      ],
+      "prefix_hash": "7df7dd39ad708cb0",
+      "utilization_pct": 83.0
+    },
+    {
+      "kv_page_id": 264,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "tests.models.test_responses.test_response_async_streaming_picklable",
+        "tests.models.test_responses.test_response_decode_text_using_autodetect"
+      ],
+      "prefix_hash": "373d05b5a9c533c6",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 265,
+      "capacity_tokens": 512,
+      "used_tokens": 507,
+      "chunks": [
+        "tests.models.test_responses.test_response_decode_text_using_explicit_encoding",
+        "tests.models.test_url.test_basic_url",
+        "tests.models.test_url.test_complete_url"
+      ],
+      "prefix_hash": "ed6f39b09eb5ee2b",
+      "utilization_pct": 99.0
+    },
+    {
+      "kv_page_id": 266,
+      "capacity_tokens": 512,
+      "used_tokens": 511,
+      "chunks": [
+        "tests.models.test_url.test_url_with_empty_query",
+        "tests.models.test_url.test_url_no_scheme",
+        "tests.models.test_url.test_url_no_authority",
+        "tests.models.test_url.test_path_query_fragment",
+        "tests.models.test_url.test_url_query_encoding",
+        "tests.models.test_url.test_url_params",
+        "tests.models.test_url.test_url_username_and_password"
+      ],
+      "prefix_hash": "98fa232012880564",
+      "utilization_pct": 99.8
+    },
+    {
+      "kv_page_id": 267,
+      "capacity_tokens": 512,
+      "used_tokens": 492,
+      "chunks": [
+        "tests.models.test_url.test_url_valid_host",
+        "tests.models.test_url.test_url_normalized_host",
+        "tests.models.test_url.test_url_percent_escape_host",
+        "tests.models.test_url.test_url_ipv4_like_host",
+        "tests.models.test_url.test_url_valid_port",
+        "tests.models.test_url.test_url_normalized_port",
+        "tests.models.test_url.test_url_invalid_port",
+        "tests.models.test_url.test_url_normalized_path",
+        "tests.models.test_url.test_url_escaped_path",
+        "tests.models.test_url.test_url_leading_dot_prefix_on_absolute_url",
+        "tests.models.test_url.test_url_leading_dot_prefix_on_relative_url",
+        "tests.models.test_url.test_param_with_space",
+        "tests.models.test_url.test_param_requires_encoding"
+      ],
+      "prefix_hash": "6addc29f9e22fa30",
+      "utilization_pct": 96.1
+    },
+    {
+      "kv_page_id": 268,
+      "capacity_tokens": 512,
+      "used_tokens": 500,
+      "chunks": [
+        "tests.models.test_url.test_param_with_percent_encoded",
+        "tests.models.test_url.test_param_with_existing_escape_requires_encoding",
+        "tests.models.test_url.test_query_with_existing_percent_encoding",
+        "tests.models.test_url.test_query_requiring_percent_encoding",
+        "tests.models.test_url.test_query_with_mixed_percent_encoding",
+        "tests.models.test_url.test_url_invalid_hostname",
+        "tests.models.test_url.test_url_excessively_long_url"
+      ],
+      "prefix_hash": "1b5d63076ea9f3d1",
+      "utilization_pct": 97.7
+    },
+    {
+      "kv_page_id": 269,
+      "capacity_tokens": 512,
+      "used_tokens": 404,
+      "chunks": [
+        "tests.models.test_url.test_url_excessively_long_component",
+        "tests.models.test_url.test_url_non_printing_character_in_url",
+        "tests.models.test_url.test_url_non_printing_character_in_component",
+        "tests.models.test_url.test_url_with_components",
+        "tests.models.test_url.test_urlparse_with_invalid_component",
+        "tests.models.test_url.test_urlparse_with_invalid_scheme"
+      ],
+      "prefix_hash": "a01d30c6505fbc4a",
+      "utilization_pct": 78.9
+    },
+    {
+      "kv_page_id": 270,
+      "capacity_tokens": 512,
+      "used_tokens": 470,
+      "chunks": [
+        "tests.models.test_url.test_urlparse_with_invalid_path",
+        "tests.models.test_url.test_url_with_relative_path",
+        "tests.models.test_url.test_url_eq_str",
+        "tests.models.test_url.test_url_set",
+        "tests.models.test_url.test_url_invalid_type",
+        "tests.models.test_url.test_url_with_invalid_component"
+      ],
+      "prefix_hash": "072ce34334998128",
+      "utilization_pct": 91.8
+    },
+    {
+      "kv_page_id": 271,
+      "capacity_tokens": 512,
+      "used_tokens": 213,
+      "chunks": [
+        "tests.models.test_url.test_url_join",
+        "tests.models.test_url.test_relative_url_join"
+      ],
+      "prefix_hash": "2240977b028d9d36",
+      "utilization_pct": 41.6
+    },
+    {
+      "kv_page_id": 272,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "tests.models.test_url.test_url_join_rfc3986"
+      ],
+      "prefix_hash": "70c3f2fe7683d316",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 273,
+      "capacity_tokens": 512,
+      "used_tokens": 492,
+      "chunks": [
+        "tests.models.test_url.test_resolution_error_1833",
+        "tests.models.test_url.test_copy_with",
+        "tests.models.test_url.test_url_copywith_authority_subcomponents",
+        "tests.models.test_url.test_url_copywith_netloc",
+        "tests.models.test_url.test_url_copywith_userinfo_subcomponents",
+        "tests.models.test_url.test_url_copywith_invalid_component"
+      ],
+      "prefix_hash": "5d2f1accd1bde797",
+      "utilization_pct": 96.1
+    },
+    {
+      "kv_page_id": 274,
+      "capacity_tokens": 512,
+      "used_tokens": 506,
+      "chunks": [
+        "tests.models.test_url.test_url_copywith_urlencoded_path",
+        "tests.models.test_url.test_url_copywith_query",
+        "tests.models.test_url.test_url_copywith_raw_path",
+        "tests.models.test_url.test_url_copywith_security",
+        "tests.models.test_url.test_url_set_param_manipulation",
+        "tests.models.test_url.test_url_add_param_manipulation"
+      ],
+      "prefix_hash": "0797c8e28de58157",
+      "utilization_pct": 98.8
+    },
+    {
+      "kv_page_id": 275,
+      "capacity_tokens": 512,
+      "used_tokens": 492,
+      "chunks": [
+        "tests.models.test_url.test_url_remove_param_manipulation",
+        "tests.models.test_url.test_url_merge_params_manipulation",
+        "tests.models.test_url.test_idna_url",
+        "tests.models.test_url.test_url_unescaped_idna_host",
+        "tests.models.test_url.test_url_escaped_idna_host",
+        "tests.models.test_url.test_url_invalid_idna_host",
+        "tests.models.test_url.test_url_valid_ipv4",
+        "tests.models.test_url.test_url_invalid_ipv4",
+        "tests.models.test_url.test_ipv6_url",
+        "tests.models.test_url.test_url_valid_ipv6",
+        "tests.models.test_url.test_url_invalid_ipv6"
+      ],
+      "prefix_hash": "96bcecb619e61343",
+      "utilization_pct": 96.1
+    },
+    {
+      "kv_page_id": 276,
+      "capacity_tokens": 512,
+      "used_tokens": 470,
+      "chunks": [
+        "tests.models.test_url.test_ipv6_url_from_raw_url",
+        "tests.models.test_url.test_ipv6_url_copy_with_host",
+        "tests.models.test_whatwg.test_urlparse"
+      ],
+      "prefix_hash": "121dae2105610971",
+      "utilization_pct": 91.8
+    },
+    {
+      "kv_page_id": 277,
+      "capacity_tokens": 512,
+      "used_tokens": 445,
+      "chunks": [
+        "tests.test_api.test_get",
+        "tests.test_api.test_post",
+        "tests.test_api.test_post_byte_iterator",
+        "tests.test_api.test_post_byte_stream",
+        "tests.test_api.test_options",
+        "tests.test_api.test_head",
+        "tests.test_api.test_put",
+        "tests.test_api.test_patch",
+        "tests.test_api.test_delete"
+      ],
+      "prefix_hash": "085a907c11dea304",
+      "utilization_pct": 86.9
+    },
+    {
+      "kv_page_id": 278,
+      "capacity_tokens": 512,
+      "used_tokens": 456,
+      "chunks": [
+        "tests.test_api.test_stream",
+        "tests.test_api.test_get_invalid_url",
+        "tests.test_api.test_httpcore_lazy_loading",
+        "tests.test_asgi.hello_world",
+        "tests.test_asgi.echo_path",
+        "tests.test_asgi.echo_raw_path"
+      ],
+      "prefix_hash": "cdb995f3a6867ed2",
+      "utilization_pct": 89.1
+    },
+    {
+      "kv_page_id": 279,
+      "capacity_tokens": 512,
+      "used_tokens": 504,
+      "chunks": [
+        "tests.test_asgi.echo_body",
+        "tests.test_asgi.echo_headers",
+        "tests.test_asgi.raise_exc",
+        "tests.test_asgi.raise_exc_after_response",
+        "tests.test_asgi.test_asgi_transport",
+        "tests.test_asgi.test_asgi_transport_no_body"
+      ],
+      "prefix_hash": "4693c697f26cfd66",
+      "utilization_pct": 98.4
+    },
+    {
+      "kv_page_id": 280,
+      "capacity_tokens": 512,
+      "used_tokens": 454,
+      "chunks": [
+        "tests.test_asgi.test_asgi",
+        "tests.test_asgi.test_asgi_urlencoded_path",
+        "tests.test_asgi.test_asgi_raw_path",
+        "tests.test_asgi.test_asgi_raw_path_should_not_include_querystring_portion",
+        "tests.test_asgi.test_asgi_upload"
+      ],
+      "prefix_hash": "9f1ee9e736a4dd65",
+      "utilization_pct": 88.7
+    },
+    {
+      "kv_page_id": 281,
+      "capacity_tokens": 512,
+      "used_tokens": 268,
+      "chunks": [
+        "tests.test_asgi.test_asgi_headers",
+        "tests.test_asgi.test_asgi_exc",
+        "tests.test_asgi.test_asgi_exc_after_response"
+      ],
+      "prefix_hash": "bdfc3868fc84adff",
+      "utilization_pct": 52.3
+    },
+    {
+      "kv_page_id": 282,
+      "capacity_tokens": 512,
+      "used_tokens": 502,
+      "chunks": [
+        "tests.test_asgi.test_asgi_disconnect_after_response_complete",
+        "tests.test_asgi.test_asgi_exc_no_raise",
+        "tests.test_auth.test_basic_auth"
+      ],
+      "prefix_hash": "29b6a442721f7982",
+      "utilization_pct": 98.0
+    },
+    {
+      "kv_page_id": 283,
+      "capacity_tokens": 512,
+      "used_tokens": 364,
+      "chunks": [
+        "tests.test_auth.test_digest_auth_with_200",
+        "tests.test_auth.test_digest_auth_with_401"
+      ],
+      "prefix_hash": "da1b3e92ad372cfd",
+      "utilization_pct": 71.1
+    },
+    {
+      "kv_page_id": 284,
+      "capacity_tokens": 512,
+      "used_tokens": 490,
+      "chunks": [
+        "tests.test_auth.test_digest_auth_with_401_nonce_counting",
+        "tests.test_auth.set_cookies"
+      ],
+      "prefix_hash": "296ec999de0575e9",
+      "utilization_pct": 95.7
+    },
+    {
+      "kv_page_id": 285,
+      "capacity_tokens": 512,
+      "used_tokens": 223,
+      "chunks": [
+        "tests.test_auth.test_digest_auth_setting_cookie_in_request"
+      ],
+      "prefix_hash": "cdf76c5acbc02b4a",
+      "utilization_pct": 43.6
+    },
+    {
+      "kv_page_id": 286,
+      "capacity_tokens": 512,
+      "used_tokens": 439,
+      "chunks": [
+        "tests.test_auth.test_digest_auth_rfc_2069"
+      ],
+      "prefix_hash": "d026297f418d7aa3",
+      "utilization_pct": 85.7
+    },
+    {
+      "kv_page_id": 287,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "tests.test_auth.test_digest_auth_rfc_7616_md5"
+      ],
+      "prefix_hash": "905687922f1a7170",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 288,
+      "capacity_tokens": 512,
+      "used_tokens": 512,
+      "chunks": [
+        "tests.test_auth.test_digest_auth_rfc_7616_sha_256"
+      ],
+      "prefix_hash": "6069db0239e646fc",
+      "utilization_pct": 100.0
+    },
+    {
+      "kv_page_id": 289,
+      "capacity_tokens": 512,
+      "used_tokens": 507,
+      "chunks": [
+        "tests.test_config.test_load_ssl_config",
+        "tests.test_config.test_load_ssl_config_verify_non_existing_file",
+        "tests.test_config.test_load_ssl_with_keylog",
+        "tests.test_config.test_load_ssl_config_verify_existing_file",
+        "tests.test_config.test_load_ssl_config_verify_directory",
+        "tests.test_config.test_load_ssl_config_cert_and_key",
+        "tests.test_config.test_load_ssl_config_cert_and_encrypted_key",
+        "tests.test_config.test_load_ssl_config_cert_and_key_invalid_password"
+      ],
+      "prefix_hash": "876497821e7fa57d",
+      "utilization_pct": 99.0
+    },
+    {
+      "kv_page_id": 290,
+      "capacity_tokens": 512,
+      "used_tokens": 503,
+      "chunks": [
+        "tests.test_config.test_load_ssl_config_cert_without_key_raises",
+        "tests.test_config.test_load_ssl_config_no_verify",
+        "tests.test_config.test_SSLContext_with_get_request",
+        "tests.test_config.test_limits_repr",
+        "tests.test_config.test_limits_eq",
+        "tests.test_config.test_timeout_eq",
+        "tests.test_config.test_timeout_all_parameters_set",
+        "tests.test_config.test_timeout_from_nothing",
+        "tests.test_config.test_timeout_from_none",
+        "tests.test_config.test_timeout_from_one_none_value",
+        "tests.test_config.test_timeout_from_one_value",
+        "tests.test_config.test_timeout_from_one_value_and_default"
+      ],
+      "prefix_hash": "b88bff885066aedc",
+      "utilization_pct": 98.2
+    },
+    {
+      "kv_page_id": 291,
+      "capacity_tokens": 512,
+      "used_tokens": 446,
+      "chunks": [
+        "tests.test_config.test_timeout_missing_default",
+        "tests.test_config.test_timeout_from_tuple",
+        "tests.test_config.test_timeout_from_config_instance",
+        "tests.test_config.test_timeout_repr",
+        "tests.test_config.test_proxy_from_url",
+        "tests.test_config.test_proxy_with_auth_from_url",
+        "tests.test_config.test_invalid_proxy_scheme",
+        "tests.test_content.test_empty_content"
+      ],
+      "prefix_hash": "0149bfee58a1e654",
+      "utilization_pct": 87.1
+    },
+    {
+      "kv_page_id": 292,
+      "capacity_tokens": 512,
+      "used_tokens": 373,
+      "chunks": [
+        "tests.test_content.test_bytes_content",
+        "tests.test_content.test_bytesio_content"
+      ],
+      "prefix_hash": "46fbea2f13936d88",
+      "utilization_pct": 72.9
+    },
+    {
+      "kv_page_id": 293,
+      "capacity_tokens": 512,
+      "used_tokens": 492,
+      "chunks": [
+        "tests.test_content.test_async_bytesio_content",
+        "tests.test_content.test_iterator_content"
+      ],
+      "prefix_hash": "3666bd97d7e21475",
+      "utilization_pct": 96.1
+    },
+    {
+      "kv_page_id": 294,
+      "capacity_tokens": 512,
+      "used_tokens": 434,
+      "chunks": [
+        "tests.test_content.test_aiterator_content",
+        "tests.test_content.test_json_content"
+      ],
+      "prefix_hash": "e72dd91431a16eb2",
+      "utilization_pct": 84.8
+    },
+    {
+      "kv_page_id": 295,
+      "capacity_tokens": 512,
+      "used_tokens": 443,
+      "chunks": [
+        "tests.test_content.test_urlencoded_content",
+        "tests.test_content.test_urlencoded_boolean",
+        "tests.test_content.test_urlencoded_none"
+      ],
+      "prefix_hash": "f8e1ddc2e5ba70b6",
+      "utilization_pct": 86.5
+    },
+    {
+      "kv_page_id": 296,
+      "capacity_tokens": 512,
+      "used_tokens": 487,
+      "chunks": [
+        "tests.test_content.test_urlencoded_list",
+        "tests.test_content.test_multipart_files_content"
+      ],
+      "prefix_hash": "1ba05567ab1e1df9",
+      "utilization_pct": 95.1
+    },
+    {
+      "kv_page_id": 297,
+      "capacity_tokens": 512,
+      "used_tokens": 406,
+      "chunks": [
+        "tests.test_content.test_multipart_data_and_files_content"
+      ],
+      "prefix_hash": "dd1bf295bf4f0656",
+      "utilization_pct": 79.3
+    },
+    {
+      "kv_page_id": 298,
+      "capacity_tokens": 512,
+      "used_tokens": 177,
+      "chunks": [
+        "tests.test_content.test_empty_request",
+        "tests.test_content.test_invalid_argument"
+      ],
+      "prefix_hash": "6569b3509d971bf9",
+      "utilization_pct": 34.6
+    },
+    {
+      "kv_page_id": 299,
+      "capacity_tokens": 512,
+      "used_tokens": 454,
+      "chunks": [
+        "tests.test_content.test_multipart_multiple_files_single_input_content"
+      ],
+      "prefix_hash": "49db824a03485b70",
+      "utilization_pct": 88.7
+    },
+    {
+      "kv_page_id": 300,
+      "capacity_tokens": 512,
+      "used_tokens": 364,
+      "chunks": [
+        "tests.test_content.test_response_empty_content",
+        "tests.test_content.test_response_bytes_content",
+        "tests.test_content.test_response_iterator_content"
+      ],
+      "prefix_hash": "59858e85ea86da46",
+      "utilization_pct": 71.1
+    },
+    {
+      "kv_page_id": 301,
+      "capacity_tokens": 512,
+      "used_tokens": 459,
+      "chunks": [
+        "tests.test_content.test_response_aiterator_content",
+        "tests.test_content.test_response_invalid_argument",
+        "tests.test_content.test_ensure_ascii_false_with_french_characters",
+        "tests.test_content.test_separators_for_compact_json",
+        "tests.test_content.test_allow_nan_false"
+      ],
+      "prefix_hash": "6449f0ec22dfca42",
+      "utilization_pct": 89.6
+    },
+    {
+      "kv_page_id": 302,
+      "capacity_tokens": 512,
+      "used_tokens": 495,
+      "chunks": [
+        "tests.test_decoders.test_deflate",
+        "tests.test_decoders.test_zlib",
+        "tests.test_decoders.test_gzip",
+        "tests.test_decoders.test_brotli",
+        "tests.test_decoders.test_zstd"
+      ],
+      "prefix_hash": "b66bbc1a768a0be7",
+      "utilization_pct": 96.7
+    },
+    {
+      "kv_page_id": 303,
+      "capacity_tokens": 512,
+      "used_tokens": 510,
+      "chunks": [
+        "tests.test_decoders.test_zstd_decoding_error",
+        "tests.test_decoders.test_zstd_empty",
+        "tests.test_decoders.test_zstd_truncated",
+        "tests.test_decoders.test_zstd_multiframe",
+        "tests.test_decoders.test_multi"
+      ],
+      "prefix_hash": "e5b348cff139c06b",
+      "utilization_pct": 99.6
+    },
+    {
+      "kv_page_id": 304,
+      "capacity_tokens": 512,
+      "used_tokens": 468,
+      "chunks": [
+        "tests.test_decoders.test_multi_with_identity",
+        "tests.test_decoders.test_streaming",
+        "tests.test_decoders.test_empty_content",
+        "tests.test_decoders.test_decoders_empty_cases",
+        "tests.test_decoders.test_decoding_errors"
+      ],
+      "prefix_hash": "4781e543f9f7707a",
+      "utilization_pct": 91.4
+    },
+    {
+      "kv_page_id": 305,
+      "capacity_tokens": 512,
+      "used_tokens": 421,
+      "chunks": [
+        "tests.test_decoders.test_text_decoder_with_autodetect",
+        "tests.test_decoders.test_text_decoder_known_encoding",
+        "tests.test_decoders.test_text_decoder_empty_cases",
+        "tests.test_decoders.test_streaming_text_decoder"
+      ],
+      "prefix_hash": "8674b38c7ab4744d",
+      "utilization_pct": 82.2
+    },
+    {
+      "kv_page_id": 306,
+      "capacity_tokens": 512,
+      "used_tokens": 445,
+      "chunks": [
+        "tests.test_decoders.test_line_decoder_nl",
+        "tests.test_decoders.test_line_decoder_cr",
+        "tests.test_decoders.test_line_decoder_crnl",
+        "tests.test_decoders.test_invalid_content_encoding_header"
+      ],
+      "prefix_hash": "97a354be41f0ef5c",
+      "utilization_pct": 86.9
+    },
+    {
+      "kv_page_id": 307,
+      "capacity_tokens": 512,
+      "used_tokens": 505,
+      "chunks": [
+        "tests.test_exceptions.test_httpcore_all_exceptions_mapped",
+        "tests.test_exceptions.test_httpcore_exception_mapping",
+        "tests.test_exceptions.test_request_attribute",
+        "tests.test_exported_members.test_all_imports_are_exported"
+      ],
+      "prefix_hash": "357b54093aa8bb62",
+      "utilization_pct": 98.6
+    },
+    {
+      "kv_page_id": 308,
+      "capacity_tokens": 512,
+      "used_tokens": 445,
+      "chunks": [
+        "tests.test_main.splitlines",
+        "tests.test_main.remove_date_header",
+        "tests.test_main.test_help",
+        "tests.test_main.test_get",
+        "tests.test_main.test_json",
+        "tests.test_main.test_binary"
+      ],
+      "prefix_hash": "48ca123c14412daa",
+      "utilization_pct": 86.9
+    },
+    {
+      "kv_page_id": 309,
+      "capacity_tokens": 512,
+      "used_tokens": 364,
+      "chunks": [
+        "tests.test_main.test_redirects",
+        "tests.test_main.test_follow_redirects",
+        "tests.test_main.test_post"
+      ],
+      "prefix_hash": "525d4f0a12c882bd",
+      "utilization_pct": 71.1
+    },
+    {
+      "kv_page_id": 310,
+      "capacity_tokens": 512,
+      "used_tokens": 484,
+      "chunks": [
+        "tests.test_main.test_verbose",
+        "tests.test_main.test_auth",
+        "tests.test_main.test_download"
+      ],
+      "prefix_hash": "1c19def4a689024e",
+      "utilization_pct": 94.5
+    },
+    {
+      "kv_page_id": 311,
+      "capacity_tokens": 512,
+      "used_tokens": 358,
+      "chunks": [
+        "tests.test_main.test_errors",
+        "tests.test_multipart.echo_request_content",
+        "tests.test_multipart.test_multipart"
+      ],
+      "prefix_hash": "8318371e1735201a",
+      "utilization_pct": 69.9
+    },
+    {
+      "kv_page_id": 312,
+      "capacity_tokens": 512,
+      "used_tokens": 507,
+      "chunks": [
+        "tests.test_multipart.test_multipart_explicit_boundary",
+        "tests.test_multipart.test_multipart_header_without_boundary",
+        "tests.test_multipart.test_multipart_invalid_key",
+        "tests.test_multipart.test_multipart_invalid_value"
+      ],
+      "prefix_hash": "312318f8837df569",
+      "utilization_pct": 99.0
+    },
+    {
+      "kv_page_id": 313,
+      "capacity_tokens": 512,
+      "used_tokens": 495,
+      "chunks": [
+        "tests.test_multipart.test_multipart_file_tuple",
+        "tests.test_multipart.test_multipart_file_tuple_headers"
+      ],
+      "prefix_hash": "ef037e737a2a074c",
+      "utilization_pct": 96.7
+    },
+    {
+      "kv_page_id": 314,
+      "capacity_tokens": 512,
+      "used_tokens": 267,
+      "chunks": [
+        "tests.test_multipart.test_multipart_headers_include_content_type"
+      ],
+      "prefix_hash": "f93b08aa6652fedd",
+      "utilization_pct": 52.1
+    },
+    {
+      "kv_page_id": 315,
+      "capacity_tokens": 512,
+      "used_tokens": 444,
+      "chunks": [
+        "tests.test_multipart.test_multipart_encode"
+      ],
+      "prefix_hash": "8448b5613cb3b82a",
+      "utilization_pct": 86.7
+    },
+    {
+      "kv_page_id": 316,
+      "capacity_tokens": 512,
+      "used_tokens": 365,
+      "chunks": [
+        "tests.test_multipart.test_multipart_encode_unicode_file_contents",
+        "tests.test_multipart.test_multipart_encode_files_allows_filenames_as_none"
+      ],
+      "prefix_hash": "fb3f9f3fd157d05c",
+      "utilization_pct": 71.3
+    },
+    {
+      "kv_page_id": 317,
+      "capacity_tokens": 512,
+      "used_tokens": 412,
+      "chunks": [
+        "tests.test_multipart.test_multipart_encode_files_guesses_correct_content_type",
+        "tests.test_multipart.test_multipart_encode_files_allows_bytes_content"
+      ],
+      "prefix_hash": "99396ef0cd6b28b8",
+      "utilization_pct": 80.5
+    },
+    {
+      "kv_page_id": 318,
+      "capacity_tokens": 512,
+      "used_tokens": 359,
+      "chunks": [
+        "tests.test_multipart.test_multipart_encode_files_allows_str_content",
+        "tests.test_multipart.test_multipart_encode_files_raises_exception_with_StringIO_content",
+        "tests.test_multipart.test_multipart_encode_files_raises_exception_with_text_mode_file"
+      ],
+      "prefix_hash": "f0b9adbd2b7a77b4",
+      "utilization_pct": 70.1
+    },
+    {
+      "kv_page_id": 319,
+      "capacity_tokens": 512,
+      "used_tokens": 511,
+      "chunks": [
+        "tests.test_multipart.test_multipart_encode_non_seekable_filelike",
+        "tests.test_multipart.test_multipart_rewinds_files"
+      ],
+      "prefix_hash": "c68f92fbfed9ce19",
+      "utilization_pct": 99.8
+    },
+    {
+      "kv_page_id": 320,
+      "capacity_tokens": 512,
+      "used_tokens": 442,
+      "chunks": [
+        "tests.test_multipart.TestHeaderParamHTML5Formatting",
+        "tests.test_multipart.TestHeaderParamHTML5Formatting.test_unicode",
+        "tests.test_multipart.TestHeaderParamHTML5Formatting.test_ascii"
+      ],
+      "prefix_hash": "2fe01407cf3acd5e",
+      "utilization_pct": 86.3
+    },
+    {
+      "kv_page_id": 321,
+      "capacity_tokens": 512,
+      "used_tokens": 477,
+      "chunks": [
+        "tests.test_multipart.TestHeaderParamHTML5Formatting.test_unicode_escape",
+        "tests.test_multipart.TestHeaderParamHTML5Formatting.test_unicode_with_control_character",
+        "tests.test_status_codes.test_status_code_as_int",
+        "tests.test_status_codes.test_status_code_value_lookup",
+        "tests.test_status_codes.test_status_code_phrase_lookup",
+        "tests.test_status_codes.test_lowercase_status_code",
+        "tests.test_status_codes.test_reason_phrase_for_status_code",
+        "tests.test_status_codes.test_reason_phrase_for_unknown_status_code",
+        "tests.test_timeouts.test_read_timeout",
+        "tests.test_timeouts.test_write_timeout"
+      ],
+      "prefix_hash": "7d2aef3a4395bec4",
+      "utilization_pct": 93.2
+    },
+    {
+      "kv_page_id": 322,
+      "capacity_tokens": 512,
+      "used_tokens": 487,
+      "chunks": [
+        "tests.test_timeouts.test_connect_timeout",
+        "tests.test_timeouts.test_pool_timeout",
+        "tests.test_timeouts.test_async_client_new_request_send_timeout",
+        "tests.test_utils.test_encoded",
+        "tests.test_utils.test_bad_utf_like_encoding",
+        "tests.test_utils.test_guess_by_bom",
+        "tests.test_utils.test_logging_request"
+      ],
+      "prefix_hash": "cadeabc1e059fd33",
+      "utilization_pct": 95.1
+    },
+    {
+      "kv_page_id": 323,
+      "capacity_tokens": 512,
+      "used_tokens": 505,
+      "chunks": [
+        "tests.test_utils.test_logging_redirect_chain",
+        "tests.test_utils.test_get_environment_proxies",
+        "tests.test_utils.test_url_matches",
+        "tests.test_utils.test_pattern_priority",
+        "tests.test_wsgi.application_factory",
+        "tests.test_wsgi.echo_body"
+      ],
+      "prefix_hash": "2736e015a5daf2b4",
+      "utilization_pct": 98.6
+    },
+    {
+      "kv_page_id": 324,
+      "capacity_tokens": 512,
+      "used_tokens": 499,
+      "chunks": [
+        "tests.test_wsgi.echo_body_with_response_stream",
+        "tests.test_wsgi.raise_exc",
+        "tests.test_wsgi.log_to_wsgi_log_buffer",
+        "tests.test_wsgi.test_wsgi",
+        "tests.test_wsgi.test_wsgi_upload",
+        "tests.test_wsgi.test_wsgi_upload_with_response_stream"
+      ],
+      "prefix_hash": "d390c97d889de3f3",
+      "utilization_pct": 97.5
+    },
+    {
+      "kv_page_id": 325,
+      "capacity_tokens": 512,
+      "used_tokens": 367,
+      "chunks": [
+        "tests.test_wsgi.test_wsgi_exc",
+        "tests.test_wsgi.test_wsgi_http_error",
+        "tests.test_wsgi.test_wsgi_generator",
+        "tests.test_wsgi.test_wsgi_generator_empty",
+        "tests.test_wsgi.test_logging"
+      ],
+      "prefix_hash": "0785a81d2dfebd5d",
+      "utilization_pct": 71.7
+    },
+    {
+      "kv_page_id": 326,
+      "capacity_tokens": 512,
+      "used_tokens": 309,
+      "chunks": [
+        "tests.test_wsgi.test_wsgi_server_port",
+        "tests.test_wsgi.test_wsgi_server_protocol"
+      ],
+      "prefix_hash": "d81cc91b4d888d54",
+      "utilization_pct": 60.4
+    }
+  ]
+}

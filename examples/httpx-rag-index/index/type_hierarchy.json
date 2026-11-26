@@ -1,0 +1,1740 @@
+{
+  "types": {
+    "httpx._auth.Auth": {
+      "kind": "class",
+      "file": "httpx/_auth.py",
+      "line": 22,
+      "super_types": [],
+      "sub_types": [
+        "httpx._auth.FunctionAuth",
+        "httpx._auth.BasicAuth",
+        "httpx._auth.NetRCAuth",
+        "httpx._auth.DigestAuth",
+        "tests.client.test_auth.RepeatAuth",
+        "tests.client.test_auth.ResponseBodyAuth",
+        "tests.client.test_auth.SyncOrAsyncAuth"
+      ],
+      "implementations": [
+        "httpx._auth.FunctionAuth",
+        "httpx._auth.BasicAuth",
+        "httpx._auth.NetRCAuth",
+        "httpx._auth.DigestAuth",
+        "tests.client.test_auth.RepeatAuth",
+        "tests.client.test_auth.ResponseBodyAuth",
+        "tests.client.test_auth.SyncOrAsyncAuth"
+      ]
+    },
+    "httpx._auth.FunctionAuth": {
+      "kind": "class",
+      "file": "httpx/_auth.py",
+      "line": 113,
+      "super_types": [
+        "httpx._auth.Auth"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._auth.BasicAuth": {
+      "kind": "class",
+      "file": "httpx/_auth.py",
+      "line": 126,
+      "super_types": [
+        "httpx._auth.Auth"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._auth.NetRCAuth": {
+      "kind": "class",
+      "file": "httpx/_auth.py",
+      "line": 145,
+      "super_types": [
+        "httpx._auth.Auth"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._auth.DigestAuth": {
+      "kind": "class",
+      "file": "httpx/_auth.py",
+      "line": 175,
+      "super_types": [
+        "httpx._auth.Auth"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._auth._DigestAuthChallenge": {
+      "kind": "class",
+      "file": "httpx/_auth.py",
+      "line": 343,
+      "super_types": [
+        "typing.NamedTuple"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._client.UseClientDefault": {
+      "kind": "class",
+      "file": "httpx/_client.py",
+      "line": 94,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._client.ClientState": {
+      "kind": "class",
+      "file": "httpx/_client.py",
+      "line": 125,
+      "super_types": [
+        "enum.Enum"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._client.BoundSyncStream": {
+      "kind": "class",
+      "file": "httpx/_client.py",
+      "line": 139,
+      "super_types": [
+        "httpx._types.SyncByteStream"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._client.BoundAsyncStream": {
+      "kind": "class",
+      "file": "httpx/_client.py",
+      "line": 162,
+      "super_types": [
+        "httpx._types.AsyncByteStream"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._client.BaseClient": {
+      "kind": "class",
+      "file": "httpx/_client.py",
+      "line": 188,
+      "super_types": [],
+      "sub_types": [
+        "httpx._client.Client",
+        "httpx._client.AsyncClient"
+      ],
+      "implementations": [
+        "httpx._client.Client",
+        "httpx._client.AsyncClient"
+      ]
+    },
+    "httpx._client.Client": {
+      "kind": "class",
+      "file": "httpx/_client.py",
+      "line": 594,
+      "super_types": [
+        "httpx._client.BaseClient"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._client.AsyncClient": {
+      "kind": "class",
+      "file": "httpx/_client.py",
+      "line": 1307,
+      "super_types": [
+        "httpx._client.BaseClient"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._config.UnsetType": {
+      "kind": "class",
+      "file": "httpx/_config.py",
+      "line": 16,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._config.Timeout": {
+      "kind": "class",
+      "file": "httpx/_config.py",
+      "line": 72,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._config.Limits": {
+      "kind": "class",
+      "file": "httpx/_config.py",
+      "line": 159,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._config.Proxy": {
+      "kind": "class",
+      "file": "httpx/_config.py",
+      "line": 201,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._content.ByteStream": {
+      "kind": "class",
+      "file": "httpx/_content.py",
+      "line": 31,
+      "super_types": [
+        "httpx._types.AsyncByteStream",
+        "httpx._types.SyncByteStream"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._content.IteratorByteStream": {
+      "kind": "class",
+      "file": "httpx/_content.py",
+      "line": 42,
+      "super_types": [
+        "httpx._types.SyncByteStream"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._content.AsyncIteratorByteStream": {
+      "kind": "class",
+      "file": "httpx/_content.py",
+      "line": 67,
+      "super_types": [
+        "httpx._types.AsyncByteStream"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._content.UnattachedStream": {
+      "kind": "class",
+      "file": "httpx/_content.py",
+      "line": 92,
+      "super_types": [
+        "httpx._types.AsyncByteStream",
+        "httpx._types.SyncByteStream"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._decoders.ContentDecoder": {
+      "kind": "class",
+      "file": "httpx/_decoders.py",
+      "line": 36,
+      "super_types": [],
+      "sub_types": [
+        "httpx._decoders.IdentityDecoder",
+        "httpx._decoders.DeflateDecoder",
+        "httpx._decoders.GZipDecoder",
+        "httpx._decoders.BrotliDecoder",
+        "httpx._decoders.ZStandardDecoder",
+        "httpx._decoders.MultiDecoder"
+      ],
+      "implementations": [
+        "httpx._decoders.IdentityDecoder",
+        "httpx._decoders.DeflateDecoder",
+        "httpx._decoders.GZipDecoder",
+        "httpx._decoders.BrotliDecoder",
+        "httpx._decoders.ZStandardDecoder",
+        "httpx._decoders.MultiDecoder"
+      ]
+    },
+    "httpx._decoders.IdentityDecoder": {
+      "kind": "class",
+      "file": "httpx/_decoders.py",
+      "line": 44,
+      "super_types": [
+        "httpx._decoders.ContentDecoder"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._decoders.DeflateDecoder": {
+      "kind": "class",
+      "file": "httpx/_decoders.py",
+      "line": 56,
+      "super_types": [
+        "httpx._decoders.ContentDecoder"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._decoders.GZipDecoder": {
+      "kind": "class",
+      "file": "httpx/_decoders.py",
+      "line": 85,
+      "super_types": [
+        "httpx._decoders.ContentDecoder"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._decoders.BrotliDecoder": {
+      "kind": "class",
+      "file": "httpx/_decoders.py",
+      "line": 108,
+      "super_types": [
+        "httpx._decoders.ContentDecoder"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._decoders.ZStandardDecoder": {
+      "kind": "class",
+      "file": "httpx/_decoders.py",
+      "line": 161,
+      "super_types": [
+        "httpx._decoders.ContentDecoder"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._decoders.MultiDecoder": {
+      "kind": "class",
+      "file": "httpx/_decoders.py",
+      "line": 203,
+      "super_types": [
+        "httpx._decoders.ContentDecoder"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._decoders.ByteChunker": {
+      "kind": "class",
+      "file": "httpx/_decoders.py",
+      "line": 228,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._decoders.TextChunker": {
+      "kind": "class",
+      "file": "httpx/_decoders.py",
+      "line": 267,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._decoders.TextDecoder": {
+      "kind": "class",
+      "file": "httpx/_decoders.py",
+      "line": 306,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._decoders.LineDecoder": {
+      "kind": "class",
+      "file": "httpx/_decoders.py",
+      "line": 321,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.HTTPError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 74,
+      "super_types": [
+        "Exception"
+      ],
+      "sub_types": [
+        "httpx._exceptions.RequestError",
+        "httpx._exceptions.HTTPStatusError"
+      ],
+      "implementations": [
+        "httpx._exceptions.RequestError",
+        "httpx._exceptions.HTTPStatusError"
+      ]
+    },
+    "httpx._exceptions.RequestError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 107,
+      "super_types": [
+        "httpx._exceptions.HTTPError"
+      ],
+      "sub_types": [
+        "httpx._exceptions.TransportError",
+        "httpx._exceptions.DecodingError",
+        "httpx._exceptions.TooManyRedirects"
+      ],
+      "implementations": [
+        "httpx._exceptions.TransportError",
+        "httpx._exceptions.DecodingError",
+        "httpx._exceptions.TooManyRedirects"
+      ]
+    },
+    "httpx._exceptions.TransportError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 123,
+      "super_types": [
+        "httpx._exceptions.RequestError"
+      ],
+      "sub_types": [
+        "httpx._exceptions.TimeoutException",
+        "httpx._exceptions.NetworkError",
+        "httpx._exceptions.ProxyError",
+        "httpx._exceptions.UnsupportedProtocol",
+        "httpx._exceptions.ProtocolError"
+      ],
+      "implementations": [
+        "httpx._exceptions.TimeoutException",
+        "httpx._exceptions.NetworkError",
+        "httpx._exceptions.ProxyError",
+        "httpx._exceptions.UnsupportedProtocol",
+        "httpx._exceptions.ProtocolError"
+      ]
+    },
+    "httpx._exceptions.TimeoutException": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 132,
+      "super_types": [
+        "httpx._exceptions.TransportError"
+      ],
+      "sub_types": [
+        "httpx._exceptions.ConnectTimeout",
+        "httpx._exceptions.ReadTimeout",
+        "httpx._exceptions.WriteTimeout",
+        "httpx._exceptions.PoolTimeout"
+      ],
+      "implementations": [
+        "httpx._exceptions.ConnectTimeout",
+        "httpx._exceptions.ReadTimeout",
+        "httpx._exceptions.WriteTimeout",
+        "httpx._exceptions.PoolTimeout"
+      ]
+    },
+    "httpx._exceptions.ConnectTimeout": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 140,
+      "super_types": [
+        "httpx._exceptions.TimeoutException"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.ReadTimeout": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 146,
+      "super_types": [
+        "httpx._exceptions.TimeoutException"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.WriteTimeout": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 152,
+      "super_types": [
+        "httpx._exceptions.TimeoutException"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.PoolTimeout": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 158,
+      "super_types": [
+        "httpx._exceptions.TimeoutException"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.NetworkError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 167,
+      "super_types": [
+        "httpx._exceptions.TransportError"
+      ],
+      "sub_types": [
+        "httpx._exceptions.ReadError",
+        "httpx._exceptions.WriteError",
+        "httpx._exceptions.ConnectError",
+        "httpx._exceptions.CloseError"
+      ],
+      "implementations": [
+        "httpx._exceptions.ReadError",
+        "httpx._exceptions.WriteError",
+        "httpx._exceptions.ConnectError",
+        "httpx._exceptions.CloseError"
+      ]
+    },
+    "httpx._exceptions.ReadError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 175,
+      "super_types": [
+        "httpx._exceptions.NetworkError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.WriteError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 181,
+      "super_types": [
+        "httpx._exceptions.NetworkError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.ConnectError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 187,
+      "super_types": [
+        "httpx._exceptions.NetworkError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.CloseError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 193,
+      "super_types": [
+        "httpx._exceptions.NetworkError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.ProxyError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 202,
+      "super_types": [
+        "httpx._exceptions.TransportError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.UnsupportedProtocol": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 208,
+      "super_types": [
+        "httpx._exceptions.TransportError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.ProtocolError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 216,
+      "super_types": [
+        "httpx._exceptions.TransportError"
+      ],
+      "sub_types": [
+        "httpx._exceptions.LocalProtocolError",
+        "httpx._exceptions.RemoteProtocolError"
+      ],
+      "implementations": [
+        "httpx._exceptions.LocalProtocolError",
+        "httpx._exceptions.RemoteProtocolError"
+      ]
+    },
+    "httpx._exceptions.LocalProtocolError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 222,
+      "super_types": [
+        "httpx._exceptions.ProtocolError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.RemoteProtocolError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 232,
+      "super_types": [
+        "httpx._exceptions.ProtocolError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.DecodingError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 243,
+      "super_types": [
+        "httpx._exceptions.RequestError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.TooManyRedirects": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 249,
+      "super_types": [
+        "httpx._exceptions.RequestError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.HTTPStatusError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 258,
+      "super_types": [
+        "httpx._exceptions.HTTPError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.InvalidURL": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 271,
+      "super_types": [
+        "Exception"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.CookieConflict": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 280,
+      "super_types": [
+        "Exception"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.StreamError": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 297,
+      "super_types": [
+        "RuntimeError"
+      ],
+      "sub_types": [
+        "httpx._exceptions.StreamConsumed",
+        "httpx._exceptions.StreamClosed",
+        "httpx._exceptions.ResponseNotRead",
+        "httpx._exceptions.RequestNotRead"
+      ],
+      "implementations": [
+        "httpx._exceptions.StreamConsumed",
+        "httpx._exceptions.StreamClosed",
+        "httpx._exceptions.ResponseNotRead",
+        "httpx._exceptions.RequestNotRead"
+      ]
+    },
+    "httpx._exceptions.StreamConsumed": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 309,
+      "super_types": [
+        "httpx._exceptions.StreamError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.StreamClosed": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 327,
+      "super_types": [
+        "httpx._exceptions.StreamError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.ResponseNotRead": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 338,
+      "super_types": [
+        "httpx._exceptions.StreamError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._exceptions.RequestNotRead": {
+      "kind": "class",
+      "file": "httpx/_exceptions.py",
+      "line": 351,
+      "super_types": [
+        "httpx._exceptions.StreamError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._models.Headers": {
+      "kind": "class",
+      "file": "httpx/_models.py",
+      "line": 139,
+      "super_types": [
+        "typing.MutableMapping[str, str]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._models.Request": {
+      "kind": "class",
+      "file": "httpx/_models.py",
+      "line": 382,
+      "super_types": [],
+      "sub_types": [
+        "httpx._models.Cookies._CookieCompatRequest"
+      ],
+      "implementations": [
+        "httpx._models.Cookies._CookieCompatRequest"
+      ]
+    },
+    "httpx._models.Response": {
+      "kind": "class",
+      "file": "httpx/_models.py",
+      "line": 515,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._models.Cookies": {
+      "kind": "class",
+      "file": "httpx/_models.py",
+      "line": 1079,
+      "super_types": [
+        "typing.MutableMapping[str, str]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._models.Cookies._CookieCompatRequest": {
+      "kind": "class",
+      "file": "httpx/_models.py",
+      "line": 1243,
+      "super_types": [
+        "httpx._models.Request"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._models.Cookies._CookieCompatResponse": {
+      "kind": "class",
+      "file": "httpx/_models.py",
+      "line": 1261,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._multipart.DataField": {
+      "kind": "class",
+      "file": "httpx/_multipart.py",
+      "line": 70,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._multipart.FileField": {
+      "kind": "class",
+      "file": "httpx/_multipart.py",
+      "line": 115,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._multipart.MultipartStream": {
+      "kind": "class",
+      "file": "httpx/_multipart.py",
+      "line": 224,
+      "super_types": [
+        "httpx._types.SyncByteStream",
+        "httpx._types.AsyncByteStream"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._status_codes.codes": {
+      "kind": "class",
+      "file": "httpx/_status_codes.py",
+      "line": 8,
+      "super_types": [
+        "IntEnum"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._types.SyncByteStream": {
+      "kind": "class",
+      "file": "httpx/_types.py",
+      "line": 92,
+      "super_types": [],
+      "sub_types": [
+        "httpx._client.BoundSyncStream",
+        "httpx._content.ByteStream",
+        "httpx._content.IteratorByteStream",
+        "httpx._content.UnattachedStream",
+        "httpx._multipart.MultipartStream",
+        "httpx._transports.default.ResponseStream",
+        "httpx._transports.wsgi.WSGIByteStream"
+      ],
+      "implementations": [
+        "httpx._client.BoundSyncStream",
+        "httpx._content.ByteStream",
+        "httpx._content.IteratorByteStream",
+        "httpx._content.UnattachedStream",
+        "httpx._multipart.MultipartStream",
+        "httpx._transports.default.ResponseStream",
+        "httpx._transports.wsgi.WSGIByteStream"
+      ]
+    },
+    "httpx._types.AsyncByteStream": {
+      "kind": "class",
+      "file": "httpx/_types.py",
+      "line": 106,
+      "super_types": [],
+      "sub_types": [
+        "httpx._client.BoundAsyncStream",
+        "httpx._content.ByteStream",
+        "httpx._content.AsyncIteratorByteStream",
+        "httpx._content.UnattachedStream",
+        "httpx._multipart.MultipartStream",
+        "httpx._transports.asgi.ASGIResponseStream",
+        "httpx._transports.default.AsyncResponseStream"
+      ],
+      "implementations": [
+        "httpx._client.BoundAsyncStream",
+        "httpx._content.ByteStream",
+        "httpx._content.AsyncIteratorByteStream",
+        "httpx._content.UnattachedStream",
+        "httpx._multipart.MultipartStream",
+        "httpx._transports.asgi.ASGIResponseStream",
+        "httpx._transports.default.AsyncResponseStream"
+      ]
+    },
+    "httpx._urlparse.ParseResult": {
+      "kind": "class",
+      "file": "httpx/_urlparse.py",
+      "line": 158,
+      "super_types": [
+        "typing.NamedTuple"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._urls.URL": {
+      "kind": "class",
+      "file": "httpx/_urls.py",
+      "line": 15,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._urls.QueryParams": {
+      "kind": "class",
+      "file": "httpx/_urls.py",
+      "line": 420,
+      "super_types": [
+        "typing.Mapping[str, str]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._utils.URLPattern": {
+      "kind": "class",
+      "file": "httpx/_utils.py",
+      "line": 120,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._transports.asgi.ASGIResponseStream": {
+      "kind": "class",
+      "file": "httpx/_transports/asgi.py",
+      "line": 55,
+      "super_types": [
+        "httpx._types.AsyncByteStream"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._transports.asgi.ASGITransport": {
+      "kind": "class",
+      "file": "httpx/_transports/asgi.py",
+      "line": 63,
+      "super_types": [
+        "httpx._transports.base.AsyncBaseTransport"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._transports.base.BaseTransport": {
+      "kind": "class",
+      "file": "httpx/_transports/base.py",
+      "line": 14,
+      "super_types": [],
+      "sub_types": [
+        "httpx._transports.default.HTTPTransport",
+        "httpx._transports.mock.MockTransport",
+        "httpx._transports.wsgi.WSGITransport"
+      ],
+      "implementations": [
+        "httpx._transports.default.HTTPTransport",
+        "httpx._transports.mock.MockTransport",
+        "httpx._transports.wsgi.WSGITransport"
+      ]
+    },
+    "httpx._transports.base.AsyncBaseTransport": {
+      "kind": "class",
+      "file": "httpx/_transports/base.py",
+      "line": 65,
+      "super_types": [],
+      "sub_types": [
+        "httpx._transports.asgi.ASGITransport",
+        "httpx._transports.default.AsyncHTTPTransport",
+        "httpx._transports.mock.MockTransport"
+      ],
+      "implementations": [
+        "httpx._transports.asgi.ASGITransport",
+        "httpx._transports.default.AsyncHTTPTransport",
+        "httpx._transports.mock.MockTransport"
+      ]
+    },
+    "httpx._transports.default.ResponseStream": {
+      "kind": "class",
+      "file": "httpx/_transports/default.py",
+      "line": 121,
+      "super_types": [
+        "httpx._types.SyncByteStream"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._transports.default.HTTPTransport": {
+      "kind": "class",
+      "file": "httpx/_transports/default.py",
+      "line": 135,
+      "super_types": [
+        "httpx._transports.base.BaseTransport"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._transports.default.AsyncResponseStream": {
+      "kind": "class",
+      "file": "httpx/_transports/default.py",
+      "line": 265,
+      "super_types": [
+        "httpx._types.AsyncByteStream"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._transports.default.AsyncHTTPTransport": {
+      "kind": "class",
+      "file": "httpx/_transports/default.py",
+      "line": 279,
+      "super_types": [
+        "httpx._transports.base.AsyncBaseTransport"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._transports.mock.MockTransport": {
+      "kind": "class",
+      "file": "httpx/_transports/mock.py",
+      "line": 15,
+      "super_types": [
+        "httpx._transports.base.AsyncBaseTransport",
+        "httpx._transports.base.BaseTransport"
+      ],
+      "sub_types": [
+        "tests.client.test_auth.ConsumeBodyTransport",
+        "tests.client.test_redirects.ConsumeBodyTransport"
+      ],
+      "implementations": [
+        "tests.client.test_auth.ConsumeBodyTransport",
+        "tests.client.test_redirects.ConsumeBodyTransport"
+      ]
+    },
+    "httpx._transports.wsgi.WSGIByteStream": {
+      "kind": "class",
+      "file": "httpx/_transports/wsgi.py",
+      "line": 30,
+      "super_types": [
+        "httpx._types.SyncByteStream"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "httpx._transports.wsgi.WSGITransport": {
+      "kind": "class",
+      "file": "httpx/_transports/wsgi.py",
+      "line": 44,
+      "super_types": [
+        "httpx._transports.base.BaseTransport"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.conftest.TestServer": {
+      "kind": "class",
+      "file": "tests/conftest.py",
+      "line": 224,
+      "super_types": [
+        "Server"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_multipart.TestHeaderParamHTML5Formatting": {
+      "kind": "class",
+      "file": "tests/test_multipart.py",
+      "line": 442,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.client.test_auth.App": {
+      "kind": "class",
+      "file": "tests/client/test_auth.py",
+      "line": 23,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.client.test_auth.DigestApp": {
+      "kind": "class",
+      "file": "tests/client/test_auth.py",
+      "line": 38,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.client.test_auth.RepeatAuth": {
+      "kind": "class",
+      "file": "tests/client/test_auth.py",
+      "line": 87,
+      "super_types": [
+        "httpx._auth.Auth"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.client.test_auth.ResponseBodyAuth": {
+      "kind": "class",
+      "file": "tests/client/test_auth.py",
+      "line": 115,
+      "super_types": [
+        "httpx._auth.Auth"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.client.test_auth.SyncOrAsyncAuth": {
+      "kind": "class",
+      "file": "tests/client/test_auth.py",
+      "line": 137,
+      "super_types": [
+        "httpx._auth.Auth"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.client.test_auth.ConsumeBodyTransport": {
+      "kind": "class",
+      "file": "tests/client/test_auth.py",
+      "line": 688,
+      "super_types": [
+        "httpx._transports.mock.MockTransport"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.client.test_redirects.ConsumeBodyTransport": {
+      "kind": "class",
+      "file": "tests/client/test_redirects.py",
+      "line": 345,
+      "super_types": [
+        "httpx._transports.mock.MockTransport"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.models.test_responses.StreamingBody": {
+      "kind": "class",
+      "file": "tests/models/test_responses.py",
+      "line": 11,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    }
+  },
+  "super_implementations": {
+    "httpx._auth.FunctionAuth.auth_flow": "httpx._auth.Auth.auth_flow",
+    "httpx._auth.BasicAuth.auth_flow": "httpx._auth.Auth.auth_flow",
+    "httpx._auth.NetRCAuth.auth_flow": "httpx._auth.Auth.auth_flow",
+    "httpx._auth.DigestAuth.auth_flow": "httpx._auth.Auth.auth_flow",
+    "httpx._client.BoundSyncStream.__iter__": "httpx._types.SyncByteStream.__iter__",
+    "httpx._client.BoundSyncStream.close": "httpx._types.SyncByteStream.close",
+    "httpx._client.BoundAsyncStream.__aiter__": "httpx._types.AsyncByteStream.__aiter__",
+    "httpx._client.BoundAsyncStream.aclose": "httpx._types.AsyncByteStream.aclose",
+    "httpx._client.Client.__init__": "httpx._client.BaseClient.__init__",
+    "httpx._client.AsyncClient.__init__": "httpx._client.BaseClient.__init__",
+    "httpx._content.ByteStream.__iter__": "httpx._types.SyncByteStream.__iter__",
+    "httpx._content.ByteStream.__aiter__": "httpx._types.AsyncByteStream.__aiter__",
+    "httpx._content.IteratorByteStream.__iter__": "httpx._types.SyncByteStream.__iter__",
+    "httpx._content.AsyncIteratorByteStream.__aiter__": "httpx._types.AsyncByteStream.__aiter__",
+    "httpx._content.UnattachedStream.__iter__": "httpx._types.SyncByteStream.__iter__",
+    "httpx._content.UnattachedStream.__aiter__": "httpx._types.AsyncByteStream.__aiter__",
+    "httpx._decoders.IdentityDecoder.decode": "httpx._decoders.ContentDecoder.decode",
+    "httpx._decoders.IdentityDecoder.flush": "httpx._decoders.ContentDecoder.flush",
+    "httpx._decoders.DeflateDecoder.decode": "httpx._decoders.ContentDecoder.decode",
+    "httpx._decoders.DeflateDecoder.flush": "httpx._decoders.ContentDecoder.flush",
+    "httpx._decoders.GZipDecoder.decode": "httpx._decoders.ContentDecoder.decode",
+    "httpx._decoders.GZipDecoder.flush": "httpx._decoders.ContentDecoder.flush",
+    "httpx._decoders.BrotliDecoder.decode": "httpx._decoders.ContentDecoder.decode",
+    "httpx._decoders.BrotliDecoder.flush": "httpx._decoders.ContentDecoder.flush",
+    "httpx._decoders.ZStandardDecoder.decode": "httpx._decoders.ContentDecoder.decode",
+    "httpx._decoders.ZStandardDecoder.flush": "httpx._decoders.ContentDecoder.flush",
+    "httpx._decoders.MultiDecoder.decode": "httpx._decoders.ContentDecoder.decode",
+    "httpx._decoders.MultiDecoder.flush": "httpx._decoders.ContentDecoder.flush",
+    "httpx._exceptions.RequestError.__init__": "httpx._exceptions.HTTPError.__init__",
+    "httpx._exceptions.HTTPStatusError.__init__": "httpx._exceptions.HTTPError.__init__",
+    "httpx._exceptions.StreamConsumed.__init__": "httpx._exceptions.StreamError.__init__",
+    "httpx._exceptions.StreamClosed.__init__": "httpx._exceptions.StreamError.__init__",
+    "httpx._exceptions.ResponseNotRead.__init__": "httpx._exceptions.StreamError.__init__",
+    "httpx._exceptions.RequestNotRead.__init__": "httpx._exceptions.StreamError.__init__",
+    "httpx._models.Cookies._CookieCompatRequest.__init__": "httpx._models.Request.__init__",
+    "httpx._multipart.MultipartStream.__iter__": "httpx._types.SyncByteStream.__iter__",
+    "httpx._multipart.MultipartStream.__aiter__": "httpx._types.AsyncByteStream.__aiter__",
+    "httpx._transports.asgi.ASGIResponseStream.__aiter__": "httpx._types.AsyncByteStream.__aiter__",
+    "httpx._transports.asgi.ASGITransport.handle_async_request": "httpx._transports.base.AsyncBaseTransport.handle_async_request",
+    "httpx._transports.default.ResponseStream.__iter__": "httpx._types.SyncByteStream.__iter__",
+    "httpx._transports.default.ResponseStream.close": "httpx._types.SyncByteStream.close",
+    "httpx._transports.default.HTTPTransport.__enter__": "httpx._transports.base.BaseTransport.__enter__",
+    "httpx._transports.default.HTTPTransport.__exit__": "httpx._transports.base.BaseTransport.__exit__",
+    "httpx._transports.default.HTTPTransport.handle_request": "httpx._transports.base.BaseTransport.handle_request",
+    "httpx._transports.default.HTTPTransport.close": "httpx._transports.base.BaseTransport.close",
+    "httpx._transports.default.AsyncResponseStream.__aiter__": "httpx._types.AsyncByteStream.__aiter__",
+    "httpx._transports.default.AsyncResponseStream.aclose": "httpx._types.AsyncByteStream.aclose",
+    "httpx._transports.default.AsyncHTTPTransport.__aenter__": "httpx._transports.base.AsyncBaseTransport.__aenter__",
+    "httpx._transports.default.AsyncHTTPTransport.__aexit__": "httpx._transports.base.AsyncBaseTransport.__aexit__",
+    "httpx._transports.default.AsyncHTTPTransport.handle_async_request": "httpx._transports.base.AsyncBaseTransport.handle_async_request",
+    "httpx._transports.default.AsyncHTTPTransport.aclose": "httpx._transports.base.AsyncBaseTransport.aclose",
+    "httpx._transports.mock.MockTransport.handle_request": "httpx._transports.base.BaseTransport.handle_request",
+    "httpx._transports.mock.MockTransport.handle_async_request": "httpx._transports.base.AsyncBaseTransport.handle_async_request",
+    "httpx._transports.wsgi.WSGIByteStream.__iter__": "httpx._types.SyncByteStream.__iter__",
+    "httpx._transports.wsgi.WSGIByteStream.close": "httpx._types.SyncByteStream.close",
+    "httpx._transports.wsgi.WSGITransport.handle_request": "httpx._transports.base.BaseTransport.handle_request",
+    "tests.client.test_auth.RepeatAuth.auth_flow": "httpx._auth.Auth.auth_flow",
+    "tests.client.test_auth.ResponseBodyAuth.auth_flow": "httpx._auth.Auth.auth_flow",
+    "tests.client.test_auth.SyncOrAsyncAuth.sync_auth_flow": "httpx._auth.Auth.sync_auth_flow",
+    "tests.client.test_auth.SyncOrAsyncAuth.async_auth_flow": "httpx._auth.Auth.async_auth_flow",
+    "tests.client.test_auth.ConsumeBodyTransport.handle_async_request": "httpx._transports.mock.MockTransport.handle_async_request",
+    "tests.client.test_redirects.ConsumeBodyTransport.handle_request": "httpx._transports.mock.MockTransport.handle_request"
+  },
+  "type_definitions": {
+    "httpx._api.request": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._api.stream": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._api.get": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._api.options": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._api.head": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._api.post": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._api.put": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._api.patch": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._api.delete": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._auth.Auth.auth_flow": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._auth.Auth.sync_auth_flow": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._auth.Auth.async_auth_flow": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._auth.FunctionAuth.__init__": [
+      "httpx._models.Request"
+    ],
+    "httpx._auth.FunctionAuth.auth_flow": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._auth.BasicAuth.auth_flow": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._auth.NetRCAuth.auth_flow": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._auth.DigestAuth.auth_flow": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._auth.DigestAuth._parse_challenge": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._auth.DigestAuth._build_auth_header": [
+      "httpx._models.Request"
+    ],
+    "httpx._auth.DigestAuth._resolve_qop": [
+      "httpx._models.Request"
+    ],
+    "httpx._client._is_https_redirect": [
+      "httpx._urls.URL"
+    ],
+    "httpx._client._port_or_default": [
+      "httpx._urls.URL"
+    ],
+    "httpx._client._same_origin": [
+      "httpx._urls.URL"
+    ],
+    "httpx._client.BoundSyncStream.__init__": [
+      "httpx._types.SyncByteStream",
+      "httpx._models.Response"
+    ],
+    "httpx._client.BoundAsyncStream.__init__": [
+      "httpx._types.AsyncByteStream",
+      "httpx._models.Response"
+    ],
+    "httpx._client.BaseClient._enforce_trailing_slash": [
+      "httpx._urls.URL"
+    ],
+    "httpx._client.BaseClient._get_proxy_map": [
+      "httpx._config.Proxy"
+    ],
+    "httpx._client.BaseClient.timeout": [
+      "httpx._config.Timeout"
+    ],
+    "httpx._client.BaseClient.auth": [
+      "httpx._auth.Auth"
+    ],
+    "httpx._client.BaseClient.base_url": [
+      "httpx._urls.URL"
+    ],
+    "httpx._client.BaseClient.base_url#L295": [
+      "httpx._urls.URL"
+    ],
+    "httpx._client.BaseClient.headers": [
+      "httpx._models.Headers"
+    ],
+    "httpx._client.BaseClient.cookies": [
+      "httpx._models.Cookies"
+    ],
+    "httpx._client.BaseClient.params": [
+      "httpx._urls.QueryParams"
+    ],
+    "httpx._client.BaseClient.build_request": [
+      "httpx._urls.URL",
+      "httpx._models.Request"
+    ],
+    "httpx._client.BaseClient._merge_url": [
+      "httpx._urls.URL"
+    ],
+    "httpx._client.BaseClient._build_auth": [
+      "httpx._auth.Auth"
+    ],
+    "httpx._client.BaseClient._build_request_auth": [
+      "httpx._models.Request",
+      "httpx._client.UseClientDefault",
+      "httpx._auth.Auth"
+    ],
+    "httpx._client.BaseClient._build_redirect_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._client.BaseClient._redirect_method": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._client.BaseClient._redirect_url": [
+      "httpx._models.Request",
+      "httpx._models.Response",
+      "httpx._urls.URL"
+    ],
+    "httpx._client.BaseClient._redirect_headers": [
+      "httpx._models.Request",
+      "httpx._urls.URL",
+      "httpx._models.Headers"
+    ],
+    "httpx._client.BaseClient._redirect_stream": [
+      "httpx._models.Request",
+      "httpx._types.SyncByteStream",
+      "httpx._types.AsyncByteStream"
+    ],
+    "httpx._client.BaseClient._set_timeout": [
+      "httpx._models.Request"
+    ],
+    "httpx._client.Client._init_transport": [
+      "httpx._config.Limits",
+      "httpx._transports.base.BaseTransport"
+    ],
+    "httpx._client.Client._init_proxy_transport": [
+      "httpx._config.Proxy",
+      "httpx._config.Limits",
+      "httpx._transports.base.BaseTransport"
+    ],
+    "httpx._client.Client._transport_for_url": [
+      "httpx._urls.URL",
+      "httpx._transports.base.BaseTransport"
+    ],
+    "httpx._client.Client.request": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client.stream": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client.send": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client._send_handling_auth": [
+      "httpx._models.Request",
+      "httpx._auth.Auth",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client._send_handling_redirects": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client._send_single_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client.get": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client.options": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client.head": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client.post": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client.put": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client.patch": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.Client.delete": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient._init_transport": [
+      "httpx._config.Limits",
+      "httpx._transports.base.AsyncBaseTransport"
+    ],
+    "httpx._client.AsyncClient._init_proxy_transport": [
+      "httpx._config.Proxy",
+      "httpx._config.Limits",
+      "httpx._transports.base.AsyncBaseTransport"
+    ],
+    "httpx._client.AsyncClient._transport_for_url": [
+      "httpx._urls.URL",
+      "httpx._transports.base.AsyncBaseTransport"
+    ],
+    "httpx._client.AsyncClient.request": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient.stream": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient.send": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient._send_handling_auth": [
+      "httpx._models.Request",
+      "httpx._auth.Auth",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient._send_handling_redirects": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient._send_single_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient.get": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient.options": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient.head": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient.post": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient.put": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient.patch": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._client.AsyncClient.delete": [
+      "httpx._urls.URL",
+      "httpx._models.Response"
+    ],
+    "httpx._config.Timeout.__init__": [
+      "httpx._config.UnsetType"
+    ],
+    "httpx._config.Proxy.__init__": [
+      "httpx._urls.URL"
+    ],
+    "httpx._content.encode_content": [
+      "httpx._types.SyncByteStream",
+      "httpx._types.AsyncByteStream"
+    ],
+    "httpx._content.encode_urlencoded_data": [
+      "httpx._content.ByteStream"
+    ],
+    "httpx._content.encode_multipart_data": [
+      "httpx._multipart.MultipartStream"
+    ],
+    "httpx._content.encode_text": [
+      "httpx._content.ByteStream"
+    ],
+    "httpx._content.encode_html": [
+      "httpx._content.ByteStream"
+    ],
+    "httpx._content.encode_json": [
+      "httpx._content.ByteStream"
+    ],
+    "httpx._content.encode_request": [
+      "httpx._types.SyncByteStream",
+      "httpx._types.AsyncByteStream"
+    ],
+    "httpx._content.encode_response": [
+      "httpx._types.SyncByteStream",
+      "httpx._types.AsyncByteStream"
+    ],
+    "httpx._decoders.MultiDecoder.__init__": [
+      "httpx._decoders.ContentDecoder"
+    ],
+    "httpx._exceptions.HTTPError.request": [
+      "httpx._models.Request"
+    ],
+    "httpx._exceptions.HTTPError.request#L103": [
+      "httpx._models.Request"
+    ],
+    "httpx._exceptions.request_context": [
+      "httpx._models.Request"
+    ],
+    "httpx._main.get_lexer_for_response": [
+      "httpx._models.Response"
+    ],
+    "httpx._main.format_request_headers": [
+      "httpx._models.Request"
+    ],
+    "httpx._main.print_request_headers": [
+      "httpx._models.Request"
+    ],
+    "httpx._main.print_response": [
+      "httpx._models.Response"
+    ],
+    "httpx._main.download_response": [
+      "httpx._models.Response"
+    ],
+    "httpx._models.Headers.copy": [
+      "httpx._models.Headers"
+    ],
+    "httpx._models.Request.__init__": [
+      "httpx._urls.URL"
+    ],
+    "httpx._models.Response.request": [
+      "httpx._models.Request"
+    ],
+    "httpx._models.Response.request#L607": [
+      "httpx._models.Request"
+    ],
+    "httpx._models.Response.url": [
+      "httpx._urls.URL"
+    ],
+    "httpx._models.Response._get_content_decoder": [
+      "httpx._decoders.ContentDecoder"
+    ],
+    "httpx._models.Response.raise_for_status": [
+      "httpx._models.Response"
+    ],
+    "httpx._models.Response.cookies": [
+      "httpx._models.Cookies"
+    ],
+    "httpx._models.Cookies.extract_cookies": [
+      "httpx._models.Response"
+    ],
+    "httpx._models.Cookies.set_cookie_header": [
+      "httpx._models.Request"
+    ],
+    "httpx._models.Cookies._CookieCompatRequest.__init__": [
+      "httpx._models.Request"
+    ],
+    "httpx._models.Cookies._CookieCompatResponse.__init__": [
+      "httpx._models.Response"
+    ],
+    "httpx._multipart.MultipartStream._iter_fields": [
+      "httpx._multipart.FileField",
+      "httpx._multipart.DataField"
+    ],
+    "httpx._urlparse.ParseResult.copy_with": [
+      "httpx._urlparse.ParseResult"
+    ],
+    "httpx._urlparse.urlparse": [
+      "httpx._urlparse.ParseResult"
+    ],
+    "httpx._urls.URL.__init__": [
+      "httpx._urls.URL"
+    ],
+    "httpx._urls.URL.params": [
+      "httpx._urls.QueryParams"
+    ],
+    "httpx._urls.URL.copy_with": [
+      "httpx._urls.URL"
+    ],
+    "httpx._urls.URL.copy_set_param": [
+      "httpx._urls.URL"
+    ],
+    "httpx._urls.URL.copy_add_param": [
+      "httpx._urls.URL"
+    ],
+    "httpx._urls.URL.copy_remove_param": [
+      "httpx._urls.URL"
+    ],
+    "httpx._urls.URL.copy_merge_params": [
+      "httpx._urls.URL"
+    ],
+    "httpx._urls.URL.join": [
+      "httpx._urls.URL"
+    ],
+    "httpx._urls.QueryParams.set": [
+      "httpx._urls.QueryParams"
+    ],
+    "httpx._urls.QueryParams.add": [
+      "httpx._urls.QueryParams"
+    ],
+    "httpx._urls.QueryParams.remove": [
+      "httpx._urls.QueryParams"
+    ],
+    "httpx._urls.QueryParams.merge": [
+      "httpx._urls.QueryParams"
+    ],
+    "httpx._utils.URLPattern.matches": [
+      "httpx._urls.URL"
+    ],
+    "httpx._utils.URLPattern.__lt__": [
+      "httpx._utils.URLPattern"
+    ],
+    "httpx._transports.asgi.ASGITransport.handle_async_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._transports.base.BaseTransport.handle_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._transports.base.AsyncBaseTransport.handle_async_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._transports.default._load_httpcore_exceptions": [
+      "httpx._exceptions.HTTPError"
+    ],
+    "httpx._transports.default.HTTPTransport.__init__": [
+      "httpx._config.Limits"
+    ],
+    "httpx._transports.default.HTTPTransport.handle_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._transports.default.AsyncHTTPTransport.__init__": [
+      "httpx._config.Limits"
+    ],
+    "httpx._transports.default.AsyncHTTPTransport.handle_async_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._transports.mock.MockTransport.handle_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._transports.mock.MockTransport.handle_async_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "httpx._transports.wsgi.WSGITransport.handle_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.conftest.TestServer.url": [
+      "httpx._urls.URL"
+    ],
+    "tests.conftest.serve_in_thread": [
+      "tests.conftest.TestServer"
+    ],
+    "tests.conftest.server": [
+      "tests.conftest.TestServer"
+    ],
+    "tests.test_auth.set_cookies": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.test_exceptions.test_httpcore_exception_mapping": [
+      "tests.conftest.TestServer"
+    ],
+    "tests.test_multipart.echo_request_content": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_async_client.unmounted": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_async_client.mounted": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_auth.App.__call__": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_auth.DigestApp.__call__": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_auth.DigestApp.challenge_send": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_auth.RepeatAuth.auth_flow": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_auth.ResponseBodyAuth.auth_flow": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_auth.SyncOrAsyncAuth.sync_auth_flow": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_auth.SyncOrAsyncAuth.async_auth_flow": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_auth.ConsumeBodyTransport.handle_async_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_client.echo_raw_headers": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_client.unmounted": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_client.mounted": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_cookies.get_and_set_cookies": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_event_hooks.app": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_headers.echo_headers": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_headers.echo_repeated_headers_multi_items": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_headers.echo_repeated_headers_items": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_proxies.url_to_origin": [
+      "httpx._urls.URL"
+    ],
+    "tests.client.test_queryparams.hello_world": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_redirects.redirects": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_redirects.ConsumeBodyTransport.handle_request": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ],
+    "tests.client.test_redirects.cookie_sessions": [
+      "httpx._models.Request",
+      "httpx._models.Response"
+    ]
+  }
+}

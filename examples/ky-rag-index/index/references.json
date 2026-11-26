@@ -1,0 +1,1614 @@
+{
+  "source.core.Ky.cloneInitHookOptions": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "source.core.Ky.Ky": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.browser.Window.fetch": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.error-data.fetch": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.error-data.fetch#L160": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.browser.Window.get": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.fetch.fetch",
+      "file": "test/fetch.ts",
+      "line": 17,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.headers.Headers.fetch",
+      "file": "test/headers.ts",
+      "line": 314,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.hooks.fetch",
+      "file": "test/hooks.ts",
+      "line": 302,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 5888,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7122,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7386,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.main.schemaValidationCaller",
+      "file": "test/main.ts",
+      "line": 640,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 4314,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.memory-leak.isKyLeaking",
+      "file": "test/memory-leak.ts",
+      "line": 13,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.network-error.fetch",
+      "file": "test/network-error.ts",
+      "line": 27,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.response-consumption.fetch",
+      "file": "test/response-consumption.ts",
+      "line": 246,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry-options.fetch",
+      "file": "test/retry-options.ts",
+      "line": 253,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.http-error.get": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.fetch.fetch",
+      "file": "test/fetch.ts",
+      "line": 17,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.headers.Headers.fetch",
+      "file": "test/headers.ts",
+      "line": 314,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.hooks.fetch",
+      "file": "test/hooks.ts",
+      "line": 302,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 5888,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7122,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7386,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.main.schemaValidationCaller",
+      "file": "test/main.ts",
+      "line": 640,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 4314,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.memory-leak.isKyLeaking",
+      "file": "test/memory-leak.ts",
+      "line": 13,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.network-error.fetch",
+      "file": "test/network-error.ts",
+      "line": 27,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.response-consumption.fetch",
+      "file": "test/response-consumption.ts",
+      "line": 246,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry-options.fetch",
+      "file": "test/retry-options.ts",
+      "line": 253,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.fetch.Agent.text": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.browser.Window.onDownloadProgress",
+      "file": "test/browser.ts",
+      "line": 401,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 1974,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.merge.fetch",
+      "file": "test/merge.ts",
+      "line": 15,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.request-construction.fetch",
+      "file": "test/request-construction.ts",
+      "line": 166,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.request-options.fetch",
+      "file": "test/request-options.ts",
+      "line": 11,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.request-options.fetch",
+      "file": "test/request-options.ts",
+      "line": 42,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.resilience.scriptedFetch",
+      "file": "test/resilience.ts",
+      "line": 30,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.resilience.fetch",
+      "file": "test/resilience.ts",
+      "line": 37,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry-options.fetch",
+      "file": "test/retry-options.ts",
+      "line": 30,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry-options.fetch",
+      "file": "test/retry-options.ts",
+      "line": 55,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry-options.fetch",
+      "file": "test/retry-options.ts",
+      "line": 253,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.test",
+      "file": "test/retry.ts",
+      "line": 779,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1070,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1184,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.test",
+      "file": "test/retry.ts",
+      "line": 2941,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4614,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4646,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4725,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4744,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4773,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 60,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1168,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1420,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1442,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.hooks.text": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.browser.Window.onDownloadProgress",
+      "file": "test/browser.ts",
+      "line": 401,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7105,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7122,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7159,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7203,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7386,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7439,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 1974,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.merge.fetch",
+      "file": "test/merge.ts",
+      "line": 15,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.request-construction.fetch",
+      "file": "test/request-construction.ts",
+      "line": 166,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.request-options.fetch",
+      "file": "test/request-options.ts",
+      "line": 11,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.request-options.fetch",
+      "file": "test/request-options.ts",
+      "line": 42,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.resilience.scriptedFetch",
+      "file": "test/resilience.ts",
+      "line": 30,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.resilience.fetch",
+      "file": "test/resilience.ts",
+      "line": 37,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry-options.fetch",
+      "file": "test/retry-options.ts",
+      "line": 30,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry-options.fetch",
+      "file": "test/retry-options.ts",
+      "line": 55,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry-options.fetch",
+      "file": "test/retry-options.ts",
+      "line": 253,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.test",
+      "file": "test/retry.ts",
+      "line": 779,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1070,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1184,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.test",
+      "file": "test/retry.ts",
+      "line": 2941,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4614,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4646,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4725,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4744,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4773,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 60,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1168,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1420,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1442,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.error-data.parseJson": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.error-data.parseJson#L206": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.hooks.parseJson": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "source.errors.TimeoutError.TimeoutError": [
+    {
+      "from_symbol": "source.core.Ky.Ky.create",
+      "file": "source/core/Ky.ts",
+      "line": 349,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "source.errors.NonError.NonError.wrap": [
+    {
+      "from_symbol": "source.errors.ForceRetryError.ForceRetryError.constructor",
+      "file": "source/errors/ForceRetryError.ts",
+      "line": 17,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "source.errors.NonError.NonError": [
+    {
+      "from_symbol": "source.errors.NonError.NonError.wrap",
+      "file": "source/errors/NonError.ts",
+      "line": 12,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "source.errors.ResponseSizeError.ResponseSizeError": [
+    {
+      "from_symbol": "source.utils.body.transform",
+      "file": "source/utils/body.ts",
+      "line": 186,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.errors.start": [
+    {
+      "from_symbol": "test.errors.fetch",
+      "file": "test/errors.ts",
+      "line": 272,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.fetch.start": [
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 538,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.fetch.Agent.start": [
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 538,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.fetch.Agent.cancel": [
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 538,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.fetch.Agent.cancel#L452": [
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 538,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.browser.Window.delay": [
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 684,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 712,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.fetch.Agent.pull",
+      "file": "test/fetch.ts",
+      "line": 720,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 765,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.hooks.delay": [
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 684,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 712,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.fetch.Agent.pull",
+      "file": "test/fetch.ts",
+      "line": 720,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 765,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 2906,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 3152,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 3384,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 5960,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.http-error.delay": [
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 684,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 712,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.fetch.Agent.pull",
+      "file": "test/fetch.ts",
+      "line": 720,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 765,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.fetch.Agent.pull": [
+    {
+      "from_symbol": "test.fetch.Agent.fetch",
+      "file": "test/fetch.ts",
+      "line": 712,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.browser.Window.await": [
+    {
+      "from_symbol": "test.hooks.fetch",
+      "file": "test/hooks.ts",
+      "line": 88,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.request-construction.fetch",
+      "file": "test/request-construction.ts",
+      "line": 166,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.response-handling.fetch",
+      "file": "test/response-handling.ts",
+      "line": 58,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1070,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1184,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1641,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1657,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1674,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1690,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1704,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1721,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.resilience.await": [
+    {
+      "from_symbol": "test.hooks.fetch",
+      "file": "test/hooks.ts",
+      "line": 88,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.request-construction.fetch",
+      "file": "test/request-construction.ts",
+      "line": 166,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.response-handling.fetch",
+      "file": "test/response-handling.ts",
+      "line": 58,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1070,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1184,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1641,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1657,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1674,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1690,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1704,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1721,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.stream.await": [
+    {
+      "from_symbol": "test.hooks.fetch",
+      "file": "test/hooks.ts",
+      "line": 88,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.request-construction.fetch",
+      "file": "test/request-construction.ts",
+      "line": 166,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.response-handling.fetch",
+      "file": "test/response-handling.ts",
+      "line": 58,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1070,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1184,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1641,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1657,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1674,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1690,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1704,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 1721,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.hooks.pull": [
+    {
+      "from_symbol": "test.hooks.fetch",
+      "file": "test/hooks.ts",
+      "line": 569,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.hooks.cancel": [
+    {
+      "from_symbol": "test.hooks.fetch",
+      "file": "test/hooks.ts",
+      "line": 750,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.hooks.cancel#L1122": [
+    {
+      "from_symbol": "test.hooks.fetch",
+      "file": "test/hooks.ts",
+      "line": 750,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.hooks.start": [
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 3176,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7571,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.hooks.CustomError.start": [
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 3176,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.hooks.CustomError.fetch",
+      "file": "test/hooks.ts",
+      "line": 7571,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.http-error.pull": [
+    {
+      "from_symbol": "test.http-error.fetch",
+      "file": "test/http-error.ts",
+      "line": 303,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.http-error.cancel": [
+    {
+      "from_symbol": "test.http-error.start",
+      "file": "test/http-error.ts",
+      "line": 574,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.http-error.cancel#L773": [
+    {
+      "from_symbol": "test.http-error.start",
+      "file": "test/http-error.ts",
+      "line": 574,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.http-error.start": [
+    {
+      "from_symbol": "test.http-error.fetch",
+      "file": "test/http-error.ts",
+      "line": 749,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.http-error.start#L548": [
+    {
+      "from_symbol": "test.http-error.fetch",
+      "file": "test/http-error.ts",
+      "line": 749,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.main.schemaValidationCaller": [
+    {
+      "from_symbol": "test.main.schemaValidationEntryPoint",
+      "file": "test/main.ts",
+      "line": 645,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.main.fetch": [
+    {
+      "from_symbol": "test.main.asyncValidationCaller",
+      "file": "test/main.ts",
+      "line": 667,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.main.CustomKyError.fetch": [
+    {
+      "from_symbol": "test.main.asyncValidationCaller",
+      "file": "test/main.ts",
+      "line": 667,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.main.CustomKyError.delay": [
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 1002,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 1002,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.pull",
+      "file": "test/main.ts",
+      "line": 1005,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.parseJson",
+      "file": "test/main.ts",
+      "line": 4086,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.validate",
+      "file": "test/main.ts",
+      "line": 4112,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.parseJson",
+      "file": "test/main.ts",
+      "line": 4146,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.parseJson",
+      "file": "test/main.ts",
+      "line": 4178,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.main.CustomKyError.pull": [
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 1002,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 1233,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.main.CustomKyError.pull#L1236": [
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 1002,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 1233,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.main.CustomKyError.cancel": [
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 1194,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.main.start": [
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 1476,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.main.start#L289": [
+    {
+      "from_symbol": "test.main.CustomKyError.fetch",
+      "file": "test/main.ts",
+      "line": 1476,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.resilience.fetch": [
+    {
+      "from_symbol": "test.resilience.scriptedFetch",
+      "file": "test/resilience.ts",
+      "line": 30,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.resilience.delay": [
+    {
+      "from_symbol": "test.resilience.shouldRetry",
+      "file": "test/resilience.ts",
+      "line": 698,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.resilience.client": [
+    {
+      "from_symbol": "test.resilience.send",
+      "file": "test/resilience.ts",
+      "line": 856,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.response-consumption.start": [
+    {
+      "from_symbol": "test.response-consumption.fetch",
+      "file": "test/response-consumption.ts",
+      "line": 217,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.response-size.start": [
+    {
+      "from_symbol": "test.response-size.fetch",
+      "file": "test/response-size.ts",
+      "line": 462,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.response-size.start#L305": [
+    {
+      "from_symbol": "test.response-size.fetch",
+      "file": "test/response-size.ts",
+      "line": 462,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.retry.pull": [
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 46,
+      "kind": "call",
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "test.retry.start": [
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 3985,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4197,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 5094,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.retry.start#L1952": [
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 3985,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 4197,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 5094,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.retry.delay": [
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 5094,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.start",
+      "file": "test/retry.ts",
+      "line": 5096,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.retry.delay#L430": [
+    {
+      "from_symbol": "test.retry.fetch",
+      "file": "test/retry.ts",
+      "line": 5094,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.retry.start",
+      "file": "test/retry.ts",
+      "line": 5096,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.stream.start": [
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1295,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1345,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1380,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1462,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.stream.start#L736": [
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1295,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1345,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1380,
+      "kind": "call",
+      "confidence": "INFERRED"
+    },
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1462,
+      "kind": "call",
+      "confidence": "INFERRED"
+    }
+  ],
+  "test.fetch.Agent.clone": [
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1420,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.hooks.clone": [
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1420,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "test.hooks.clone#L63": [
+    {
+      "from_symbol": "test.stream.fetch",
+      "file": "test/stream.ts",
+      "line": 1420,
+      "kind": "call",
+      "confidence": "AMBIGUOUS"
+    }
+  ],
+  "source.errors.KyError.KyError": [
+    {
+      "from_symbol": "source.errors.ForceRetryError.ForceRetryError",
+      "file": "source/errors/ForceRetryError.ts",
+      "line": 11,
+      "kind": "extends/implements",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "source.errors.HTTPError.HTTPError",
+      "file": "source/errors/HTTPError.ts",
+      "line": 15,
+      "kind": "extends/implements",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "source.errors.NetworkError.NetworkError",
+      "file": "source/errors/NetworkError.ts",
+      "line": 11,
+      "kind": "extends/implements",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "source.errors.ResponseSizeError.ResponseSizeError",
+      "file": "source/errors/ResponseSizeError.ts",
+      "line": 20,
+      "kind": "extends/implements",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "source.errors.TimeoutError.TimeoutError",
+      "file": "source/errors/TimeoutError.ts",
+      "line": 7,
+      "kind": "extends/implements",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "from_symbol": "test.main.CustomKyError",
+      "file": "test/main.ts",
+      "line": 713,
+      "kind": "extends/implements",
+      "confidence": "EXTRACTED"
+    }
+  ]
+}

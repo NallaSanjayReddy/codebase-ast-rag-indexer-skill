@@ -1,0 +1,456 @@
+{
+  "outgoing": {
+    "source.core.Ky.Ky.create": [
+      "source.core.Ky.Ky",
+      "source.core.Ky.cloneInitHookOptions",
+      "source.errors.TimeoutError.TimeoutError",
+      "test.browser.Window.fetch",
+      "test.browser.Window.get",
+      "test.error-data.fetch",
+      "test.error-data.fetch#L160",
+      "test.error-data.parseJson",
+      "test.error-data.parseJson#L206",
+      "test.fetch.Agent.text",
+      "test.hooks.parseJson",
+      "test.hooks.text",
+      "test.http-error.get"
+    ],
+    "source.errors.ForceRetryError.ForceRetryError.constructor": [
+      "source.errors.NonError.NonError.wrap"
+    ],
+    "source.errors.NonError.NonError.wrap": [
+      "source.errors.NonError.NonError"
+    ],
+    "source.utils.body.transform": [
+      "source.errors.ResponseSizeError.ResponseSizeError"
+    ],
+    "test.browser.Window.onDownloadProgress": [
+      "test.fetch.Agent.text",
+      "test.hooks.text"
+    ],
+    "test.errors.fetch": [
+      "test.errors.start"
+    ],
+    "test.fetch.fetch": [
+      "test.browser.Window.get",
+      "test.http-error.get"
+    ],
+    "test.fetch.Agent.fetch": [
+      "test.browser.Window.delay",
+      "test.fetch.Agent.cancel",
+      "test.fetch.Agent.cancel#L452",
+      "test.fetch.Agent.pull",
+      "test.fetch.Agent.start",
+      "test.fetch.start",
+      "test.hooks.delay",
+      "test.http-error.delay"
+    ],
+    "test.fetch.Agent.pull": [
+      "test.browser.Window.delay",
+      "test.hooks.delay",
+      "test.http-error.delay"
+    ],
+    "test.headers.Headers.fetch": [
+      "test.browser.Window.get",
+      "test.http-error.get"
+    ],
+    "test.hooks.fetch": [
+      "test.browser.Window.await",
+      "test.browser.Window.get",
+      "test.hooks.cancel",
+      "test.hooks.cancel#L1122",
+      "test.hooks.pull",
+      "test.http-error.get",
+      "test.resilience.await",
+      "test.stream.await"
+    ],
+    "test.hooks.CustomError.fetch": [
+      "test.browser.Window.get",
+      "test.hooks.CustomError.start",
+      "test.hooks.delay",
+      "test.hooks.start",
+      "test.hooks.text",
+      "test.http-error.get"
+    ],
+    "test.http-error.fetch": [
+      "test.http-error.pull",
+      "test.http-error.start",
+      "test.http-error.start#L548"
+    ],
+    "test.http-error.start": [
+      "test.http-error.cancel",
+      "test.http-error.cancel#L773"
+    ],
+    "test.main.schemaValidationCaller": [
+      "test.browser.Window.get",
+      "test.http-error.get"
+    ],
+    "test.main.schemaValidationEntryPoint": [
+      "test.main.schemaValidationCaller"
+    ],
+    "test.main.asyncValidationCaller": [
+      "test.main.CustomKyError.fetch",
+      "test.main.fetch"
+    ],
+    "test.main.CustomKyError.fetch": [
+      "test.browser.Window.get",
+      "test.fetch.Agent.text",
+      "test.hooks.text",
+      "test.http-error.get",
+      "test.main.CustomKyError.cancel",
+      "test.main.CustomKyError.delay",
+      "test.main.CustomKyError.pull",
+      "test.main.CustomKyError.pull#L1236",
+      "test.main.start",
+      "test.main.start#L289"
+    ],
+    "test.main.CustomKyError.pull": [
+      "test.main.CustomKyError.delay"
+    ],
+    "test.main.CustomKyError.parseJson": [
+      "test.main.CustomKyError.delay"
+    ],
+    "test.main.CustomKyError.validate": [
+      "test.main.CustomKyError.delay"
+    ],
+    "test.memory-leak.isKyLeaking": [
+      "test.browser.Window.get",
+      "test.http-error.get"
+    ],
+    "test.merge.fetch": [
+      "test.fetch.Agent.text",
+      "test.hooks.text"
+    ],
+    "test.network-error.fetch": [
+      "test.browser.Window.get",
+      "test.http-error.get"
+    ],
+    "test.request-construction.fetch": [
+      "test.browser.Window.await",
+      "test.fetch.Agent.text",
+      "test.hooks.text",
+      "test.resilience.await",
+      "test.stream.await"
+    ],
+    "test.request-options.fetch": [
+      "test.fetch.Agent.text",
+      "test.hooks.text"
+    ],
+    "test.resilience.scriptedFetch": [
+      "test.fetch.Agent.text",
+      "test.hooks.text",
+      "test.resilience.fetch"
+    ],
+    "test.resilience.fetch": [
+      "test.fetch.Agent.text",
+      "test.hooks.text"
+    ],
+    "test.resilience.shouldRetry": [
+      "test.resilience.delay"
+    ],
+    "test.resilience.send": [
+      "test.resilience.client"
+    ],
+    "test.response-consumption.fetch": [
+      "test.browser.Window.get",
+      "test.http-error.get",
+      "test.response-consumption.start"
+    ],
+    "test.response-handling.fetch": [
+      "test.browser.Window.await",
+      "test.resilience.await",
+      "test.stream.await"
+    ],
+    "test.response-size.fetch": [
+      "test.response-size.start",
+      "test.response-size.start#L305"
+    ],
+    "test.retry-options.fetch": [
+      "test.browser.Window.get",
+      "test.fetch.Agent.text",
+      "test.hooks.text",
+      "test.http-error.get"
+    ],
+    "test.retry.fetch": [
+      "test.browser.Window.await",
+      "test.fetch.Agent.text",
+      "test.hooks.text",
+      "test.resilience.await",
+      "test.retry.delay",
+      "test.retry.delay#L430",
+      "test.retry.pull",
+      "test.retry.start",
+      "test.retry.start#L1952",
+      "test.stream.await"
+    ],
+    "test.retry.test": [
+      "test.fetch.Agent.text",
+      "test.hooks.text"
+    ],
+    "test.retry.start": [
+      "test.retry.delay",
+      "test.retry.delay#L430"
+    ],
+    "test.stream.fetch": [
+      "test.fetch.Agent.clone",
+      "test.fetch.Agent.text",
+      "test.hooks.clone",
+      "test.hooks.clone#L63",
+      "test.hooks.text",
+      "test.stream.start",
+      "test.stream.start#L736"
+    ]
+  },
+  "incoming": {
+    "source.core.Ky.cloneInitHookOptions": [
+      "source.core.Ky.Ky.create"
+    ],
+    "source.core.Ky.Ky": [
+      "source.core.Ky.Ky.create"
+    ],
+    "test.browser.Window.fetch": [
+      "source.core.Ky.Ky.create"
+    ],
+    "test.error-data.fetch": [
+      "source.core.Ky.Ky.create"
+    ],
+    "test.error-data.fetch#L160": [
+      "source.core.Ky.Ky.create"
+    ],
+    "test.browser.Window.get": [
+      "source.core.Ky.Ky.create",
+      "test.fetch.fetch",
+      "test.headers.Headers.fetch",
+      "test.hooks.CustomError.fetch",
+      "test.hooks.fetch",
+      "test.main.CustomKyError.fetch",
+      "test.main.schemaValidationCaller",
+      "test.memory-leak.isKyLeaking",
+      "test.network-error.fetch",
+      "test.response-consumption.fetch",
+      "test.retry-options.fetch"
+    ],
+    "test.http-error.get": [
+      "source.core.Ky.Ky.create",
+      "test.fetch.fetch",
+      "test.headers.Headers.fetch",
+      "test.hooks.CustomError.fetch",
+      "test.hooks.fetch",
+      "test.main.CustomKyError.fetch",
+      "test.main.schemaValidationCaller",
+      "test.memory-leak.isKyLeaking",
+      "test.network-error.fetch",
+      "test.response-consumption.fetch",
+      "test.retry-options.fetch"
+    ],
+    "test.fetch.Agent.text": [
+      "source.core.Ky.Ky.create",
+      "test.browser.Window.onDownloadProgress",
+      "test.main.CustomKyError.fetch",
+      "test.merge.fetch",
+      "test.request-construction.fetch",
+      "test.request-options.fetch",
+      "test.resilience.fetch",
+      "test.resilience.scriptedFetch",
+      "test.retry-options.fetch",
+      "test.retry.fetch",
+      "test.retry.test",
+      "test.stream.fetch"
+    ],
+    "test.hooks.text": [
+      "source.core.Ky.Ky.create",
+      "test.browser.Window.onDownloadProgress",
+      "test.hooks.CustomError.fetch",
+      "test.main.CustomKyError.fetch",
+      "test.merge.fetch",
+      "test.request-construction.fetch",
+      "test.request-options.fetch",
+      "test.resilience.fetch",
+      "test.resilience.scriptedFetch",
+      "test.retry-options.fetch",
+      "test.retry.fetch",
+      "test.retry.test",
+      "test.stream.fetch"
+    ],
+    "test.error-data.parseJson": [
+      "source.core.Ky.Ky.create"
+    ],
+    "test.error-data.parseJson#L206": [
+      "source.core.Ky.Ky.create"
+    ],
+    "test.hooks.parseJson": [
+      "source.core.Ky.Ky.create"
+    ],
+    "source.errors.TimeoutError.TimeoutError": [
+      "source.core.Ky.Ky.create"
+    ],
+    "source.errors.NonError.NonError.wrap": [
+      "source.errors.ForceRetryError.ForceRetryError.constructor"
+    ],
+    "source.errors.NonError.NonError": [
+      "source.errors.NonError.NonError.wrap"
+    ],
+    "source.errors.ResponseSizeError.ResponseSizeError": [
+      "source.utils.body.transform"
+    ],
+    "test.errors.start": [
+      "test.errors.fetch"
+    ],
+    "test.fetch.start": [
+      "test.fetch.Agent.fetch"
+    ],
+    "test.fetch.Agent.start": [
+      "test.fetch.Agent.fetch"
+    ],
+    "test.fetch.Agent.cancel": [
+      "test.fetch.Agent.fetch"
+    ],
+    "test.fetch.Agent.cancel#L452": [
+      "test.fetch.Agent.fetch"
+    ],
+    "test.browser.Window.delay": [
+      "test.fetch.Agent.fetch",
+      "test.fetch.Agent.pull"
+    ],
+    "test.hooks.delay": [
+      "test.fetch.Agent.fetch",
+      "test.fetch.Agent.pull",
+      "test.hooks.CustomError.fetch"
+    ],
+    "test.http-error.delay": [
+      "test.fetch.Agent.fetch",
+      "test.fetch.Agent.pull"
+    ],
+    "test.fetch.Agent.pull": [
+      "test.fetch.Agent.fetch"
+    ],
+    "test.browser.Window.await": [
+      "test.hooks.fetch",
+      "test.request-construction.fetch",
+      "test.response-handling.fetch",
+      "test.retry.fetch"
+    ],
+    "test.resilience.await": [
+      "test.hooks.fetch",
+      "test.request-construction.fetch",
+      "test.response-handling.fetch",
+      "test.retry.fetch"
+    ],
+    "test.stream.await": [
+      "test.hooks.fetch",
+      "test.request-construction.fetch",
+      "test.response-handling.fetch",
+      "test.retry.fetch"
+    ],
+    "test.hooks.pull": [
+      "test.hooks.fetch"
+    ],
+    "test.hooks.cancel": [
+      "test.hooks.fetch"
+    ],
+    "test.hooks.cancel#L1122": [
+      "test.hooks.fetch"
+    ],
+    "test.hooks.start": [
+      "test.hooks.CustomError.fetch"
+    ],
+    "test.hooks.CustomError.start": [
+      "test.hooks.CustomError.fetch"
+    ],
+    "test.http-error.pull": [
+      "test.http-error.fetch"
+    ],
+    "test.http-error.cancel": [
+      "test.http-error.start"
+    ],
+    "test.http-error.cancel#L773": [
+      "test.http-error.start"
+    ],
+    "test.http-error.start": [
+      "test.http-error.fetch"
+    ],
+    "test.http-error.start#L548": [
+      "test.http-error.fetch"
+    ],
+    "test.main.schemaValidationCaller": [
+      "test.main.schemaValidationEntryPoint"
+    ],
+    "test.main.fetch": [
+      "test.main.asyncValidationCaller"
+    ],
+    "test.main.CustomKyError.fetch": [
+      "test.main.asyncValidationCaller"
+    ],
+    "test.main.CustomKyError.delay": [
+      "test.main.CustomKyError.fetch",
+      "test.main.CustomKyError.parseJson",
+      "test.main.CustomKyError.pull",
+      "test.main.CustomKyError.validate"
+    ],
+    "test.main.CustomKyError.pull": [
+      "test.main.CustomKyError.fetch"
+    ],
+    "test.main.CustomKyError.pull#L1236": [
+      "test.main.CustomKyError.fetch"
+    ],
+    "test.main.CustomKyError.cancel": [
+      "test.main.CustomKyError.fetch"
+    ],
+    "test.main.start": [
+      "test.main.CustomKyError.fetch"
+    ],
+    "test.main.start#L289": [
+      "test.main.CustomKyError.fetch"
+    ],
+    "test.resilience.fetch": [
+      "test.resilience.scriptedFetch"
+    ],
+    "test.resilience.delay": [
+      "test.resilience.shouldRetry"
+    ],
+    "test.resilience.client": [
+      "test.resilience.send"
+    ],
+    "test.response-consumption.start": [
+      "test.response-consumption.fetch"
+    ],
+    "test.response-size.start": [
+      "test.response-size.fetch"
+    ],
+    "test.response-size.start#L305": [
+      "test.response-size.fetch"
+    ],
+    "test.retry.pull": [
+      "test.retry.fetch"
+    ],
+    "test.retry.start": [
+      "test.retry.fetch"
+    ],
+    "test.retry.start#L1952": [
+      "test.retry.fetch"
+    ],
+    "test.retry.delay": [
+      "test.retry.fetch",
+      "test.retry.start"
+    ],
+    "test.retry.delay#L430": [
+      "test.retry.fetch",
+      "test.retry.start"
+    ],
+    "test.stream.start": [
+      "test.stream.fetch"
+    ],
+    "test.stream.start#L736": [
+      "test.stream.fetch"
+    ],
+    "test.fetch.Agent.clone": [
+      "test.stream.fetch"
+    ],
+    "test.hooks.clone": [
+      "test.stream.fetch"
+    ],
+    "test.hooks.clone#L63": [
+      "test.stream.fetch"
+    ]
+  }
+}

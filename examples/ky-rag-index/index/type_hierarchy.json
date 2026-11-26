@@ -1,0 +1,261 @@
+{
+  "types": {
+    "source.core.Ky.Ky": {
+      "kind": "class",
+      "file": "source/core/Ky.ts",
+      "line": 348,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "source.core.constants.RetryMarker": {
+      "kind": "class",
+      "file": "source/core/constants.ts",
+      "line": 162,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "source.errors.ForceRetryError.ForceRetryError": {
+      "kind": "class",
+      "file": "source/errors/ForceRetryError.ts",
+      "line": 11,
+      "super_types": [
+        "source.errors.KyError.KyError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "source.errors.HTTPError.HTTPError": {
+      "kind": "class",
+      "file": "source/errors/HTTPError.ts",
+      "line": 15,
+      "super_types": [
+        "source.errors.KyError.KyError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "source.errors.KyError.KyError": {
+      "kind": "class",
+      "file": "source/errors/KyError.ts",
+      "line": 8,
+      "super_types": [
+        "Error"
+      ],
+      "sub_types": [
+        "source.errors.ForceRetryError.ForceRetryError",
+        "source.errors.HTTPError.HTTPError",
+        "source.errors.NetworkError.NetworkError",
+        "source.errors.ResponseSizeError.ResponseSizeError",
+        "source.errors.TimeoutError.TimeoutError",
+        "test.main.CustomKyError"
+      ],
+      "implementations": [
+        "source.errors.ForceRetryError.ForceRetryError",
+        "source.errors.HTTPError.HTTPError",
+        "source.errors.NetworkError.NetworkError",
+        "source.errors.ResponseSizeError.ResponseSizeError",
+        "source.errors.TimeoutError.TimeoutError",
+        "test.main.CustomKyError"
+      ]
+    },
+    "source.errors.NetworkError.NetworkError": {
+      "kind": "class",
+      "file": "source/errors/NetworkError.ts",
+      "line": 11,
+      "super_types": [
+        "source.errors.KyError.KyError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "source.errors.NonError.NonError": {
+      "kind": "class",
+      "file": "source/errors/NonError.ts",
+      "line": 8,
+      "super_types": [
+        "Error"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "source.errors.ResponseSizeError.ResponseSizeError": {
+      "kind": "class",
+      "file": "source/errors/ResponseSizeError.ts",
+      "line": 20,
+      "super_types": [
+        "source.errors.KyError.KyError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "source.errors.SchemaValidationError.SchemaValidationError": {
+      "kind": "class",
+      "file": "source/errors/SchemaValidationError.ts",
+      "line": 25,
+      "super_types": [
+        "Error"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "source.errors.TimeoutError.TimeoutError": {
+      "kind": "class",
+      "file": "source/errors/TimeoutError.ts",
+      "line": 7,
+      "super_types": [
+        "source.errors.KyError.KyError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "source.types.ResponsePromise.Result": {
+      "kind": "interface",
+      "file": "source/types/ResponsePromise.ts",
+      "line": 40,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "source.types.options.Options": {
+      "kind": "interface",
+      "file": "source/types/options.ts",
+      "line": 454,
+      "super_types": [
+        "KyOptions",
+        "RequestOptions"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "source.types.options.NormalizedOptions": {
+      "kind": "interface",
+      "file": "source/types/options.ts",
+      "line": 540,
+      "super_types": [
+        "Readonly"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "test.browser.Window": {
+      "kind": "interface",
+      "file": "test/browser.ts",
+      "line": 17,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "test.fetch.Agent": {
+      "kind": "class",
+      "file": "test/fetch.ts",
+      "line": 300,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "test.fetch.Agent#L323": {
+      "kind": "class",
+      "file": "test/fetch.ts",
+      "line": 323,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "test.headers.Headers": {
+      "kind": "class",
+      "file": "test/headers.ts",
+      "line": 43,
+      "super_types": [
+        "OriginalHeaders"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "test.hooks.CustomError": {
+      "kind": "class",
+      "file": "test/hooks.ts",
+      "line": 2592,
+      "super_types": [
+        "Error"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "test.main.CustomKyError": {
+      "kind": "class",
+      "file": "test/main.ts",
+      "line": 713,
+      "super_types": [
+        "source.errors.KyError.KyError"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "test.retry.Holder": {
+      "kind": "class",
+      "file": "test/retry.ts",
+      "line": 5237,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "test-d.fetch-extensions.RequestInit": {
+      "kind": "interface",
+      "file": "test-d/fetch-extensions.ts",
+      "line": 12,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "test-d.normalized-options.Options": {
+      "kind": "interface",
+      "file": "test-d/normalized-options.ts",
+      "line": 13,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "test-d.normalized-options.NormalizedOptions": {
+      "kind": "interface",
+      "file": "test-d/normalized-options.ts",
+      "line": 17,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    }
+  },
+  "super_implementations": {},
+  "type_definitions": {
+    "source.core.Ky.cloneInitHookOptions": [
+      "source.types.options.Options",
+      "test-d.normalized-options.Options"
+    ],
+    "source.core.Ky.Ky.create": [
+      "source.types.options.Options",
+      "test-d.normalized-options.Options"
+    ],
+    "source.core.Ky.Ky.constructor": [
+      "source.types.options.Options",
+      "test-d.normalized-options.Options"
+    ],
+    "source.errors.HTTPError.HTTPError.constructor": [
+      "source.types.options.NormalizedOptions",
+      "test-d.normalized-options.NormalizedOptions"
+    ],
+    "test.headers.Headers.constructor": [
+      "test-d.fetch-extensions.RequestInit"
+    ],
+    "test.request-stream-support-runtimes.constructor": [
+      "test-d.fetch-extensions.RequestInit"
+    ],
+    "test.request-stream-support.constructor": [
+      "test-d.fetch-extensions.RequestInit"
+    ],
+    "test.resilience.client": [
+      "source.types.options.Options",
+      "test-d.normalized-options.Options"
+    ]
+  }
+}

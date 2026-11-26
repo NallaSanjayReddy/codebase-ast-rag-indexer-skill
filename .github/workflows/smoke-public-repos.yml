@@ -1,0 +1,44 @@
+name: Smoke Test Public Repositories
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  public-repo-smoke:
+    name: Index ${{ matrix.repo }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - repo: pgvector/pgvector-python
+            query: "register vector async"
+          - repo: encode/httpx
+            query: "AsyncClient transport send"
+          - repo: sindresorhus/ky
+            query: "retry timeout request"
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Clone & index ${{ matrix.repo }}
+        run: |
+          python skills/codebase-ast-rag-indexer/scripts/ast_rag_indexer.py \
+            --repo "https://github.com/${{ matrix.repo }}" \
+            --output "./smoke_out" \
+            --rag-mode both \
+            --embedding-provider tfidf \
+            --page-size 512
+
+      - name: Verify hybrid & vectorless queries
+        run: |
+          python skills/codebase-ast-rag-indexer/scripts/query_rag.py --index ./smoke_out/index --query "${{ matrix.query }}" --mode hybrid --top-k 3
+          python skills/codebase-ast-rag-indexer/scripts/query_rag.py --index ./smoke_out/index --query "${{ matrix.query }}" --mode vectorless --top-k 3

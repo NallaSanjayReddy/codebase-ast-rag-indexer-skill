@@ -1,25 +1,58 @@
 # Codebase AST, Knowledge Graph & Dual Vector/Vectorless RAG Indexer Skill (`v3.0`)
 
 <p align="center">
-  <img src="./assets/logo.svg" alt="Codebase AST & RAG Indexer" width="120" />
+  <img src="./assets/logo.svg" alt="Codebase AST & RAG Indexer" width="110" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/NallaSanjayReddy/codebase-ast-rag-indexer-skill/actions/workflows/ci.yml"><img src="https://github.com/NallaSanjayReddy/codebase-ast-rag-indexer-skill/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="https://github.com/NallaSanjayReddy/codebase-ast-rag-indexer-skill/actions/workflows/smoke-public-repos.yml"><img src="https://github.com/NallaSanjayReddy/codebase-ast-rag-indexer-skill/actions/workflows/smoke-public-repos.yml/badge.svg" alt="Public Repo Smoke Tests" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a>
+  <img src="https://img.shields.io/badge/Python-3.11%2B%20(Zero%20Deps)-3776AB?logo=python&logoColor=white" alt="Python 3.11+" />
 </p>
 
 An open-source, zero-dependency agent skill (for **Antigravity**, **Claude Code**, **Codex**, and **Gemini CLI**) that clones any GitHub repository (or scans a local codebase) and builds **BOTH Vectorless RAG** (AST Tree + Confidence-Tagged Knowledge Graph) **AND Vector-Based RAG** (Dual NLP + Code Embeddings, SQLite FTS5 + Vector Store, Qdrant Points, PostgreSQL `pgvector` HNSW Schema, and Hybrid Reciprocal Rank Fusion) with **KV-Cache / PagedAttention** block packing.
 
 ---
 
-## Architecture Overview
+## Visual Overview — End-to-End Architecture & Workflow
 
-```mermaid
-flowchart LR
-    Repo["GitHub URL or Local Repo"] --> AST["AST & Structural Parser<br/>(Python, Java, TS/JS, Go, Rust, Kotlin, C#, PHP)"]
-    AST --> VL["Vectorless RAG<br/>tree_index.json + graph.json + graph.html"]
-    AST --> VEC["Vector-Based RAG<br/>Dual NLP + Code Embeddings<br/>vectors.jsonl + SQLite FTS5 + Qdrant + pgvector"]
-    AST --> KV["KV-Cache & PagedAttention<br/>512-tok canonical pages + prefix_hash"]
-    VL --> Q["query_rag.py (8 Modes)<br/>hybrid | vector | vectorless | fts<br/>explain | path | symbol | kv-pack"]
-    VEC --> Q
-    KV --> Q
+![Codebase AST, Knowledge Graph & Dual Vector/Vectorless RAG Workflow](./assets/workflow_overview.gif)
+
+---
+
+## 30-Second Setup Walkthrough (MP4)
+
+> Watch the animated CLI & architecture setup walkthrough: **[`assets/setup_walkthrough.mp4`](./assets/setup_walkthrough.mp4)** (`1280×720`, 24fps H.264)
+
+<video src="./assets/setup_walkthrough.mp4" controls width="100%"></video>
+
+### Quick Start Commands
+
+```bash
+# 1. Clone the skill repo (zero external dependencies — pure Python 3 stdlib)
+git clone https://github.com/NallaSanjayReddy/codebase-ast-rag-indexer-skill.git
+cd codebase-ast-rag-indexer-skill
+
+# 2. Index any GitHub repository or local codebase (BOTH Vectorless + Vector RAG)
+python skills/codebase-ast-rag-indexer/scripts/ast_rag_indexer.py \
+  --repo https://github.com/pgvector/pgvector-python \
+  --output ./examples/pgvector-python-rag-index \
+  --rag-mode both \
+  --embedding-provider tfidf \
+  --page-size 512 \
+  --priority-paths pgvector \
+  --incremental
 ```
+
+**Output:**
+```text
+SUCCESS: Indexed 74 files -> 675 AST chunks, 675 dual vectors (tfidf d=128), 2491 graph edges (15 communities), 124 KV pages
+```
+
+Switch modes anytime: `--rag-mode vectorless` (zero embeddings), `--chunk-strategy hybrid|function|class|file`, or `--embedding-provider sentence-transformers|openai|ollama`.
+
+---
 
 ## Dual RAG Capabilities (Vectorless + Vector + Hybrid RRF)
 
@@ -33,42 +66,28 @@ flowchart LR
 
 ---
 
-## Quick Start
+## Included Multi-Language Public Examples
 
-### 1. Index Any GitHub Repository or Local Path
+Three real open-source repositories are pre-indexed in [`examples/`](./examples/) across **Python** and **TypeScript**:
 
-```bash
-python skills/codebase-ast-rag-indexer/scripts/ast_rag_indexer.py \
-  --repo https://github.com/pgvector/pgvector-python \
-  --output ./examples/pgvector-python-rag-index \
-  --rag-mode both \
-  --embedding-provider tfidf \
-  --page-size 512 \
-  --priority-paths pgvector \
-  --incremental
-```
-
-**Sample Output:**
-```text
-SUCCESS: Indexed 74 files -> 675 AST chunks, 675 dual vectors (tfidf d=128), 2491 graph edges (15 communities), 124 KV pages
-```
-
-You can also run **Vectorless-only** (`--rag-mode vectorless`), switch chunk granularity (`--chunk-strategy hybrid|function|class|file`), or swap in neural embeddings (`--embedding-provider sentence-transformers`, `openai`, or `ollama`).
+| Repository | Language | Files | AST Chunks & Dual Vectors | Graph Edges | KV Pages | Browse Outputs |
+| :--- | :--- | :---: | :---: | :---: | :---: | :--- |
+| **[`pgvector/pgvector-python`](https://github.com/pgvector/pgvector-python)** | Python | `74` | `675` | `2,491` (15 communities) | `124` | [00-INDEX.md](./examples/pgvector-python-rag-index/docs/00-INDEX.md) · [05-GRAPH-REPORT.md](./examples/pgvector-python-rag-index/docs/05-GRAPH-REPORT.md) · [graph.html](./examples/pgvector-python-rag-index/docs/graph.html) |
+| **[`encode/httpx`](https://github.com/encode/httpx)** | Python | `60` | `1,150` | `6,247` (3 communities) | `327` | [00-INDEX.md](./examples/httpx-rag-index/docs/00-INDEX.md) · [05-GRAPH-REPORT.md](./examples/httpx-rag-index/docs/05-GRAPH-REPORT.md) · [graph.html](./examples/httpx-rag-index/docs/graph.html) |
+| **[`sindresorhus/ky`](https://github.com/sindresorhus/ky)** | TypeScript | `98` | `658` | `173` (5 communities) | `49` | [00-INDEX.md](./examples/ky-rag-index/docs/00-INDEX.md) · [05-GRAPH-REPORT.md](./examples/ky-rag-index/docs/05-GRAPH-REPORT.md) · [graph.html](./examples/ky-rag-index/docs/graph.html) |
 
 ---
 
 ## Real Query Examples (8 Retrieval Modes)
 
-All examples below are captured from running `query_rag.py` against the included [`examples/pgvector-python-rag-index/`](./examples/pgvector-python-rag-index/docs/00-INDEX.md) index.
-
 ### Example 1 — Hybrid Reciprocal Rank Fusion (`--mode hybrid`)
-Fuses **Vector Cosine Rank + SQLite FTS5 BM25 Rank + Knowledge Graph Degree** into a single ranked result:
+Fuses **Vector Cosine Rank + SQLite FTS5 BM25 Rank + Knowledge Graph Degree**:
 
 ```bash
 python skills/codebase-ast-rag-indexer/scripts/query_rag.py \
   --index ./examples/pgvector-python-rag-index/index \
   --query "async psycopg register vector" \
-  --mode hybrid --top-k 3
+  --mode hybrid --top-k 2
 ```
 
 ```json
@@ -138,13 +157,12 @@ python skills/codebase-ast-rag-indexer/scripts/query_rag.py \
 ```
 
 ### Example 3 — Vectorless RAG: Tree + 1-Hop Knowledge Graph (`--mode vectorless`)
-Zero embeddings required — retrieves matching AST nodes plus their 1-hop confidence-tagged graph neighborhood and linked unit tests:
 
 ```bash
 python skills/codebase-ast-rag-indexer/scripts/query_rag.py \
   --index ./examples/pgvector-python-rag-index/index \
   --query "HalfVector" \
-  --mode vectorless --top-k 2
+  --mode vectorless --top-k 1
 ```
 
 ```markdown
@@ -157,32 +175,7 @@ python skills/codebase-ast-rag-indexer/scripts/query_rag.py \
   - Tests (1): tests.test_django.TestDjango.test_half_precision
 ```
 
-### Example 4 — Symbol Neighborhood Explanation (`--mode explain`)
-Inspects a symbol's source file, KV-Page, production subsystem community, degree, and confidence-tagged incoming/outgoing edges:
-
-```bash
-python skills/codebase-ast-rag-indexer/scripts/query_rag.py \
-  --index ./examples/pgvector-python-rag-index/index \
-  --query "pgvector.vector.Vector" \
-  --mode explain
-```
-
-```text
-Node: pgvector.vector.Vector
-  Source:    pgvector/vector.py:12 (KV-Page 40)
-  Community: #1 (pgvector/psycopg)
-  Degree:    154
-  Signature: class Vector:
-
-Incoming Connections (154):
-  <-- pgvector.asyncpg.register.register_vector [calls] [EXTRACTED]
-  <-- pgvector.django.functions.DistanceBase.__init__ [calls] [EXTRACTED]
-  <-- pgvector.psycopg.vector.VectorDumper.dump [calls] [EXTRACTED]
-  ...
-```
-
-### Example 5 — Shortest Path Between Two Symbols (`--mode path`)
-Finds the shortest graph path between any two symbols and computes overall path confidence from its weakest hop:
+### Example 4 — Graph Explain & Shortest Path (`--mode explain`, `--mode path`)
 
 ```bash
 python skills/codebase-ast-rag-indexer/scripts/query_rag.py \
@@ -197,14 +190,13 @@ Shortest path (2 hops) | Overall confidence (weakest hop): [EXTRACTED]
 pgvector.vector.Vector <--[calls|EXTRACTED]<-- pgvector.asyncpg.register.register_vector -->[calls|EXTRACTED]--> pgvector.halfvec.HalfVector
 ```
 
-### Example 6 — KV-Cache Prefix-Stable & PagedAttention Prompt Packet (`--mode kv-pack`)
-Orders retrieved chunks deterministically by `(kv_page_id, kv_token_offset)` inside a static prefix block so LLM inference engines (vLLM, SGLang, Anthropic/OpenAI prompt caching) maximize KV-cache prefix reuse:
+### Example 5 — KV-Cache Prefix-Stable & PagedAttention Prompt Packet (`--mode kv-pack`)
 
 ```bash
 python skills/codebase-ast-rag-indexer/scripts/query_rag.py \
   --index ./examples/pgvector-python-rag-index/index \
   --query "register_vector_async" \
-  --mode kv-pack --top-k 2
+  --mode kv-pack --top-k 1
 ```
 
 ```text
@@ -223,22 +215,14 @@ User Query: register_vector_async
 
 ---
 
-## Included Generated Example Output
+## CI, Validation & Release Workflows
 
-Browse the complete generated index and interactive knowledge graph for `pgvector/pgvector-python`:
-- [`examples/pgvector-python-rag-index/docs/00-INDEX.md`](./examples/pgvector-python-rag-index/docs/00-INDEX.md) — Executive metrics & index map
-- [`examples/pgvector-python-rag-index/docs/01-TREE-INDEX-VECTORLESS-RAG.md`](./examples/pgvector-python-rag-index/docs/01-TREE-INDEX-VECTORLESS-RAG.md) — Hierarchical Vectorless RAG tree
-- [`examples/pgvector-python-rag-index/docs/02-CALL-AND-TYPE-HIERARCHY.md`](./examples/pgvector-python-rag-index/docs/02-CALL-AND-TYPE-HIERARCHY.md) — Supertypes, subtypes & method overrides
-- [`examples/pgvector-python-rag-index/docs/03-REFERENCES-AND-TESTS-MAP.md`](./examples/pgvector-python-rag-index/docs/03-REFERENCES-AND-TESTS-MAP.md) — Cross-file references & test traceability
-- [`examples/pgvector-python-rag-index/docs/04-KV-CACHE-AND-PAGED-ATTENTION-PACKING.md`](./examples/pgvector-python-rag-index/docs/04-KV-CACHE-AND-PAGED-ATTENTION-PACKING.md) — PagedAttention virtual token pages & prefix hashes
-- [`examples/pgvector-python-rag-index/docs/05-GRAPH-REPORT.md`](./examples/pgvector-python-rag-index/docs/05-GRAPH-REPORT.md) — God Nodes, subsystem communities, cross-community bridges & import cycles
-- [`examples/pgvector-python-rag-index/docs/graph.html`](./examples/pgvector-python-rag-index/docs/graph.html) — Self-contained interactive force-directed graph explorer
-
----
-
-## Running Tests
+- **[`.github/workflows/ci.yml`](./.github/workflows/ci.yml)** — Cross-OS matrix (`ubuntu`, `windows`, `macos` × Python `3.11`/`3.12`/`3.13`), manifest & `SKILL.md` contract checks (`scripts/validate_manifests.py`), unit tests, and 8-mode CLI smoke tests.
+- **[`.github/workflows/smoke-public-repos.yml`](./.github/workflows/smoke-public-repos.yml)** — Weekly scheduled & manual public repository smoke tests (`pgvector-python`, `httpx`, `ky`).
+- **[`.github/workflows/release.yml`](./.github/workflows/release.yml)** — Tag-triggered (`v*.*.*`) portable skill archive builder (`.tar.gz`, `.zip`, `SHA256SUMS.txt`).
 
 ```bash
+python scripts/validate_manifests.py
 python -m unittest discover -s tests -v
 ```
 

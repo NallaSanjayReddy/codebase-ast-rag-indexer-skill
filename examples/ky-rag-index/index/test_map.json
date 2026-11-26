@@ -1,0 +1,200 @@
+{
+  "source.utils.body.value": [
+    {
+      "test_id": "test.bytes.value",
+      "file": "test/bytes.ts",
+      "line": 71,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.error-data.value",
+      "file": "test/error-data.ts",
+      "line": 125,
+      "link": "name_match"
+    }
+  ],
+  "source.utils.body.value#L149": [
+    {
+      "test_id": "test.bytes.value",
+      "file": "test/bytes.ts",
+      "line": 71,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.error-data.value",
+      "file": "test/error-data.ts",
+      "line": 125,
+      "link": "name_match"
+    }
+  ],
+  "source.errors.HTTPError.HTTPError": [
+    {
+      "test_id": "test.error-data.throwHttpErrors",
+      "file": "test/error-data.ts",
+      "line": 156,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.error-data.throwHttpErrors#L173",
+      "file": "test/error-data.ts",
+      "line": 173,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.hooks.CustomError.throwHttpErrors",
+      "file": "test/hooks.ts",
+      "line": 3527,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.hooks.CustomError.throwHttpErrors#L5492",
+      "file": "test/hooks.ts",
+      "line": 5492,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.http-error.throwHttpErrors",
+      "file": "test/http-error.ts",
+      "line": 780,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.http-error.throwHttpErrors#L796",
+      "file": "test/http-error.ts",
+      "line": 796,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.retry-options.throwHttpErrors",
+      "file": "test/retry-options.ts",
+      "line": 154,
+      "link": "name_match"
+    }
+  ],
+  "source.core.Ky.Ky.constructor": [
+    {
+      "test_id": "test.fetch.Agent.constructor",
+      "file": "test/fetch.ts",
+      "line": 301,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.fetch.Agent.constructor#L324",
+      "file": "test/fetch.ts",
+      "line": 324,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.headers.Headers.constructor",
+      "file": "test/headers.ts",
+      "line": 44,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.hooks.CustomError.constructor",
+      "file": "test/hooks.ts",
+      "line": 2596,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.request-stream-support-runtimes.constructor",
+      "file": "test/request-stream-support-runtimes.ts",
+      "line": 8,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.request-stream-support.constructor",
+      "file": "test/request-stream-support.ts",
+      "line": 8,
+      "link": "name_match"
+    }
+  ],
+  "source.core.constants.RetryMarker.constructor": [
+    {
+      "test_id": "test.fetch.Agent.constructor",
+      "file": "test/fetch.ts",
+      "line": 301,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.fetch.Agent.constructor#L324",
+      "file": "test/fetch.ts",
+      "line": 324,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.headers.Headers.constructor",
+      "file": "test/headers.ts",
+      "line": 44,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.hooks.CustomError.constructor",
+      "file": "test/hooks.ts",
+      "line": 2596,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.request-stream-support-runtimes.constructor",
+      "file": "test/request-stream-support-runtimes.ts",
+      "line": 8,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.request-stream-support.constructor",
+      "file": "test/request-stream-support.ts",
+      "line": 8,
+      "link": "name_match"
+    }
+  ],
+  "source.core.Ky.Ky.create": [
+    {
+      "test_id": "test.http-error.createFakeResponse",
+      "file": "test/http-error.ts",
+      "line": 8,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.request-body-serialization.createBodyServer",
+      "file": "test/request-body-serialization.ts",
+      "line": 12,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test.helpers.create-large-file.createLargeBlob",
+      "file": "test/helpers/create-large-file.ts",
+      "line": 2,
+      "link": "name_match"
+    }
+  ],
+  "source.errors.KyError.KyError": [
+    {
+      "test_id": "test.main.CustomKyError",
+      "file": "test/main.ts",
+      "line": 713,
+      "link": "name_match"
+    }
+  ],
+  "source.types.options.Options": [
+    {
+      "test_id": "test-d.normalized-options.Options",
+      "file": "test-d/normalized-options.ts",
+      "line": 13,
+      "link": "name_match"
+    },
+    {
+      "test_id": "test-d.normalized-options.NormalizedOptions",
+      "file": "test-d/normalized-options.ts",
+      "line": 17,
+      "link": "name_match"
+    }
+  ],
+  "source.types.options.NormalizedOptions": [
+    {
+      "test_id": "test-d.normalized-options.NormalizedOptions",
+      "file": "test-d/normalized-options.ts",
+      "line": 17,
+      "link": "name_match"
+    }
+  ]
+}

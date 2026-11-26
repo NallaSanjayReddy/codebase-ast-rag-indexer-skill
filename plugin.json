@@ -1,0 +1,15 @@
+{
+  "name": "codebase-ast-rag-indexer",
+  "displayName": "Codebase AST, Call/Type Hierarchy & Vectorless/PagedAttention RAG Indexer",
+  "version": "1.0.0",
+  "description": "Clone and index any GitHub or local repository into AST tree chunks, call/type hierarchies, super-implementations, references, test maps, Vectorless RAG trees, and KV-cache/PagedAttention-aligned context blocks.",
+  "logo": "assets/logo.svg",
+  "author": { "name": "Nalla Sanjay Reddy" },
+  "homepage": "https://github.com/sanjay/codebase-ast-rag-indexer-skill",
+  "repository": "https://github.com/sanjay/codebase-ast-rag-indexer-skill",
+  "suggestedPrompts": [
+    "Index this GitHub repository into AST chunks, call/type hierarchies, and a Vectorless RAG tree",
+    "Trace call hierarchy, super-implementations, references, and unit tests for a symbol",
+    "Pack retrieved AST chunks into KV-cache prefix-stable, PagedAttention-aligned token pages"
+  ]
+}

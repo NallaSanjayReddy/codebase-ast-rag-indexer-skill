@@ -1,0 +1,1 @@
+{"name":"codebase-ast-rag-indexer","interface":{"displayName":"Codebase AST & RAG Indexer"},"plugins":[{"name":"codebase-ast-rag-indexer","source":{"source":"url","url":"./"},"policy":{"installation":"AVAILABLE","authentication":"ON_INSTALL"},"category":"Developer Tools"}]}

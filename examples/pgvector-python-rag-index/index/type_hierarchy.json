@@ -1,0 +1,1139 @@
+{
+  "types": {
+    "examples.implicit.example.Base": {
+      "kind": "class",
+      "file": "examples/implicit/example.py",
+      "line": 13,
+      "super_types": [
+        "DeclarativeBase"
+      ],
+      "sub_types": [
+        "examples.implicit.example.User",
+        "examples.implicit.example.Item",
+        "examples.lightfm.example.User",
+        "examples.lightfm.example.Item",
+        "examples.surprise.example.User",
+        "examples.surprise.example.Item",
+        "tests.test_sqlalchemy.Item"
+      ],
+      "implementations": [
+        "examples.implicit.example.User",
+        "examples.implicit.example.Item",
+        "examples.lightfm.example.User",
+        "examples.lightfm.example.Item",
+        "examples.surprise.example.User",
+        "examples.surprise.example.Item",
+        "tests.test_sqlalchemy.Item"
+      ]
+    },
+    "examples.implicit.example.User": {
+      "kind": "class",
+      "file": "examples/implicit/example.py",
+      "line": 17,
+      "super_types": [
+        "examples.implicit.example.Base",
+        "examples.lightfm.example.Base"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "examples.implicit.example.Item": {
+      "kind": "class",
+      "file": "examples/implicit/example.py",
+      "line": 24,
+      "super_types": [
+        "examples.implicit.example.Base",
+        "examples.lightfm.example.Base"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "examples.lightfm.example.Base": {
+      "kind": "class",
+      "file": "examples/lightfm/example.py",
+      "line": 13,
+      "super_types": [
+        "DeclarativeBase"
+      ],
+      "sub_types": [
+        "examples.implicit.example.User",
+        "examples.implicit.example.Item",
+        "examples.lightfm.example.User",
+        "examples.lightfm.example.Item",
+        "examples.surprise.example.User",
+        "examples.surprise.example.Item",
+        "tests.test_sqlalchemy.Item"
+      ],
+      "implementations": [
+        "examples.implicit.example.User",
+        "examples.implicit.example.Item",
+        "examples.lightfm.example.User",
+        "examples.lightfm.example.Item",
+        "examples.surprise.example.User",
+        "examples.surprise.example.Item",
+        "tests.test_sqlalchemy.Item"
+      ]
+    },
+    "examples.lightfm.example.User": {
+      "kind": "class",
+      "file": "examples/lightfm/example.py",
+      "line": 17,
+      "super_types": [
+        "examples.implicit.example.Base",
+        "examples.lightfm.example.Base"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "examples.lightfm.example.Item": {
+      "kind": "class",
+      "file": "examples/lightfm/example.py",
+      "line": 24,
+      "super_types": [
+        "examples.implicit.example.Base",
+        "examples.lightfm.example.Base"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "examples.surprise.example.Base": {
+      "kind": "class",
+      "file": "examples/surprise/example.py",
+      "line": 12,
+      "super_types": [
+        "DeclarativeBase"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "examples.surprise.example.User": {
+      "kind": "class",
+      "file": "examples/surprise/example.py",
+      "line": 16,
+      "super_types": [
+        "examples.implicit.example.Base",
+        "examples.lightfm.example.Base"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "examples.surprise.example.Item": {
+      "kind": "class",
+      "file": "examples/surprise/example.py",
+      "line": 23,
+      "super_types": [
+        "examples.implicit.example.Base",
+        "examples.lightfm.example.Base"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.bit.Bit": {
+      "kind": "class",
+      "file": "pgvector/bit.py",
+      "line": 10,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.halfvec.HalfVector": {
+      "kind": "class",
+      "file": "pgvector/halfvec.py",
+      "line": 12,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.sparsevec.Sentinel": {
+      "kind": "class",
+      "file": "pgvector/sparsevec.py",
+      "line": 11,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.sparsevec.SparseVector": {
+      "kind": "class",
+      "file": "pgvector/sparsevec.py",
+      "line": 18,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.vector.Vector": {
+      "kind": "class",
+      "file": "pgvector/vector.py",
+      "line": 12,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.bit.BitField": {
+      "kind": "class",
+      "file": "pgvector/django/bit.py",
+      "line": 7,
+      "super_types": [
+        "Field"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.bit.BitFormField": {
+      "kind": "class",
+      "file": "pgvector/django/bit.py",
+      "line": 33,
+      "super_types": [
+        "forms.CharField"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.extensions.VectorExtension": {
+      "kind": "class",
+      "file": "pgvector/django/extensions.py",
+      "line": 6,
+      "super_types": [
+        "CreateExtension"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.functions.DistanceBase": {
+      "kind": "class",
+      "file": "pgvector/django/functions.py",
+      "line": 6,
+      "super_types": [
+        "Func"
+      ],
+      "sub_types": [
+        "pgvector.django.functions.L2Distance",
+        "pgvector.django.functions.MaxInnerProduct",
+        "pgvector.django.functions.CosineDistance",
+        "pgvector.django.functions.L1Distance"
+      ],
+      "implementations": [
+        "pgvector.django.functions.L2Distance",
+        "pgvector.django.functions.MaxInnerProduct",
+        "pgvector.django.functions.CosineDistance",
+        "pgvector.django.functions.L1Distance"
+      ]
+    },
+    "pgvector.django.functions.BitDistanceBase": {
+      "kind": "class",
+      "file": "pgvector/django/functions.py",
+      "line": 22,
+      "super_types": [
+        "Func"
+      ],
+      "sub_types": [
+        "pgvector.django.functions.HammingDistance",
+        "pgvector.django.functions.JaccardDistance"
+      ],
+      "implementations": [
+        "pgvector.django.functions.HammingDistance",
+        "pgvector.django.functions.JaccardDistance"
+      ]
+    },
+    "pgvector.django.functions.L2Distance": {
+      "kind": "class",
+      "file": "pgvector/django/functions.py",
+      "line": 31,
+      "super_types": [
+        "pgvector.django.functions.DistanceBase"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.functions.MaxInnerProduct": {
+      "kind": "class",
+      "file": "pgvector/django/functions.py",
+      "line": 36,
+      "super_types": [
+        "pgvector.django.functions.DistanceBase"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.functions.CosineDistance": {
+      "kind": "class",
+      "file": "pgvector/django/functions.py",
+      "line": 41,
+      "super_types": [
+        "pgvector.django.functions.DistanceBase"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.functions.L1Distance": {
+      "kind": "class",
+      "file": "pgvector/django/functions.py",
+      "line": 46,
+      "super_types": [
+        "pgvector.django.functions.DistanceBase"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.functions.HammingDistance": {
+      "kind": "class",
+      "file": "pgvector/django/functions.py",
+      "line": 51,
+      "super_types": [
+        "pgvector.django.functions.BitDistanceBase"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.functions.JaccardDistance": {
+      "kind": "class",
+      "file": "pgvector/django/functions.py",
+      "line": 56,
+      "super_types": [
+        "pgvector.django.functions.BitDistanceBase"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.halfvec.HalfVectorField": {
+      "kind": "class",
+      "file": "pgvector/django/halfvec.py",
+      "line": 8,
+      "super_types": [
+        "Field"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.halfvec.HalfVectorFormField": {
+      "kind": "class",
+      "file": "pgvector/django/halfvec.py",
+      "line": 50,
+      "super_types": [
+        "forms.CharField"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.indexes.IvfflatIndex": {
+      "kind": "class",
+      "file": "pgvector/django/indexes.py",
+      "line": 5,
+      "super_types": [
+        "PostgresIndex"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.indexes.HnswIndex": {
+      "kind": "class",
+      "file": "pgvector/django/indexes.py",
+      "line": 25,
+      "super_types": [
+        "PostgresIndex"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.sparsevec.SparseVectorField": {
+      "kind": "class",
+      "file": "pgvector/django/sparsevec.py",
+      "line": 8,
+      "super_types": [
+        "Field"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.sparsevec.SparseVectorWidget": {
+      "kind": "class",
+      "file": "pgvector/django/sparsevec.py",
+      "line": 48,
+      "super_types": [
+        "forms.TextInput"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.sparsevec.SparseVectorFormField": {
+      "kind": "class",
+      "file": "pgvector/django/sparsevec.py",
+      "line": 55,
+      "super_types": [
+        "forms.CharField"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.vector.VectorField": {
+      "kind": "class",
+      "file": "pgvector/django/vector.py",
+      "line": 8,
+      "super_types": [
+        "Field"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.django.vector.VectorFormField": {
+      "kind": "class",
+      "file": "pgvector/django/vector.py",
+      "line": 50,
+      "super_types": [
+        "forms.CharField"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.peewee.bit.FixedBitField": {
+      "kind": "class",
+      "file": "pgvector/peewee/bit.py",
+      "line": 5,
+      "super_types": [
+        "Field"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.peewee.halfvec.HalfVectorField": {
+      "kind": "class",
+      "file": "pgvector/peewee/halfvec.py",
+      "line": 6,
+      "super_types": [
+        "Field"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.peewee.sparsevec.SparseVectorField": {
+      "kind": "class",
+      "file": "pgvector/peewee/sparsevec.py",
+      "line": 6,
+      "super_types": [
+        "Field"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.peewee.vector.VectorField": {
+      "kind": "class",
+      "file": "pgvector/peewee/vector.py",
+      "line": 6,
+      "super_types": [
+        "Field"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.psycopg.bit.BitDumper": {
+      "kind": "class",
+      "file": "pgvector/psycopg/bit.py",
+      "line": 11,
+      "super_types": [
+        "Dumper"
+      ],
+      "sub_types": [
+        "pgvector.psycopg.bit.BitBinaryDumper"
+      ],
+      "implementations": [
+        "pgvector.psycopg.bit.BitBinaryDumper"
+      ]
+    },
+    "pgvector.psycopg.bit.BitBinaryDumper": {
+      "kind": "class",
+      "file": "pgvector/psycopg/bit.py",
+      "line": 18,
+      "super_types": [
+        "pgvector.psycopg.bit.BitDumper"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.psycopg.halfvec.HalfVectorDumper": {
+      "kind": "class",
+      "file": "pgvector/psycopg/halfvec.py",
+      "line": 11,
+      "super_types": [
+        "Dumper"
+      ],
+      "sub_types": [
+        "pgvector.psycopg.halfvec.HalfVectorBinaryDumper"
+      ],
+      "implementations": [
+        "pgvector.psycopg.halfvec.HalfVectorBinaryDumper"
+      ]
+    },
+    "pgvector.psycopg.halfvec.HalfVectorBinaryDumper": {
+      "kind": "class",
+      "file": "pgvector/psycopg/halfvec.py",
+      "line": 18,
+      "super_types": [
+        "pgvector.psycopg.halfvec.HalfVectorDumper"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.psycopg.halfvec.HalfVectorLoader": {
+      "kind": "class",
+      "file": "pgvector/psycopg/halfvec.py",
+      "line": 25,
+      "super_types": [
+        "Loader"
+      ],
+      "sub_types": [
+        "pgvector.psycopg.halfvec.HalfVectorBinaryLoader"
+      ],
+      "implementations": [
+        "pgvector.psycopg.halfvec.HalfVectorBinaryLoader"
+      ]
+    },
+    "pgvector.psycopg.halfvec.HalfVectorBinaryLoader": {
+      "kind": "class",
+      "file": "pgvector/psycopg/halfvec.py",
+      "line": 34,
+      "super_types": [
+        "pgvector.psycopg.halfvec.HalfVectorLoader"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.psycopg.sparsevec.SparseVectorDumper": {
+      "kind": "class",
+      "file": "pgvector/psycopg/sparsevec.py",
+      "line": 11,
+      "super_types": [
+        "Dumper"
+      ],
+      "sub_types": [
+        "pgvector.psycopg.sparsevec.SparseVectorBinaryDumper"
+      ],
+      "implementations": [
+        "pgvector.psycopg.sparsevec.SparseVectorBinaryDumper"
+      ]
+    },
+    "pgvector.psycopg.sparsevec.SparseVectorBinaryDumper": {
+      "kind": "class",
+      "file": "pgvector/psycopg/sparsevec.py",
+      "line": 18,
+      "super_types": [
+        "pgvector.psycopg.sparsevec.SparseVectorDumper"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.psycopg.sparsevec.SparseVectorLoader": {
+      "kind": "class",
+      "file": "pgvector/psycopg/sparsevec.py",
+      "line": 25,
+      "super_types": [
+        "Loader"
+      ],
+      "sub_types": [
+        "pgvector.psycopg.sparsevec.SparseVectorBinaryLoader"
+      ],
+      "implementations": [
+        "pgvector.psycopg.sparsevec.SparseVectorBinaryLoader"
+      ]
+    },
+    "pgvector.psycopg.sparsevec.SparseVectorBinaryLoader": {
+      "kind": "class",
+      "file": "pgvector/psycopg/sparsevec.py",
+      "line": 34,
+      "super_types": [
+        "pgvector.psycopg.sparsevec.SparseVectorLoader"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.psycopg.vector.VectorDumper": {
+      "kind": "class",
+      "file": "pgvector/psycopg/vector.py",
+      "line": 14,
+      "super_types": [
+        "Dumper"
+      ],
+      "sub_types": [
+        "pgvector.psycopg.vector.VectorBinaryDumper"
+      ],
+      "implementations": [
+        "pgvector.psycopg.vector.VectorBinaryDumper"
+      ]
+    },
+    "pgvector.psycopg.vector.VectorBinaryDumper": {
+      "kind": "class",
+      "file": "pgvector/psycopg/vector.py",
+      "line": 23,
+      "super_types": [
+        "pgvector.psycopg.vector.VectorDumper"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.psycopg.vector.VectorLoader": {
+      "kind": "class",
+      "file": "pgvector/psycopg/vector.py",
+      "line": 32,
+      "super_types": [
+        "Loader"
+      ],
+      "sub_types": [
+        "pgvector.psycopg.vector.VectorBinaryLoader"
+      ],
+      "implementations": [
+        "pgvector.psycopg.vector.VectorBinaryLoader"
+      ]
+    },
+    "pgvector.psycopg.vector.VectorBinaryLoader": {
+      "kind": "class",
+      "file": "pgvector/psycopg/vector.py",
+      "line": 41,
+      "super_types": [
+        "pgvector.psycopg.vector.VectorLoader"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.psycopg2.halfvec.HalfvecAdapter": {
+      "kind": "class",
+      "file": "pgvector/psycopg2/halfvec.py",
+      "line": 6,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.psycopg2.sparsevec.SparsevecAdapter": {
+      "kind": "class",
+      "file": "pgvector/psycopg2/sparsevec.py",
+      "line": 6,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.psycopg2.vector.VectorAdapter": {
+      "kind": "class",
+      "file": "pgvector/psycopg2/vector.py",
+      "line": 8,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.sqlalchemy.bit.BIT": {
+      "kind": "class",
+      "file": "pgvector/sqlalchemy/bit.py",
+      "line": 7,
+      "super_types": [
+        "TypeDecorator[Any]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.sqlalchemy.bit.BIT.Comparator": {
+      "kind": "class",
+      "file": "pgvector/sqlalchemy/bit.py",
+      "line": 17,
+      "super_types": [
+        "TypeDecorator.Comparator[Any]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.sqlalchemy.functions.avg": {
+      "kind": "class",
+      "file": "pgvector/sqlalchemy/functions.py",
+      "line": 7,
+      "super_types": [
+        "ReturnTypeFromArgs[Any]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.sqlalchemy.halfvec.HALFVEC": {
+      "kind": "class",
+      "file": "pgvector/sqlalchemy/halfvec.py",
+      "line": 8,
+      "super_types": [
+        "UserDefinedType[Any]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.sqlalchemy.halfvec.HALFVEC.Comparator": {
+      "kind": "class",
+      "file": "pgvector/sqlalchemy/halfvec.py",
+      "line": 38,
+      "super_types": [
+        "TypeEngine.Comparator[Any]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.sqlalchemy.sparsevec.SPARSEVEC": {
+      "kind": "class",
+      "file": "pgvector/sqlalchemy/sparsevec.py",
+      "line": 8,
+      "super_types": [
+        "UserDefinedType[Any]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.sqlalchemy.sparsevec.SPARSEVEC.Comparator": {
+      "kind": "class",
+      "file": "pgvector/sqlalchemy/sparsevec.py",
+      "line": 38,
+      "super_types": [
+        "TypeEngine.Comparator[Any]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.sqlalchemy.vector.VECTOR": {
+      "kind": "class",
+      "file": "pgvector/sqlalchemy/vector.py",
+      "line": 8,
+      "super_types": [
+        "UserDefinedType[Any]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "pgvector.sqlalchemy.vector.VECTOR.Comparator": {
+      "kind": "class",
+      "file": "pgvector/sqlalchemy/vector.py",
+      "line": 38,
+      "super_types": [
+        "TypeEngine.Comparator[Any]"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_asyncpg.TestAsyncpg": {
+      "kind": "class",
+      "file": "tests/test_asyncpg.py",
+      "line": 9,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_bit.TestBit": {
+      "kind": "class",
+      "file": "tests/test_bit.py",
+      "line": 8,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_django.Item": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 52,
+      "super_types": [
+        "models.Model"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_django.Item.Meta": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 63,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_django.Migration": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 88,
+      "super_types": [
+        "tests.test_django.Migration"
+      ],
+      "sub_types": [
+        "tests.test_django.Migration"
+      ],
+      "implementations": [
+        "tests.test_django.Migration"
+      ]
+    },
+    "tests.test_django.VectorForm": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 138,
+      "super_types": [
+        "ModelForm"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_django.VectorForm.Meta": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 139,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_django.HalfVectorForm": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 144,
+      "super_types": [
+        "ModelForm"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_django.HalfVectorForm.Meta": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 145,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_django.BitForm": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 150,
+      "super_types": [
+        "ModelForm"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_django.BitForm.Meta": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 151,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_django.SparseVectorForm": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 156,
+      "super_types": [
+        "ModelForm"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_django.SparseVectorForm.Meta": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 157,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_django.TestDjango": {
+      "kind": "class",
+      "file": "tests/test_django.py",
+      "line": 162,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_half_vector.TestHalfVector": {
+      "kind": "class",
+      "file": "tests/test_half_vector.py",
+      "line": 7,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_peewee.BaseModel": {
+      "kind": "class",
+      "file": "tests/test_peewee.py",
+      "line": 9,
+      "super_types": [
+        "Model"
+      ],
+      "sub_types": [
+        "tests.test_peewee.Item"
+      ],
+      "implementations": [
+        "tests.test_peewee.Item"
+      ]
+    },
+    "tests.test_peewee.BaseModel.Meta": {
+      "kind": "class",
+      "file": "tests/test_peewee.py",
+      "line": 10,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_peewee.Item": {
+      "kind": "class",
+      "file": "tests/test_peewee.py",
+      "line": 14,
+      "super_types": [
+        "tests.test_peewee.BaseModel"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_peewee.Item.Meta": {
+      "kind": "class",
+      "file": "tests/test_peewee.py",
+      "line": 22,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_peewee.TestPeewee": {
+      "kind": "class",
+      "file": "tests/test_peewee.py",
+      "line": 40,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_pg8000.TestPg8000": {
+      "kind": "class",
+      "file": "tests/test_pg8000.py",
+      "line": 16,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_psycopg.TestPsycopg": {
+      "kind": "class",
+      "file": "tests/test_psycopg.py",
+      "line": 19,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_psycopg2.TestPsycopg2": {
+      "kind": "class",
+      "file": "tests/test_psycopg2.py",
+      "line": 20,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_sparse_vector.TestSparseVector": {
+      "kind": "class",
+      "file": "tests/test_sparse_vector.py",
+      "line": 12,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_sqlalchemy.Base": {
+      "kind": "class",
+      "file": "tests/test_sqlalchemy.py",
+      "line": 72,
+      "super_types": [
+        "DeclarativeBase"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_sqlalchemy.Item": {
+      "kind": "class",
+      "file": "tests/test_sqlalchemy.py",
+      "line": 76,
+      "super_types": [
+        "examples.implicit.example.Base",
+        "examples.lightfm.example.Base"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_sqlalchemy.TestSqlalchemy": {
+      "kind": "class",
+      "file": "tests/test_sqlalchemy.py",
+      "line": 132,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_sqlalchemy.TestSqlalchemyArray": {
+      "kind": "class",
+      "file": "tests/test_sqlalchemy.py",
+      "line": 580,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_sqlalchemy.TestSqlalchemyAsync": {
+      "kind": "class",
+      "file": "tests/test_sqlalchemy.py",
+      "line": 604,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_sqlalchemy.TestSqlalchemyAsyncArray": {
+      "kind": "class",
+      "file": "tests/test_sqlalchemy.py",
+      "line": 688,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_sqlmodel.Item": {
+      "kind": "class",
+      "file": "tests/test_sqlmodel.py",
+      "line": 16,
+      "super_types": [
+        "SQLModel"
+      ],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_sqlmodel.TestSqlmodel": {
+      "kind": "class",
+      "file": "tests/test_sqlmodel.py",
+      "line": 51,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    },
+    "tests.test_vector.TestVector": {
+      "kind": "class",
+      "file": "tests/test_vector.py",
+      "line": 7,
+      "super_types": [],
+      "sub_types": [],
+      "implementations": []
+    }
+  },
+  "super_implementations": {
+    "pgvector.psycopg.bit.BitBinaryDumper.dump": "pgvector.psycopg.bit.BitDumper.dump",
+    "pgvector.psycopg.halfvec.HalfVectorBinaryDumper.dump": "pgvector.psycopg.halfvec.HalfVectorDumper.dump",
+    "pgvector.psycopg.halfvec.HalfVectorBinaryLoader.load": "pgvector.psycopg.halfvec.HalfVectorLoader.load",
+    "pgvector.psycopg.sparsevec.SparseVectorBinaryDumper.dump": "pgvector.psycopg.sparsevec.SparseVectorDumper.dump",
+    "pgvector.psycopg.sparsevec.SparseVectorBinaryLoader.load": "pgvector.psycopg.sparsevec.SparseVectorLoader.load",
+    "pgvector.psycopg.vector.VectorBinaryDumper.dump": "pgvector.psycopg.vector.VectorDumper.dump",
+    "pgvector.psycopg.vector.VectorBinaryLoader.load": "pgvector.psycopg.vector.VectorLoader.load"
+  },
+  "type_definitions": {
+    "pgvector.bit.Bit.from_text": [
+      "pgvector.bit.Bit"
+    ],
+    "pgvector.bit.Bit.from_binary": [
+      "pgvector.bit.Bit"
+    ],
+    "pgvector.halfvec.HalfVector.from_text": [
+      "pgvector.halfvec.HalfVector"
+    ],
+    "pgvector.halfvec.HalfVector.from_binary": [
+      "pgvector.halfvec.HalfVector"
+    ],
+    "pgvector.sparsevec.SparseVector.from_text": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.sparsevec.SparseVector.from_binary": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.sparsevec.SparseVector._from_parts": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.sparsevec.SparseVector._from_db": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.vector.Vector.from_text": [
+      "pgvector.vector.Vector"
+    ],
+    "pgvector.vector.Vector.from_binary": [
+      "pgvector.vector.Vector"
+    ],
+    "pgvector.django.sparsevec.SparseVectorField.from_db_value": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.django.sparsevec.SparseVectorField.to_python": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.peewee.sparsevec.SparseVectorField.python_value": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.psycopg.bit.BitDumper.dump": [
+      "pgvector.bit.Bit"
+    ],
+    "pgvector.psycopg.bit.BitBinaryDumper.dump": [
+      "pgvector.bit.Bit"
+    ],
+    "pgvector.psycopg.bit.bit_text_dumper": [
+      "pgvector.psycopg.bit.BitDumper"
+    ],
+    "pgvector.psycopg.bit.bit_binary_dumper": [
+      "pgvector.psycopg.bit.BitBinaryDumper"
+    ],
+    "pgvector.psycopg.halfvec.HalfVectorDumper.dump": [
+      "pgvector.halfvec.HalfVector"
+    ],
+    "pgvector.psycopg.halfvec.HalfVectorBinaryDumper.dump": [
+      "pgvector.halfvec.HalfVector"
+    ],
+    "pgvector.psycopg.halfvec.HalfVectorLoader.load": [
+      "pgvector.halfvec.HalfVector"
+    ],
+    "pgvector.psycopg.halfvec.HalfVectorBinaryLoader.load": [
+      "pgvector.halfvec.HalfVector"
+    ],
+    "pgvector.psycopg.halfvec.halfvec_text_dumper": [
+      "pgvector.psycopg.halfvec.HalfVectorDumper"
+    ],
+    "pgvector.psycopg.halfvec.halfvec_binary_dumper": [
+      "pgvector.psycopg.halfvec.HalfVectorBinaryDumper"
+    ],
+    "pgvector.psycopg.sparsevec.SparseVectorDumper.dump": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.psycopg.sparsevec.SparseVectorBinaryDumper.dump": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.psycopg.sparsevec.SparseVectorLoader.load": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.psycopg.sparsevec.SparseVectorBinaryLoader.load": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.psycopg.sparsevec.sparsevec_text_dumper": [
+      "pgvector.psycopg.sparsevec.SparseVectorDumper"
+    ],
+    "pgvector.psycopg.sparsevec.sparsevec_binary_dumper": [
+      "pgvector.psycopg.sparsevec.SparseVectorBinaryDumper"
+    ],
+    "pgvector.psycopg.vector.VectorDumper.dump": [
+      "pgvector.vector.Vector"
+    ],
+    "pgvector.psycopg.vector.VectorBinaryDumper.dump": [
+      "pgvector.vector.Vector"
+    ],
+    "pgvector.psycopg.vector.VectorLoader.load": [
+      "pgvector.vector.Vector"
+    ],
+    "pgvector.psycopg.vector.VectorBinaryLoader.load": [
+      "pgvector.vector.Vector"
+    ],
+    "pgvector.psycopg.vector.vector_text_dumper": [
+      "pgvector.psycopg.vector.VectorDumper"
+    ],
+    "pgvector.psycopg.vector.vector_binary_dumper": [
+      "pgvector.psycopg.vector.VectorBinaryDumper"
+    ],
+    "pgvector.psycopg2.halfvec.HalfvecAdapter.__init__": [
+      "pgvector.halfvec.HalfVector"
+    ],
+    "pgvector.psycopg2.halfvec.cast_halfvec": [
+      "pgvector.halfvec.HalfVector"
+    ],
+    "pgvector.psycopg2.sparsevec.SparsevecAdapter.__init__": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.psycopg2.sparsevec.cast_sparsevec": [
+      "pgvector.sparsevec.SparseVector"
+    ],
+    "pgvector.psycopg2.vector.VectorAdapter.__init__": [
+      "pgvector.vector.Vector"
+    ],
+    "pgvector.psycopg2.vector.cast_vector": [
+      "pgvector.vector.Vector"
+    ]
+  }
+}

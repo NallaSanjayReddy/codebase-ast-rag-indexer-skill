@@ -1,0 +1,13 @@
+{
+  "name": "codebase-ast-rag-indexer-marketplace",
+  "description": "AST, Call/Type Hierarchy, Vectorless RAG, and KV-Cache/PagedAttention Code Indexer",
+  "owner": { "name": "Nalla Sanjay Reddy" },
+  "plugins": [
+    {
+      "name": "codebase-ast-rag-indexer",
+      "description": "AST-chunked codebase indexer with call/type hierarchy, super-implementations, references, test mapping, Vectorless RAG, and KV-cache PagedAttention packing.",
+      "version": "1.0.0",
+      "source": "./"
+    }
+  ]
+}

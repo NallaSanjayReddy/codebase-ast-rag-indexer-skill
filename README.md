@@ -65,5 +65,8 @@ python skills/codebase-ast-rag-indexer/scripts/query_rag.py \
 python -m unittest discover -s tests -v
 ```
 
+## Keywords & Topics
+`rag` `vectorless-rag` `graph-rag` `hybrid-search` `ast` `code-indexing` `knowledge-graph` `call-hierarchy` `type-hierarchy` `kv-cache` `paged-attention` `pgvector` `qdrant` `sqlite-fts5` `bm25` `rrf` `agent-skills` `claude-code` `antigravity` `codex`
+
 ## License
 MIT License — see [LICENSE](./LICENSE).

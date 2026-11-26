@@ -1,15 +1,41 @@
 {
   "name": "codebase-ast-rag-indexer",
-  "displayName": "Codebase AST, Call/Type Hierarchy & Vectorless/PagedAttention RAG Indexer",
-  "version": "1.0.0",
-  "description": "Clone and index any GitHub or local repository into AST tree chunks, call/type hierarchies, super-implementations, references, test maps, Vectorless RAG trees, and KV-cache/PagedAttention-aligned context blocks.",
+  "displayName": "Codebase AST, Knowledge Graph & Dual Vector/Vectorless RAG Indexer",
+  "version": "3.0.0",
+  "description": "Clone and index any GitHub or local repository into AST chunks, call/type hierarchies, super-implementations, knowledge graphs, Vectorless RAG trees, dual NLP/Code vector embeddings (SQLite FTS5, Qdrant, pgvector), Hybrid RRF search, and KV-Cache/PagedAttention context blocks.",
   "logo": "assets/logo.svg",
-  "author": { "name": "Nalla Sanjay Reddy" },
-  "homepage": "https://github.com/sanjay/codebase-ast-rag-indexer-skill",
-  "repository": "https://github.com/sanjay/codebase-ast-rag-indexer-skill",
+  "author": {
+    "name": "NallaSanjayReddy",
+    "url": "https://github.com/NallaSanjayReddy"
+  },
+  "homepage": "https://github.com/NallaSanjayReddy/codebase-ast-rag-indexer-skill",
+  "repository": "https://github.com/NallaSanjayReddy/codebase-ast-rag-indexer-skill",
+  "license": "MIT",
+  "keywords": [
+    "rag",
+    "vectorless-rag",
+    "graph-rag",
+    "hybrid-search",
+    "ast",
+    "code-indexing",
+    "knowledge-graph",
+    "call-hierarchy",
+    "type-hierarchy",
+    "kv-cache",
+    "paged-attention",
+    "pgvector",
+    "qdrant",
+    "sqlite-fts5",
+    "bm25",
+    "rrf",
+    "agent-skills",
+    "claude-code",
+    "antigravity",
+    "codex"
+  ],
   "suggestedPrompts": [
-    "Index this GitHub repository into AST chunks, call/type hierarchies, and a Vectorless RAG tree",
-    "Trace call hierarchy, super-implementations, references, and unit tests for a symbol",
+    "Index this GitHub repository for both Vectorless Graph RAG and Dual Vector Hybrid RRF search",
+    "Trace call hierarchy, super-implementations, references, shortest path, and unit tests for a symbol",
     "Pack retrieved AST chunks into KV-cache prefix-stable, PagedAttention-aligned token pages"
   ]
 }

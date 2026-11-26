@@ -1,4 +1,60 @@
 {
+  "pgvector.asyncpg.register.register_vector": [
+    {
+      "test_id": "tests.test_asyncpg.TestAsyncpg.setup_connection",
+      "file": "tests/test_asyncpg.py",
+      "line": 10,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_asyncpg.TestAsyncpg.test_pool",
+      "file": "tests/test_asyncpg.py",
+      "line": 128,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_django.TestDjango.test_vector_array",
+      "file": "tests/test_django.py",
+      "line": 471,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_psycopg.TestPsycopg.test_pool",
+      "file": "tests/test_psycopg.py",
+      "line": 191,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_psycopg2.TestPsycopg2.test_cursor_factory",
+      "file": "tests/test_psycopg2.py",
+      "line": 97,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_psycopg2.TestPsycopg2.test_cursor_factory_connection",
+      "file": "tests/test_psycopg2.py",
+      "line": 104,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_psycopg2.TestPsycopg2.test_pool",
+      "file": "tests/test_psycopg2.py",
+      "line": 110,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sqlalchemy.psycopg2_connect",
+      "file": "tests/test_sqlalchemy.py",
+      "line": 23,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sqlalchemy.psycopg_connect",
+      "file": "tests/test_sqlalchemy.py",
+      "line": 35,
+      "link": "direct_call"
+    }
+  ],
   "pgvector.pg8000.register.register_vector": [
     {
       "test_id": "tests.test_asyncpg.TestAsyncpg.setup_connection",
@@ -56,118 +112,6 @@
     }
   ],
   "pgvector.psycopg.register.register_vector": [
-    {
-      "test_id": "tests.test_asyncpg.TestAsyncpg.setup_connection",
-      "file": "tests/test_asyncpg.py",
-      "line": 10,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_asyncpg.TestAsyncpg.test_pool",
-      "file": "tests/test_asyncpg.py",
-      "line": 128,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_array",
-      "file": "tests/test_django.py",
-      "line": 471,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg.TestPsycopg.test_pool",
-      "file": "tests/test_psycopg.py",
-      "line": 191,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg2.TestPsycopg2.test_cursor_factory",
-      "file": "tests/test_psycopg2.py",
-      "line": 97,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg2.TestPsycopg2.test_cursor_factory_connection",
-      "file": "tests/test_psycopg2.py",
-      "line": 104,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg2.TestPsycopg2.test_pool",
-      "file": "tests/test_psycopg2.py",
-      "line": 110,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.psycopg2_connect",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 23,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.psycopg_connect",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 35,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.asyncpg.register.register_vector": [
-    {
-      "test_id": "tests.test_asyncpg.TestAsyncpg.setup_connection",
-      "file": "tests/test_asyncpg.py",
-      "line": 10,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_asyncpg.TestAsyncpg.test_pool",
-      "file": "tests/test_asyncpg.py",
-      "line": 128,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_array",
-      "file": "tests/test_django.py",
-      "line": 471,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg.TestPsycopg.test_pool",
-      "file": "tests/test_psycopg.py",
-      "line": 191,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg2.TestPsycopg2.test_cursor_factory",
-      "file": "tests/test_psycopg2.py",
-      "line": 97,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg2.TestPsycopg2.test_cursor_factory_connection",
-      "file": "tests/test_psycopg2.py",
-      "line": 104,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg2.TestPsycopg2.test_pool",
-      "file": "tests/test_psycopg2.py",
-      "line": 110,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.psycopg2_connect",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 23,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.psycopg_connect",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 35,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.psycopg2.register.register_vector": [
     {
       "test_id": "tests.test_asyncpg.TestAsyncpg.setup_connection",
       "file": "tests/test_asyncpg.py",
@@ -2347,370 +2291,6 @@
       "link": "name_match"
     }
   ],
-  "pgvector.bit.Bit": [
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_list",
-      "file": "tests/test_bit.py",
-      "line": 9,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_list_empty",
-      "file": "tests/test_bit.py",
-      "line": 12,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_list_none",
-      "file": "tests/test_bit.py",
-      "line": 15,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_list_int",
-      "file": "tests/test_bit.py",
-      "line": 20,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_list_list",
-      "file": "tests/test_bit.py",
-      "line": 25,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_str",
-      "file": "tests/test_bit.py",
-      "line": 30,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_str_empty",
-      "file": "tests/test_bit.py",
-      "line": 33,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_str_two",
-      "file": "tests/test_bit.py",
-      "line": 36,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_bytes",
-      "file": "tests/test_bit.py",
-      "line": 41,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_bytes_empty",
-      "file": "tests/test_bit.py",
-      "line": 45,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_ndarray",
-      "file": "tests/test_bit.py",
-      "line": 48,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_ndarray_unpackbits",
-      "file": "tests/test_bit.py",
-      "line": 56,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_ndarray_uint8",
-      "file": "tests/test_bit.py",
-      "line": 63,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_ndarray_uint16",
-      "file": "tests/test_bit.py",
-      "line": 72,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_bool",
-      "file": "tests/test_bit.py",
-      "line": 81,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_random",
-      "file": "tests/test_bit.py",
-      "line": 86,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_repr",
-      "file": "tests/test_bit.py",
-      "line": 90,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_eq",
-      "file": "tests/test_bit.py",
-      "line": 94,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_to_list",
-      "file": "tests/test_bit.py",
-      "line": 99,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_to_numpy",
-      "file": "tests/test_bit.py",
-      "line": 102,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_to_text",
-      "file": "tests/test_bit.py",
-      "line": 110,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_to_binary",
-      "file": "tests/test_bit.py",
-      "line": 113,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_text",
-      "file": "tests/test_bit.py",
-      "line": 116,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_text_zero_length",
-      "file": "tests/test_bit.py",
-      "line": 119,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_binary",
-      "file": "tests/test_bit.py",
-      "line": 126,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg.TestPsycopg.test_bit",
-      "file": "tests/test_psycopg.py",
-      "line": 98,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg.TestPsycopg.test_bit_binary_format",
-      "file": "tests/test_psycopg.py",
-      "line": 105,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg.TestPsycopg.test_bit_text_format",
-      "file": "tests/test_psycopg.py",
-      "line": 110,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg.TestPsycopg.test_binary_copy_from",
-      "file": "tests/test_psycopg.py",
-      "line": 139,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg.TestPsycopg.test_binary_copy_from_set_types",
-      "file": "tests/test_psycopg.py",
-      "line": 145,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.vector.Vector.to_list": [
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_list",
-      "file": "tests/test_bit.py",
-      "line": 9,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_list_empty",
-      "file": "tests/test_bit.py",
-      "line": 12,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_str",
-      "file": "tests/test_bit.py",
-      "line": 30,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_str_empty",
-      "file": "tests/test_bit.py",
-      "line": 33,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_ndarray",
-      "file": "tests/test_bit.py",
-      "line": 48,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_to_list",
-      "file": "tests/test_bit.py",
-      "line": 99,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_list",
-      "file": "tests/test_half_vector.py",
-      "line": 8,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_list_empty",
-      "file": "tests/test_half_vector.py",
-      "line": 13,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray",
-      "file": "tests/test_half_vector.py",
-      "line": 26,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_non_contiguous",
-      "file": "tests/test_half_vector.py",
-      "line": 35,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_big_endian",
-      "file": "tests/test_half_vector.py",
-      "line": 43,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_to_list",
-      "file": "tests/test_half_vector.py",
-      "line": 77,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_list",
-      "file": "tests/test_sparse_vector.py",
-      "line": 13,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_list_empty",
-      "file": "tests/test_sparse_vector.py",
-      "line": 20,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_ndarray",
-      "file": "tests/test_sparse_vector.py",
-      "line": 32,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_dict",
-      "file": "tests/test_sparse_vector.py",
-      "line": 40,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_dict_empty",
-      "file": "tests/test_sparse_vector.py",
-      "line": 45,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_coo_array",
-      "file": "tests/test_sparse_vector.py",
-      "line": 68,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_coo_array_duplicates",
-      "file": "tests/test_sparse_vector.py",
-      "line": 78,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_coo_matrix",
-      "file": "tests/test_sparse_vector.py",
-      "line": 96,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_dok_array",
-      "file": "tests/test_sparse_vector.py",
-      "line": 105,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_csr_array",
-      "file": "tests/test_sparse_vector.py",
-      "line": 114,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_csr_matrix",
-      "file": "tests/test_sparse_vector.py",
-      "line": 123,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_to_list",
-      "file": "tests/test_sparse_vector.py",
-      "line": 158,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_list",
-      "file": "tests/test_vector.py",
-      "line": 8,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_list_empty",
-      "file": "tests/test_vector.py",
-      "line": 13,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_ndarray",
-      "file": "tests/test_vector.py",
-      "line": 26,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_ndarray_non_contiguous",
-      "file": "tests/test_vector.py",
-      "line": 35,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_ndarray_big_endian",
-      "file": "tests/test_vector.py",
-      "line": 43,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_to_list",
-      "file": "tests/test_vector.py",
-      "line": 77,
-      "link": "direct_call"
-    }
-  ],
   "pgvector.halfvec.HalfVector.to_list": [
     {
       "test_id": "tests.test_bit.TestBit.test_init_list",
@@ -2915,6 +2495,370 @@
       "file": "tests/test_vector.py",
       "line": 77,
       "link": "name_match"
+    }
+  ],
+  "pgvector.bit.Bit": [
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_list",
+      "file": "tests/test_bit.py",
+      "line": 9,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_list_empty",
+      "file": "tests/test_bit.py",
+      "line": 12,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_list_none",
+      "file": "tests/test_bit.py",
+      "line": 15,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_list_int",
+      "file": "tests/test_bit.py",
+      "line": 20,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_list_list",
+      "file": "tests/test_bit.py",
+      "line": 25,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_str",
+      "file": "tests/test_bit.py",
+      "line": 30,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_str_empty",
+      "file": "tests/test_bit.py",
+      "line": 33,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_str_two",
+      "file": "tests/test_bit.py",
+      "line": 36,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_bytes",
+      "file": "tests/test_bit.py",
+      "line": 41,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_bytes_empty",
+      "file": "tests/test_bit.py",
+      "line": 45,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_ndarray",
+      "file": "tests/test_bit.py",
+      "line": 48,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_ndarray_unpackbits",
+      "file": "tests/test_bit.py",
+      "line": 56,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_ndarray_uint8",
+      "file": "tests/test_bit.py",
+      "line": 63,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_ndarray_uint16",
+      "file": "tests/test_bit.py",
+      "line": 72,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_bool",
+      "file": "tests/test_bit.py",
+      "line": 81,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_random",
+      "file": "tests/test_bit.py",
+      "line": 86,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_repr",
+      "file": "tests/test_bit.py",
+      "line": 90,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_eq",
+      "file": "tests/test_bit.py",
+      "line": 94,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_to_list",
+      "file": "tests/test_bit.py",
+      "line": 99,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_to_numpy",
+      "file": "tests/test_bit.py",
+      "line": 102,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_to_text",
+      "file": "tests/test_bit.py",
+      "line": 110,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_to_binary",
+      "file": "tests/test_bit.py",
+      "line": 113,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_from_text",
+      "file": "tests/test_bit.py",
+      "line": 116,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_from_text_zero_length",
+      "file": "tests/test_bit.py",
+      "line": 119,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_from_binary",
+      "file": "tests/test_bit.py",
+      "line": 126,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_psycopg.TestPsycopg.test_bit",
+      "file": "tests/test_psycopg.py",
+      "line": 98,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_psycopg.TestPsycopg.test_bit_binary_format",
+      "file": "tests/test_psycopg.py",
+      "line": 105,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_psycopg.TestPsycopg.test_bit_text_format",
+      "file": "tests/test_psycopg.py",
+      "line": 110,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_psycopg.TestPsycopg.test_binary_copy_from",
+      "file": "tests/test_psycopg.py",
+      "line": 139,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_psycopg.TestPsycopg.test_binary_copy_from_set_types",
+      "file": "tests/test_psycopg.py",
+      "line": 145,
+      "link": "direct_call"
+    }
+  ],
+  "pgvector.sparsevec.SparseVector.to_list": [
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_list",
+      "file": "tests/test_bit.py",
+      "line": 9,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_list_empty",
+      "file": "tests/test_bit.py",
+      "line": 12,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_str",
+      "file": "tests/test_bit.py",
+      "line": 30,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_str_empty",
+      "file": "tests/test_bit.py",
+      "line": 33,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_ndarray",
+      "file": "tests/test_bit.py",
+      "line": 48,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_to_list",
+      "file": "tests/test_bit.py",
+      "line": 99,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_init_list",
+      "file": "tests/test_half_vector.py",
+      "line": 8,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_init_list_empty",
+      "file": "tests/test_half_vector.py",
+      "line": 13,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray",
+      "file": "tests/test_half_vector.py",
+      "line": 26,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_non_contiguous",
+      "file": "tests/test_half_vector.py",
+      "line": 35,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_big_endian",
+      "file": "tests/test_half_vector.py",
+      "line": 43,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_to_list",
+      "file": "tests/test_half_vector.py",
+      "line": 77,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_list",
+      "file": "tests/test_sparse_vector.py",
+      "line": 13,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_list_empty",
+      "file": "tests/test_sparse_vector.py",
+      "line": 20,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_ndarray",
+      "file": "tests/test_sparse_vector.py",
+      "line": 32,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_dict",
+      "file": "tests/test_sparse_vector.py",
+      "line": 40,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_dict_empty",
+      "file": "tests/test_sparse_vector.py",
+      "line": 45,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_coo_array",
+      "file": "tests/test_sparse_vector.py",
+      "line": 68,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_coo_array_duplicates",
+      "file": "tests/test_sparse_vector.py",
+      "line": 78,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_coo_matrix",
+      "file": "tests/test_sparse_vector.py",
+      "line": 96,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_dok_array",
+      "file": "tests/test_sparse_vector.py",
+      "line": 105,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_csr_array",
+      "file": "tests/test_sparse_vector.py",
+      "line": 114,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_csr_matrix",
+      "file": "tests/test_sparse_vector.py",
+      "line": 123,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_to_list",
+      "file": "tests/test_sparse_vector.py",
+      "line": 158,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_init_list",
+      "file": "tests/test_vector.py",
+      "line": 8,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_init_list_empty",
+      "file": "tests/test_vector.py",
+      "line": 13,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_init_ndarray",
+      "file": "tests/test_vector.py",
+      "line": 26,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_init_ndarray_non_contiguous",
+      "file": "tests/test_vector.py",
+      "line": 35,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_init_ndarray_big_endian",
+      "file": "tests/test_vector.py",
+      "line": 43,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_to_list",
+      "file": "tests/test_vector.py",
+      "line": 77,
+      "link": "direct_call"
     }
   ],
   "pgvector.bit.Bit.to_list": [
@@ -3123,288 +3067,6 @@
       "link": "name_match"
     }
   ],
-  "pgvector.sparsevec.SparseVector.to_list": [
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_list",
-      "file": "tests/test_bit.py",
-      "line": 9,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_list_empty",
-      "file": "tests/test_bit.py",
-      "line": 12,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_str",
-      "file": "tests/test_bit.py",
-      "line": 30,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_str_empty",
-      "file": "tests/test_bit.py",
-      "line": 33,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_ndarray",
-      "file": "tests/test_bit.py",
-      "line": 48,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_to_list",
-      "file": "tests/test_bit.py",
-      "line": 99,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_list",
-      "file": "tests/test_half_vector.py",
-      "line": 8,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_list_empty",
-      "file": "tests/test_half_vector.py",
-      "line": 13,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray",
-      "file": "tests/test_half_vector.py",
-      "line": 26,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_non_contiguous",
-      "file": "tests/test_half_vector.py",
-      "line": 35,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_big_endian",
-      "file": "tests/test_half_vector.py",
-      "line": 43,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_to_list",
-      "file": "tests/test_half_vector.py",
-      "line": 77,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_list",
-      "file": "tests/test_sparse_vector.py",
-      "line": 13,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_list_empty",
-      "file": "tests/test_sparse_vector.py",
-      "line": 20,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_ndarray",
-      "file": "tests/test_sparse_vector.py",
-      "line": 32,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_dict",
-      "file": "tests/test_sparse_vector.py",
-      "line": 40,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_dict_empty",
-      "file": "tests/test_sparse_vector.py",
-      "line": 45,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_coo_array",
-      "file": "tests/test_sparse_vector.py",
-      "line": 68,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_coo_array_duplicates",
-      "file": "tests/test_sparse_vector.py",
-      "line": 78,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_coo_matrix",
-      "file": "tests/test_sparse_vector.py",
-      "line": 96,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_dok_array",
-      "file": "tests/test_sparse_vector.py",
-      "line": 105,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_csr_array",
-      "file": "tests/test_sparse_vector.py",
-      "line": 114,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_csr_matrix",
-      "file": "tests/test_sparse_vector.py",
-      "line": 123,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_to_list",
-      "file": "tests/test_sparse_vector.py",
-      "line": 158,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_list",
-      "file": "tests/test_vector.py",
-      "line": 8,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_list_empty",
-      "file": "tests/test_vector.py",
-      "line": 13,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_ndarray",
-      "file": "tests/test_vector.py",
-      "line": 26,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_ndarray_non_contiguous",
-      "file": "tests/test_vector.py",
-      "line": 35,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_ndarray_big_endian",
-      "file": "tests/test_vector.py",
-      "line": 43,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_to_list",
-      "file": "tests/test_vector.py",
-      "line": 77,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.sparsevec.SparseVector.to_text": [
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_bytes",
-      "file": "tests/test_bit.py",
-      "line": 41,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_bytes_empty",
-      "file": "tests/test_bit.py",
-      "line": 45,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_ndarray_unpackbits",
-      "file": "tests/test_bit.py",
-      "line": 56,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_random",
-      "file": "tests/test_bit.py",
-      "line": 86,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_to_text",
-      "file": "tests/test_bit.py",
-      "line": 110,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_to_text",
-      "file": "tests/test_half_vector.py",
-      "line": 88,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_to_text",
-      "file": "tests/test_sparse_vector.py",
-      "line": 169,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_to_text",
-      "file": "tests/test_vector.py",
-      "line": 88,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.vector.Vector.to_text": [
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_bytes",
-      "file": "tests/test_bit.py",
-      "line": 41,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_bytes_empty",
-      "file": "tests/test_bit.py",
-      "line": 45,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_ndarray_unpackbits",
-      "file": "tests/test_bit.py",
-      "line": 56,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_random",
-      "file": "tests/test_bit.py",
-      "line": 86,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_to_text",
-      "file": "tests/test_bit.py",
-      "line": 110,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_to_text",
-      "file": "tests/test_half_vector.py",
-      "line": 88,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_to_text",
-      "file": "tests/test_sparse_vector.py",
-      "line": 169,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_to_text",
-      "file": "tests/test_vector.py",
-      "line": 88,
-      "link": "direct_call"
-    }
-  ],
   "pgvector.halfvec.HalfVector.to_text": [
     {
       "test_id": "tests.test_bit.TestBit.test_init_bytes",
@@ -3553,7 +3215,57 @@
       "link": "name_match"
     }
   ],
-  "pgvector.halfvec.HalfVector.to_numpy": [
+  "pgvector.sparsevec.SparseVector.to_text": [
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_bytes",
+      "file": "tests/test_bit.py",
+      "line": 41,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_bytes_empty",
+      "file": "tests/test_bit.py",
+      "line": 45,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_ndarray_unpackbits",
+      "file": "tests/test_bit.py",
+      "line": 56,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_init_random",
+      "file": "tests/test_bit.py",
+      "line": 86,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_to_text",
+      "file": "tests/test_bit.py",
+      "line": 110,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_to_text",
+      "file": "tests/test_half_vector.py",
+      "line": 88,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_to_text",
+      "file": "tests/test_sparse_vector.py",
+      "line": 169,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_to_text",
+      "file": "tests/test_vector.py",
+      "line": 88,
+      "link": "direct_call"
+    }
+  ],
+  "pgvector.bit.Bit.to_numpy": [
     {
       "test_id": "tests.test_bit.TestBit.test_init_ndarray",
       "file": "tests/test_bit.py",
@@ -3677,7 +3389,7 @@
       "link": "direct_call"
     }
   ],
-  "pgvector.bit.Bit.to_numpy": [
+  "pgvector.halfvec.HalfVector.to_numpy": [
     {
       "test_id": "tests.test_bit.TestBit.test_init_ndarray",
       "file": "tests/test_bit.py",
@@ -3749,156 +3461,6 @@
       "file": "tests/test_vector.py",
       "line": 80,
       "link": "name_match"
-    }
-  ],
-  "pgvector.vector.Vector.to_numpy": [
-    {
-      "test_id": "tests.test_bit.TestBit.test_init_ndarray",
-      "file": "tests/test_bit.py",
-      "line": 48,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_to_numpy",
-      "file": "tests/test_bit.py",
-      "line": 102,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray",
-      "file": "tests/test_half_vector.py",
-      "line": 26,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_to_numpy",
-      "file": "tests/test_half_vector.py",
-      "line": 80,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_init_list",
-      "file": "tests/test_sparse_vector.py",
-      "line": 13,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_to_numpy",
-      "file": "tests/test_sparse_vector.py",
-      "line": 161,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_ndarray",
-      "file": "tests/test_vector.py",
-      "line": 26,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_to_numpy",
-      "file": "tests/test_vector.py",
-      "line": 80,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.sparsevec.SparseVector.to_binary": [
-    {
-      "test_id": "tests.test_bit.TestBit.test_to_binary",
-      "file": "tests/test_bit.py",
-      "line": 113,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_non_contiguous",
-      "file": "tests/test_half_vector.py",
-      "line": 35,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_big_endian",
-      "file": "tests/test_half_vector.py",
-      "line": 43,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_to_binary",
-      "file": "tests/test_half_vector.py",
-      "line": 91,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_to_binary",
-      "file": "tests/test_sparse_vector.py",
-      "line": 172,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_ndarray_non_contiguous",
-      "file": "tests/test_vector.py",
-      "line": 35,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_ndarray_big_endian",
-      "file": "tests/test_vector.py",
-      "line": 43,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_to_binary",
-      "file": "tests/test_vector.py",
-      "line": 91,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.vector.Vector.to_binary": [
-    {
-      "test_id": "tests.test_bit.TestBit.test_to_binary",
-      "file": "tests/test_bit.py",
-      "line": 113,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_non_contiguous",
-      "file": "tests/test_half_vector.py",
-      "line": 35,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_big_endian",
-      "file": "tests/test_half_vector.py",
-      "line": 43,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_to_binary",
-      "file": "tests/test_half_vector.py",
-      "line": 91,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_to_binary",
-      "file": "tests/test_sparse_vector.py",
-      "line": 172,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_ndarray_non_contiguous",
-      "file": "tests/test_vector.py",
-      "line": 35,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_init_ndarray_big_endian",
-      "file": "tests/test_vector.py",
-      "line": 43,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_to_binary",
-      "file": "tests/test_vector.py",
-      "line": 91,
-      "link": "direct_call"
     }
   ],
   "pgvector.bit.Bit.to_binary": [
@@ -4047,6 +3609,178 @@
       "file": "tests/test_vector.py",
       "line": 91,
       "link": "name_match"
+    }
+  ],
+  "pgvector.sparsevec.SparseVector.to_binary": [
+    {
+      "test_id": "tests.test_bit.TestBit.test_to_binary",
+      "file": "tests/test_bit.py",
+      "line": 113,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_non_contiguous",
+      "file": "tests/test_half_vector.py",
+      "line": 35,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_init_ndarray_big_endian",
+      "file": "tests/test_half_vector.py",
+      "line": 43,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_to_binary",
+      "file": "tests/test_half_vector.py",
+      "line": 91,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_to_binary",
+      "file": "tests/test_sparse_vector.py",
+      "line": 172,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_init_ndarray_non_contiguous",
+      "file": "tests/test_vector.py",
+      "line": 35,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_init_ndarray_big_endian",
+      "file": "tests/test_vector.py",
+      "line": 43,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_to_binary",
+      "file": "tests/test_vector.py",
+      "line": 91,
+      "link": "direct_call"
+    }
+  ],
+  "pgvector.sparsevec.SparseVector.from_text": [
+    {
+      "test_id": "tests.test_bit.TestBit.test_from_text",
+      "file": "tests/test_bit.py",
+      "line": 116,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_from_text_zero_length",
+      "file": "tests/test_bit.py",
+      "line": 119,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_from_text_invalid_character",
+      "file": "tests/test_bit.py",
+      "line": 122,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text",
+      "file": "tests/test_half_vector.py",
+      "line": 94,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_zero_length",
+      "file": "tests/test_half_vector.py",
+      "line": 97,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_zero_dimensions",
+      "file": "tests/test_half_vector.py",
+      "line": 101,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_open_bracket",
+      "file": "tests/test_half_vector.py",
+      "line": 104,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_close_bracket",
+      "file": "tests/test_half_vector.py",
+      "line": 108,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_non_number",
+      "file": "tests/test_half_vector.py",
+      "line": 112,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text",
+      "file": "tests/test_sparse_vector.py",
+      "line": 175,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_zero_length",
+      "file": "tests/test_sparse_vector.py",
+      "line": 178,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_zero_dimensions",
+      "file": "tests/test_sparse_vector.py",
+      "line": 182,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_non_number_index",
+      "file": "tests/test_sparse_vector.py",
+      "line": 185,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_non_number_value",
+      "file": "tests/test_sparse_vector.py",
+      "line": 189,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_from_text",
+      "file": "tests/test_vector.py",
+      "line": 94,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_from_text_zero_length",
+      "file": "tests/test_vector.py",
+      "line": 97,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_from_text_zero_dimensions",
+      "file": "tests/test_vector.py",
+      "line": 101,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_from_text_open_bracket",
+      "file": "tests/test_vector.py",
+      "line": 104,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_from_text_close_bracket",
+      "file": "tests/test_vector.py",
+      "line": 108,
+      "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_from_text_non_number",
+      "file": "tests/test_vector.py",
+      "line": 112,
+      "link": "direct_call"
     }
   ],
   "pgvector.halfvec.HalfVector.from_text": [
@@ -4533,250 +4267,6 @@
       "link": "name_match"
     }
   ],
-  "pgvector.vector.Vector.from_text": [
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_text",
-      "file": "tests/test_bit.py",
-      "line": 116,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_text_zero_length",
-      "file": "tests/test_bit.py",
-      "line": 119,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_text_invalid_character",
-      "file": "tests/test_bit.py",
-      "line": 122,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text",
-      "file": "tests/test_half_vector.py",
-      "line": 94,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_zero_length",
-      "file": "tests/test_half_vector.py",
-      "line": 97,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_zero_dimensions",
-      "file": "tests/test_half_vector.py",
-      "line": 101,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_open_bracket",
-      "file": "tests/test_half_vector.py",
-      "line": 104,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_close_bracket",
-      "file": "tests/test_half_vector.py",
-      "line": 108,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_non_number",
-      "file": "tests/test_half_vector.py",
-      "line": 112,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text",
-      "file": "tests/test_sparse_vector.py",
-      "line": 175,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_zero_length",
-      "file": "tests/test_sparse_vector.py",
-      "line": 178,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_zero_dimensions",
-      "file": "tests/test_sparse_vector.py",
-      "line": 182,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_non_number_index",
-      "file": "tests/test_sparse_vector.py",
-      "line": 185,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_non_number_value",
-      "file": "tests/test_sparse_vector.py",
-      "line": 189,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text",
-      "file": "tests/test_vector.py",
-      "line": 94,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text_zero_length",
-      "file": "tests/test_vector.py",
-      "line": 97,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text_zero_dimensions",
-      "file": "tests/test_vector.py",
-      "line": 101,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text_open_bracket",
-      "file": "tests/test_vector.py",
-      "line": 104,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text_close_bracket",
-      "file": "tests/test_vector.py",
-      "line": 108,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text_non_number",
-      "file": "tests/test_vector.py",
-      "line": 112,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.sparsevec.SparseVector.from_text": [
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_text",
-      "file": "tests/test_bit.py",
-      "line": 116,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_text_zero_length",
-      "file": "tests/test_bit.py",
-      "line": 119,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_text_invalid_character",
-      "file": "tests/test_bit.py",
-      "line": 122,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text",
-      "file": "tests/test_half_vector.py",
-      "line": 94,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_zero_length",
-      "file": "tests/test_half_vector.py",
-      "line": 97,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_zero_dimensions",
-      "file": "tests/test_half_vector.py",
-      "line": 101,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_open_bracket",
-      "file": "tests/test_half_vector.py",
-      "line": 104,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_close_bracket",
-      "file": "tests/test_half_vector.py",
-      "line": 108,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_text_non_number",
-      "file": "tests/test_half_vector.py",
-      "line": 112,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text",
-      "file": "tests/test_sparse_vector.py",
-      "line": 175,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_zero_length",
-      "file": "tests/test_sparse_vector.py",
-      "line": 178,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_zero_dimensions",
-      "file": "tests/test_sparse_vector.py",
-      "line": 182,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_non_number_index",
-      "file": "tests/test_sparse_vector.py",
-      "line": 185,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_text_non_number_value",
-      "file": "tests/test_sparse_vector.py",
-      "line": 189,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text",
-      "file": "tests/test_vector.py",
-      "line": 94,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text_zero_length",
-      "file": "tests/test_vector.py",
-      "line": 97,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text_zero_dimensions",
-      "file": "tests/test_vector.py",
-      "line": 101,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text_open_bracket",
-      "file": "tests/test_vector.py",
-      "line": 104,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text_close_bracket",
-      "file": "tests/test_vector.py",
-      "line": 108,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_text_non_number",
-      "file": "tests/test_vector.py",
-      "line": 112,
-      "link": "direct_call"
-    }
-  ],
   "pgvector.halfvec.HalfVector._from_text": [
     {
       "test_id": "tests.test_bit.TestBit.test_from_text",
@@ -5018,296 +4508,6 @@
       "test_id": "tests.test_vector.TestVector.test_from_text_non_number",
       "file": "tests/test_vector.py",
       "line": 112,
-      "link": "name_match"
-    }
-  ],
-  "pgvector.halfvec.HalfVector.from_binary": [
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_binary",
-      "file": "tests/test_bit.py",
-      "line": 126,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_binary",
-      "file": "tests/test_bit.py",
-      "line": 126,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_binary_zero_length",
-      "file": "tests/test_bit.py",
-      "line": 129,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_binary_zero_length",
-      "file": "tests/test_bit.py",
-      "line": 129,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_binary_missing_data",
-      "file": "tests/test_bit.py",
-      "line": 134,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_binary_missing_data",
-      "file": "tests/test_bit.py",
-      "line": 134,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_binary_extra_data",
-      "file": "tests/test_bit.py",
-      "line": 138,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_binary_extra_data",
-      "file": "tests/test_bit.py",
-      "line": 138,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_binary_negative_length",
-      "file": "tests/test_bit.py",
-      "line": 142,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_bit.TestBit.test_from_binary_negative_length",
-      "file": "tests/test_bit.py",
-      "line": 142,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary",
-      "file": "tests/test_half_vector.py",
-      "line": 116,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary",
-      "file": "tests/test_half_vector.py",
-      "line": 116,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_zero_length",
-      "file": "tests/test_half_vector.py",
-      "line": 119,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_zero_length",
-      "file": "tests/test_half_vector.py",
-      "line": 119,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_missing_data",
-      "file": "tests/test_half_vector.py",
-      "line": 124,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_missing_data",
-      "file": "tests/test_half_vector.py",
-      "line": 124,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_extra_data",
-      "file": "tests/test_half_vector.py",
-      "line": 128,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_extra_data",
-      "file": "tests/test_half_vector.py",
-      "line": 128,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_negative_dimensions",
-      "file": "tests/test_half_vector.py",
-      "line": 132,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_negative_dimensions",
-      "file": "tests/test_half_vector.py",
-      "line": 132,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_non_zero_unused",
-      "file": "tests/test_half_vector.py",
-      "line": 136,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_non_zero_unused",
-      "file": "tests/test_half_vector.py",
-      "line": 136,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_psycopg.TestPsycopg.test_bit_binary_format",
-      "file": "tests/test_psycopg.py",
-      "line": 105,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_psycopg.TestPsycopg.test_binary_copy_to",
-      "file": "tests/test_psycopg.py",
-      "line": 162,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary",
-      "file": "tests/test_sparse_vector.py",
-      "line": 203,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary",
-      "file": "tests/test_sparse_vector.py",
-      "line": 203,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_zero_length",
-      "file": "tests/test_sparse_vector.py",
-      "line": 207,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_zero_length",
-      "file": "tests/test_sparse_vector.py",
-      "line": 207,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_missing_data",
-      "file": "tests/test_sparse_vector.py",
-      "line": 212,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_missing_data",
-      "file": "tests/test_sparse_vector.py",
-      "line": 212,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_extra_data",
-      "file": "tests/test_sparse_vector.py",
-      "line": 216,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_extra_data",
-      "file": "tests/test_sparse_vector.py",
-      "line": 216,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_negative_nnz",
-      "file": "tests/test_sparse_vector.py",
-      "line": 220,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_negative_nnz",
-      "file": "tests/test_sparse_vector.py",
-      "line": 220,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_non_zero_unused",
-      "file": "tests/test_sparse_vector.py",
-      "line": 224,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_non_zero_unused",
-      "file": "tests/test_sparse_vector.py",
-      "line": 224,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary",
-      "file": "tests/test_vector.py",
-      "line": 116,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary",
-      "file": "tests/test_vector.py",
-      "line": 116,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary_zero_length",
-      "file": "tests/test_vector.py",
-      "line": 119,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary_zero_length",
-      "file": "tests/test_vector.py",
-      "line": 119,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary_missing_data",
-      "file": "tests/test_vector.py",
-      "line": 124,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary_missing_data",
-      "file": "tests/test_vector.py",
-      "line": 124,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary_extra_data",
-      "file": "tests/test_vector.py",
-      "line": 128,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary_extra_data",
-      "file": "tests/test_vector.py",
-      "line": 128,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary_negative_dimensions",
-      "file": "tests/test_vector.py",
-      "line": 132,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary_negative_dimensions",
-      "file": "tests/test_vector.py",
-      "line": 132,
-      "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary_non_zero_unused",
-      "file": "tests/test_vector.py",
-      "line": 136,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_vector.TestVector.test_from_binary_non_zero_unused",
-      "file": "tests/test_vector.py",
-      "line": 136,
       "link": "name_match"
     }
   ],
@@ -5601,12 +4801,18 @@
       "link": "name_match"
     }
   ],
-  "pgvector.vector.Vector.from_binary": [
+  "pgvector.halfvec.HalfVector.from_binary": [
     {
       "test_id": "tests.test_bit.TestBit.test_from_binary",
       "file": "tests/test_bit.py",
       "line": 126,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_from_binary",
+      "file": "tests/test_bit.py",
+      "line": 126,
+      "link": "name_match"
     },
     {
       "test_id": "tests.test_bit.TestBit.test_from_binary_zero_length",
@@ -5615,10 +4821,22 @@
       "link": "direct_call"
     },
     {
+      "test_id": "tests.test_bit.TestBit.test_from_binary_zero_length",
+      "file": "tests/test_bit.py",
+      "line": 129,
+      "link": "name_match"
+    },
+    {
       "test_id": "tests.test_bit.TestBit.test_from_binary_missing_data",
       "file": "tests/test_bit.py",
       "line": 134,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_from_binary_missing_data",
+      "file": "tests/test_bit.py",
+      "line": 134,
+      "link": "name_match"
     },
     {
       "test_id": "tests.test_bit.TestBit.test_from_binary_extra_data",
@@ -5627,10 +4845,22 @@
       "link": "direct_call"
     },
     {
+      "test_id": "tests.test_bit.TestBit.test_from_binary_extra_data",
+      "file": "tests/test_bit.py",
+      "line": 138,
+      "link": "name_match"
+    },
+    {
       "test_id": "tests.test_bit.TestBit.test_from_binary_negative_length",
       "file": "tests/test_bit.py",
       "line": 142,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_bit.TestBit.test_from_binary_negative_length",
+      "file": "tests/test_bit.py",
+      "line": 142,
+      "link": "name_match"
     },
     {
       "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary",
@@ -5639,10 +4869,22 @@
       "link": "direct_call"
     },
     {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary",
+      "file": "tests/test_half_vector.py",
+      "line": 116,
+      "link": "name_match"
+    },
+    {
       "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_zero_length",
       "file": "tests/test_half_vector.py",
       "line": 119,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_zero_length",
+      "file": "tests/test_half_vector.py",
+      "line": 119,
+      "link": "name_match"
     },
     {
       "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_missing_data",
@@ -5651,10 +4893,22 @@
       "link": "direct_call"
     },
     {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_missing_data",
+      "file": "tests/test_half_vector.py",
+      "line": 124,
+      "link": "name_match"
+    },
+    {
       "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_extra_data",
       "file": "tests/test_half_vector.py",
       "line": 128,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_extra_data",
+      "file": "tests/test_half_vector.py",
+      "line": 128,
+      "link": "name_match"
     },
     {
       "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_negative_dimensions",
@@ -5663,10 +4917,22 @@
       "link": "direct_call"
     },
     {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_negative_dimensions",
+      "file": "tests/test_half_vector.py",
+      "line": 132,
+      "link": "name_match"
+    },
+    {
       "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_non_zero_unused",
       "file": "tests/test_half_vector.py",
       "line": 136,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_half_vector.TestHalfVector.test_from_binary_non_zero_unused",
+      "file": "tests/test_half_vector.py",
+      "line": 136,
+      "link": "name_match"
     },
     {
       "test_id": "tests.test_psycopg.TestPsycopg.test_bit_binary_format",
@@ -5687,10 +4953,22 @@
       "link": "direct_call"
     },
     {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary",
+      "file": "tests/test_sparse_vector.py",
+      "line": 203,
+      "link": "name_match"
+    },
+    {
       "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_zero_length",
       "file": "tests/test_sparse_vector.py",
       "line": 207,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_zero_length",
+      "file": "tests/test_sparse_vector.py",
+      "line": 207,
+      "link": "name_match"
     },
     {
       "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_missing_data",
@@ -5699,10 +4977,22 @@
       "link": "direct_call"
     },
     {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_missing_data",
+      "file": "tests/test_sparse_vector.py",
+      "line": 212,
+      "link": "name_match"
+    },
+    {
       "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_extra_data",
       "file": "tests/test_sparse_vector.py",
       "line": 216,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_extra_data",
+      "file": "tests/test_sparse_vector.py",
+      "line": 216,
+      "link": "name_match"
     },
     {
       "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_negative_nnz",
@@ -5711,10 +5001,22 @@
       "link": "direct_call"
     },
     {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_negative_nnz",
+      "file": "tests/test_sparse_vector.py",
+      "line": 220,
+      "link": "name_match"
+    },
+    {
       "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_non_zero_unused",
       "file": "tests/test_sparse_vector.py",
       "line": 224,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_sparse_vector.TestSparseVector.test_from_binary_non_zero_unused",
+      "file": "tests/test_sparse_vector.py",
+      "line": 224,
+      "link": "name_match"
     },
     {
       "test_id": "tests.test_vector.TestVector.test_from_binary",
@@ -5723,10 +5025,22 @@
       "link": "direct_call"
     },
     {
+      "test_id": "tests.test_vector.TestVector.test_from_binary",
+      "file": "tests/test_vector.py",
+      "line": 116,
+      "link": "name_match"
+    },
+    {
       "test_id": "tests.test_vector.TestVector.test_from_binary_zero_length",
       "file": "tests/test_vector.py",
       "line": 119,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_from_binary_zero_length",
+      "file": "tests/test_vector.py",
+      "line": 119,
+      "link": "name_match"
     },
     {
       "test_id": "tests.test_vector.TestVector.test_from_binary_missing_data",
@@ -5735,10 +5049,22 @@
       "link": "direct_call"
     },
     {
+      "test_id": "tests.test_vector.TestVector.test_from_binary_missing_data",
+      "file": "tests/test_vector.py",
+      "line": 124,
+      "link": "name_match"
+    },
+    {
       "test_id": "tests.test_vector.TestVector.test_from_binary_extra_data",
       "file": "tests/test_vector.py",
       "line": 128,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_from_binary_extra_data",
+      "file": "tests/test_vector.py",
+      "line": 128,
+      "link": "name_match"
     },
     {
       "test_id": "tests.test_vector.TestVector.test_from_binary_negative_dimensions",
@@ -5747,10 +5073,22 @@
       "link": "direct_call"
     },
     {
+      "test_id": "tests.test_vector.TestVector.test_from_binary_negative_dimensions",
+      "file": "tests/test_vector.py",
+      "line": 132,
+      "link": "name_match"
+    },
+    {
       "test_id": "tests.test_vector.TestVector.test_from_binary_non_zero_unused",
       "file": "tests/test_vector.py",
       "line": 136,
       "link": "direct_call"
+    },
+    {
+      "test_id": "tests.test_vector.TestVector.test_from_binary_non_zero_unused",
+      "file": "tests/test_vector.py",
+      "line": 136,
+      "link": "name_match"
     }
   ],
   "pgvector.sparsevec.SparseVector.from_binary": [
@@ -5916,163 +5254,7 @@
       "test_id": "tests.test_django.create_items",
       "file": "tests/test_django.py",
       "line": 132,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.create_items",
-      "file": "tests/test_django.py",
-      "line": 132,
       "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector",
-      "file": "tests/test_django.py",
-      "line": 166,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec",
-      "file": "tests/test_django.py",
-      "line": 212,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit",
-      "file": "tests/test_django.py",
-      "line": 245,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparsevec",
-      "file": "tests/test_django.py",
-      "line": 264,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_avg",
-      "file": "tests/test_django.py",
-      "line": 303,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_sum",
-      "file": "tests/test_django.py",
-      "line": 311,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_avg",
-      "file": "tests/test_django.py",
-      "line": 319,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_sum",
-      "file": "tests/test_django.py",
-      "line": 327,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_form_instance",
-      "file": "tests/test_django.py",
-      "line": 350,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_form_save",
-      "file": "tests/test_django.py",
-      "line": 356,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 365,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_form_instance",
-      "file": "tests/test_django.py",
-      "line": 378,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_form_save",
-      "file": "tests/test_django.py",
-      "line": 384,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 393,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit_form_instance",
-      "file": "tests/test_django.py",
-      "line": 406,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit_form_save",
-      "file": "tests/test_django.py",
-      "line": 412,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 421,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparsevec_form_instance",
-      "file": "tests/test_django.py",
-      "line": 434,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparsevec_form_save",
-      "file": "tests/test_django.py",
-      "line": 440,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparesevec_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 449,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_clean",
-      "file": "tests/test_django.py",
-      "line": 457,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_missing",
-      "file": "tests/test_django.py",
-      "line": 464,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_array",
-      "file": "tests/test_django.py",
-      "line": 471,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_double_array",
-      "file": "tests/test_django.py",
-      "line": 482,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_numeric_array",
-      "file": "tests/test_django.py",
-      "line": 492,
-      "link": "direct_call"
     },
     {
       "test_id": "tests.test_peewee.Item",
@@ -6096,12 +5278,6 @@
       "test_id": "tests.test_sqlalchemy.create_items",
       "file": "tests/test_sqlalchemy.py",
       "line": 117,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.create_items",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 117,
       "link": "name_match"
     },
     {
@@ -6109,168 +5285,6 @@
       "file": "tests/test_sqlalchemy.py",
       "line": 125,
       "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 171,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 189,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 244,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bit",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 299,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 336,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_select",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 417,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_select_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 423,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_avg",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 429,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_avg_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 438,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sum",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 447,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sum_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 456,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector_bad_type",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 465,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec_bad_type",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 472,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec_bad_type",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 479,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bad_dimensions",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 486,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bad_ndim",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 493,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bad_dtype",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 503,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_binary_quantize",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 551,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_binary_quantize_reranking",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 562,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyArray.test_vector_array",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 584,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyArray.test_halfvec_array",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 593,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_vector",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 609,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_halfvec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 622,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_bit",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 635,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_sparsevec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 661,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_avg",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 674,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsyncArray.test_vector_array",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 693,
-      "link": "direct_call"
     },
     {
       "test_id": "tests.test_sqlmodel.Item",
@@ -6282,79 +5296,7 @@
       "test_id": "tests.test_sqlmodel.create_items",
       "file": "tests/test_sqlmodel.py",
       "line": 43,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.create_items",
-      "file": "tests/test_sqlmodel.py",
-      "line": 43,
       "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_orm",
-      "file": "tests/test_sqlmodel.py",
-      "line": 57,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector",
-      "file": "tests/test_sqlmodel.py",
-      "line": 78,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec",
-      "file": "tests/test_sqlmodel.py",
-      "line": 109,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_bit",
-      "file": "tests/test_sqlmodel.py",
-      "line": 140,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_sparsevec",
-      "file": "tests/test_sqlmodel.py",
-      "line": 159,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_select",
-      "file": "tests/test_sqlmodel.py",
-      "line": 196,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector_avg",
-      "file": "tests/test_sqlmodel.py",
-      "line": 202,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector_sum",
-      "file": "tests/test_sqlmodel.py",
-      "line": 211,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec_avg",
-      "file": "tests/test_sqlmodel.py",
-      "line": 220,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec_sum",
-      "file": "tests/test_sqlmodel.py",
-      "line": 229,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_bad_dimensions",
-      "file": "tests/test_sqlmodel.py",
-      "line": 238,
-      "link": "direct_call"
     }
   ],
   "examples.lightfm.example.Item": [
@@ -6368,163 +5310,7 @@
       "test_id": "tests.test_django.create_items",
       "file": "tests/test_django.py",
       "line": 132,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.create_items",
-      "file": "tests/test_django.py",
-      "line": 132,
       "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector",
-      "file": "tests/test_django.py",
-      "line": 166,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec",
-      "file": "tests/test_django.py",
-      "line": 212,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit",
-      "file": "tests/test_django.py",
-      "line": 245,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparsevec",
-      "file": "tests/test_django.py",
-      "line": 264,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_avg",
-      "file": "tests/test_django.py",
-      "line": 303,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_sum",
-      "file": "tests/test_django.py",
-      "line": 311,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_avg",
-      "file": "tests/test_django.py",
-      "line": 319,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_sum",
-      "file": "tests/test_django.py",
-      "line": 327,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_form_instance",
-      "file": "tests/test_django.py",
-      "line": 350,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_form_save",
-      "file": "tests/test_django.py",
-      "line": 356,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 365,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_form_instance",
-      "file": "tests/test_django.py",
-      "line": 378,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_form_save",
-      "file": "tests/test_django.py",
-      "line": 384,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 393,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit_form_instance",
-      "file": "tests/test_django.py",
-      "line": 406,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit_form_save",
-      "file": "tests/test_django.py",
-      "line": 412,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 421,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparsevec_form_instance",
-      "file": "tests/test_django.py",
-      "line": 434,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparsevec_form_save",
-      "file": "tests/test_django.py",
-      "line": 440,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparesevec_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 449,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_clean",
-      "file": "tests/test_django.py",
-      "line": 457,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_missing",
-      "file": "tests/test_django.py",
-      "line": 464,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_array",
-      "file": "tests/test_django.py",
-      "line": 471,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_double_array",
-      "file": "tests/test_django.py",
-      "line": 482,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_numeric_array",
-      "file": "tests/test_django.py",
-      "line": 492,
-      "link": "direct_call"
     },
     {
       "test_id": "tests.test_peewee.Item",
@@ -6548,12 +5334,6 @@
       "test_id": "tests.test_sqlalchemy.create_items",
       "file": "tests/test_sqlalchemy.py",
       "line": 117,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.create_items",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 117,
       "link": "name_match"
     },
     {
@@ -6561,168 +5341,6 @@
       "file": "tests/test_sqlalchemy.py",
       "line": 125,
       "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 171,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 189,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 244,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bit",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 299,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 336,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_select",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 417,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_select_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 423,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_avg",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 429,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_avg_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 438,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sum",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 447,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sum_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 456,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector_bad_type",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 465,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec_bad_type",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 472,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec_bad_type",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 479,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bad_dimensions",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 486,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bad_ndim",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 493,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bad_dtype",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 503,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_binary_quantize",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 551,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_binary_quantize_reranking",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 562,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyArray.test_vector_array",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 584,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyArray.test_halfvec_array",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 593,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_vector",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 609,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_halfvec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 622,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_bit",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 635,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_sparsevec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 661,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_avg",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 674,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsyncArray.test_vector_array",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 693,
-      "link": "direct_call"
     },
     {
       "test_id": "tests.test_sqlmodel.Item",
@@ -6734,477 +5352,7 @@
       "test_id": "tests.test_sqlmodel.create_items",
       "file": "tests/test_sqlmodel.py",
       "line": 43,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.create_items",
-      "file": "tests/test_sqlmodel.py",
-      "line": 43,
       "link": "name_match"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_orm",
-      "file": "tests/test_sqlmodel.py",
-      "line": 57,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector",
-      "file": "tests/test_sqlmodel.py",
-      "line": 78,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec",
-      "file": "tests/test_sqlmodel.py",
-      "line": 109,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_bit",
-      "file": "tests/test_sqlmodel.py",
-      "line": 140,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_sparsevec",
-      "file": "tests/test_sqlmodel.py",
-      "line": 159,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_select",
-      "file": "tests/test_sqlmodel.py",
-      "line": 196,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector_avg",
-      "file": "tests/test_sqlmodel.py",
-      "line": 202,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector_sum",
-      "file": "tests/test_sqlmodel.py",
-      "line": 211,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec_avg",
-      "file": "tests/test_sqlmodel.py",
-      "line": 220,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec_sum",
-      "file": "tests/test_sqlmodel.py",
-      "line": 229,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_bad_dimensions",
-      "file": "tests/test_sqlmodel.py",
-      "line": 238,
-      "link": "direct_call"
-    }
-  ],
-  "examples.surprise.example.Item": [
-    {
-      "test_id": "tests.test_django.create_items",
-      "file": "tests/test_django.py",
-      "line": 132,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector",
-      "file": "tests/test_django.py",
-      "line": 166,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec",
-      "file": "tests/test_django.py",
-      "line": 212,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit",
-      "file": "tests/test_django.py",
-      "line": 245,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparsevec",
-      "file": "tests/test_django.py",
-      "line": 264,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_avg",
-      "file": "tests/test_django.py",
-      "line": 303,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_sum",
-      "file": "tests/test_django.py",
-      "line": 311,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_avg",
-      "file": "tests/test_django.py",
-      "line": 319,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_sum",
-      "file": "tests/test_django.py",
-      "line": 327,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_form_instance",
-      "file": "tests/test_django.py",
-      "line": 350,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_form_save",
-      "file": "tests/test_django.py",
-      "line": 356,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 365,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_form_instance",
-      "file": "tests/test_django.py",
-      "line": 378,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_form_save",
-      "file": "tests/test_django.py",
-      "line": 384,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_halfvec_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 393,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit_form_instance",
-      "file": "tests/test_django.py",
-      "line": 406,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit_form_save",
-      "file": "tests/test_django.py",
-      "line": 412,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_bit_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 421,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparsevec_form_instance",
-      "file": "tests/test_django.py",
-      "line": 434,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparsevec_form_save",
-      "file": "tests/test_django.py",
-      "line": 440,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_sparesevec_form_save_missing",
-      "file": "tests/test_django.py",
-      "line": 449,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_clean",
-      "file": "tests/test_django.py",
-      "line": 457,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_missing",
-      "file": "tests/test_django.py",
-      "line": 464,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_vector_array",
-      "file": "tests/test_django.py",
-      "line": 471,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_double_array",
-      "file": "tests/test_django.py",
-      "line": 482,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_numeric_array",
-      "file": "tests/test_django.py",
-      "line": 492,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.create_items",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 117,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 171,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 189,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 244,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bit",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 299,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 336,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_select",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 417,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_select_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 423,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_avg",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 429,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_avg_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 438,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sum",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 447,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sum_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 456,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector_bad_type",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 465,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec_bad_type",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 472,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec_bad_type",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 479,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bad_dimensions",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 486,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bad_ndim",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 493,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_bad_dtype",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 503,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_binary_quantize",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 551,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_binary_quantize_reranking",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 562,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyArray.test_vector_array",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 584,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyArray.test_halfvec_array",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 593,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_vector",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 609,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_halfvec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 622,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_bit",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 635,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_sparsevec",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 661,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsync.test_avg",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 674,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemyAsyncArray.test_vector_array",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 693,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.create_items",
-      "file": "tests/test_sqlmodel.py",
-      "line": 43,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_orm",
-      "file": "tests/test_sqlmodel.py",
-      "line": 57,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector",
-      "file": "tests/test_sqlmodel.py",
-      "line": 78,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec",
-      "file": "tests/test_sqlmodel.py",
-      "line": 109,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_bit",
-      "file": "tests/test_sqlmodel.py",
-      "line": 140,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_sparsevec",
-      "file": "tests/test_sqlmodel.py",
-      "line": 159,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_select",
-      "file": "tests/test_sqlmodel.py",
-      "line": 196,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector_avg",
-      "file": "tests/test_sqlmodel.py",
-      "line": 202,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector_sum",
-      "file": "tests/test_sqlmodel.py",
-      "line": 211,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec_avg",
-      "file": "tests/test_sqlmodel.py",
-      "line": 220,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec_sum",
-      "file": "tests/test_sqlmodel.py",
-      "line": 229,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_bad_dimensions",
-      "file": "tests/test_sqlmodel.py",
-      "line": 238,
-      "link": "direct_call"
     }
   ],
   "pgvector.django.functions.L2Distance": [
@@ -9769,28 +7917,6 @@
       "link": "direct_call"
     }
   ],
-  "pgvector.peewee.vector.VectorField": [
-    {
-      "test_id": "tests.test_django.TestDjango.test_double_array",
-      "file": "tests/test_django.py",
-      "line": 482,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_django.TestDjango.test_numeric_array",
-      "file": "tests/test_django.py",
-      "line": 492,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.peewee.halfvec.HalfVectorField": [
-    {
-      "test_id": "tests.test_django.TestDjango.test_half_precision",
-      "file": "tests/test_django.py",
-      "line": 502,
-      "link": "direct_call"
-    }
-  ],
   "pgvector.django.halfvec.HalfVectorField": [
     {
       "test_id": "tests.test_django.TestDjango.test_half_precision",
@@ -10183,220 +8309,6 @@
       "link": "direct_call"
     }
   ],
-  "pgvector.sqlalchemy.halfvec.HALFVEC.Comparator.l2_distance": [
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_vector_l2_distance",
-      "file": "tests/test_peewee.py",
-      "line": 49,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_halfvec_l2_distance",
-      "file": "tests/test_peewee.py",
-      "line": 82,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_sparsevec_l2_distance",
-      "file": "tests/test_peewee.py",
-      "line": 134,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_where",
-      "file": "tests/test_peewee.py",
-      "line": 162,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector_l2_distance",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 196,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector_l2_distance_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 202,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec_l2_distance",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 251,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec_l2_distance_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 257,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec_l2_distance",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 343,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec_l2_distance_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 349,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_subquery",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 391,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_subquery_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 398,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_filter",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 405,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_filter_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 411,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_select",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 417,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_select_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 423,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_literal_binds",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 517,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_half_precision",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 545,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector_l2_distance",
-      "file": "tests/test_sqlmodel.py",
-      "line": 85,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec_l2_distance",
-      "file": "tests/test_sqlmodel.py",
-      "line": 116,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_sparsevec_l2_distance",
-      "file": "tests/test_sqlmodel.py",
-      "line": 166,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_filter",
-      "file": "tests/test_sqlmodel.py",
-      "line": 190,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_select",
-      "file": "tests/test_sqlmodel.py",
-      "line": 196,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.sqlalchemy.halfvec.HALFVEC.Comparator.max_inner_product": [
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_vector_max_inner_product",
-      "file": "tests/test_peewee.py",
-      "line": 56,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_halfvec_max_inner_product",
-      "file": "tests/test_peewee.py",
-      "line": 89,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_sparsevec_max_inner_product",
-      "file": "tests/test_peewee.py",
-      "line": 141,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector_max_inner_product",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 208,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector_max_inner_product_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 214,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec_max_inner_product",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 263,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec_max_inner_product_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 269,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec_max_inner_product",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 355,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec_max_inner_product_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 361,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector_max_inner_product",
-      "file": "tests/test_sqlmodel.py",
-      "line": 91,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec_max_inner_product",
-      "file": "tests/test_sqlmodel.py",
-      "line": 122,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_sparsevec_max_inner_product",
-      "file": "tests/test_sqlmodel.py",
-      "line": 172,
-      "link": "direct_call"
-    }
-  ],
   "pgvector.peewee.vector.VectorField.max_inner_product": [
     {
       "test_id": "tests.test_peewee.TestPeewee.test_vector_max_inner_product",
@@ -10468,86 +8380,6 @@
       "test_id": "tests.test_sqlmodel.TestSqlmodel.test_sparsevec_max_inner_product",
       "file": "tests/test_sqlmodel.py",
       "line": 172,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.sqlalchemy.halfvec.HALFVEC.Comparator.cosine_distance": [
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_vector_cosine_distance",
-      "file": "tests/test_peewee.py",
-      "line": 63,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_halfvec_cosine_distance",
-      "file": "tests/test_peewee.py",
-      "line": 96,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_sparsevec_cosine_distance",
-      "file": "tests/test_peewee.py",
-      "line": 148,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector_cosine_distance",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 220,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector_cosine_distance_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 226,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec_cosine_distance",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 275,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec_cosine_distance_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 281,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec_cosine_distance",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 367,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec_cosine_distance_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 373,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_binary_quantize_reranking",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 562,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector_cosine_distance",
-      "file": "tests/test_sqlmodel.py",
-      "line": 97,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec_cosine_distance",
-      "file": "tests/test_sqlmodel.py",
-      "line": 128,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_sparsevec_cosine_distance",
-      "file": "tests/test_sqlmodel.py",
-      "line": 178,
       "link": "direct_call"
     }
   ],
@@ -10632,80 +8464,6 @@
     }
   ],
   "pgvector.peewee.vector.VectorField.l1_distance": [
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_vector_l1_distance",
-      "file": "tests/test_peewee.py",
-      "line": 70,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_halfvec_l1_distance",
-      "file": "tests/test_peewee.py",
-      "line": 103,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_peewee.TestPeewee.test_sparsevec_l1_distance",
-      "file": "tests/test_peewee.py",
-      "line": 155,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector_l1_distance",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 232,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_vector_l1_distance_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 238,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec_l1_distance",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 287,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_halfvec_l1_distance_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 293,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec_l1_distance",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 379,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlalchemy.TestSqlalchemy.test_sparsevec_l1_distance_orm",
-      "file": "tests/test_sqlalchemy.py",
-      "line": 385,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_vector_l1_distance",
-      "file": "tests/test_sqlmodel.py",
-      "line": 103,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_halfvec_l1_distance",
-      "file": "tests/test_sqlmodel.py",
-      "line": 134,
-      "link": "direct_call"
-    },
-    {
-      "test_id": "tests.test_sqlmodel.TestSqlmodel.test_sparsevec_l1_distance",
-      "file": "tests/test_sqlmodel.py",
-      "line": 184,
-      "link": "direct_call"
-    }
-  ],
-  "pgvector.sqlalchemy.halfvec.HALFVEC.Comparator.l1_distance": [
     {
       "test_id": "tests.test_peewee.TestPeewee.test_vector_l1_distance",
       "file": "tests/test_peewee.py",

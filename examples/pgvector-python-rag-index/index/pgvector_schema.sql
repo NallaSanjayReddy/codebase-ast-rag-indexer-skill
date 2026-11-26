@@ -1,6 +1,4 @@
--- PostgreSQL pgvector 0.8+ Dual-Embedding Hybrid AST RAG Schema
--- Combines NLP + Code dual embeddings (bee2bee-indexer), AST call/type/graph metadata (graphify),
--- and PagedAttention KV-block partitioning + GIN FTS hybrid RRF search.
+-- PostgreSQL pgvector 0.8+ Dual-Embedding Hybrid AST RAG Schema (dim=128)
 CREATE EXTENSION IF NOT EXISTS vector;
 
 CREATE TABLE IF NOT EXISTS code_ast_chunks (
@@ -26,8 +24,8 @@ CREATE TABLE IF NOT EXISTS code_ast_chunks (
     nlp_text TEXT NOT NULL,
     code_text TEXT NOT NULL,
     fts TSVECTOR GENERATED ALWAYS AS (to_tsvector('english', signature || ' ' || nlp_text || ' ' || code_text)) STORED,
-    nlp_embedding HALFVEC(1536),
-    code_embedding HALFVEC(1536)
+    nlp_embedding HALFVEC(128),
+    code_embedding HALFVEC(128)
 );
 
 CREATE INDEX IF NOT EXISTS idx_ast_chunks_nlp_hnsw  ON code_ast_chunks USING hnsw (nlp_embedding halfvec_cosine_ops) WITH (m = 16, ef_construction = 64);

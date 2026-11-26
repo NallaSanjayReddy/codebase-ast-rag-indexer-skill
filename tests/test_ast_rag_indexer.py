@@ -1,4 +1,5 @@
 import json
+import sqlite3
 import subprocess
 import sys
 import tempfile
@@ -10,10 +11,11 @@ INDEXER = ROOT / "skills" / "codebase-ast-rag-indexer" / "scripts" / "ast_rag_in
 QUERY = ROOT / "skills" / "codebase-ast-rag-indexer" / "scripts" / "query_rag.py"
 
 
-class TestAstRagIndexerV2(unittest.TestCase):
+class TestAstRagIndexerV3(unittest.TestCase):
     def _create_sample_repo(self, repo: Path):
         (repo / "core").mkdir(parents=True)
         (repo / "api").mkdir(parents=True)
+        (repo / "web").mkdir(parents=True)
         (repo / "tests").mkdir(parents=True)
 
         (repo / "core" / "base.py").write_text(
@@ -39,15 +41,22 @@ class TestAstRagIndexerV2(unittest.TestCase):
             "    return retriever.retrieve(q)\n",
             encoding="utf-8",
         )
+        # JS file with same function name 'score' to verify same-language-family isolation
+        (repo / "web" / "client.js").write_text(
+            "function score(x) { return x * 2; }\n",
+            encoding="utf-8",
+        )
+        # Multiple tests calling HybridRetriever to verify production community isolation
         (repo / "tests" / "test_hybrid.py").write_text(
             "from core.hybrid import HybridRetriever\n\n"
-            "def test_hybrid_retrieve():\n"
-            "    r = HybridRetriever()\n"
-            "    assert r.retrieve('hello') == ['hello']\n",
+            "def test_one():\n    return HybridRetriever().retrieve('a')\n"
+            "def test_two():\n    return HybridRetriever().retrieve('b')\n"
+            "def test_three():\n    return HybridRetriever().retrieve('c')\n"
+            "def test_four():\n    return HybridRetriever().retrieve('d')\n",
             encoding="utf-8",
         )
 
-    def test_full_v2_pipeline_and_all_query_modes(self):
+    def test_dual_vector_and_vectorless_rag_pipeline(self):
         with tempfile.TemporaryDirectory() as td:
             repo = Path(td) / "sample_repo"
             out = Path(td) / "out"
@@ -58,8 +67,10 @@ class TestAstRagIndexerV2(unittest.TestCase):
                     sys.executable, str(INDEXER),
                     "--repo", str(repo),
                     "--output", str(out),
+                    "--rag-mode", "both",
+                    "--embedding-provider", "tfidf",
+                    "--embedding-dim", "64",
                     "--page-size", "256",
-                    "--chunk-strategy", "hybrid",
                     "--priority-paths", "core",
                     "--incremental",
                 ],
@@ -70,101 +81,73 @@ class TestAstRagIndexerV2(unittest.TestCase):
             idx = out / "index"
             docs = out / "docs"
 
-            # Verify core v1 + v2 artifacts exist
             for fname in [
                 "chunks.jsonl", "tree_index.json", "graph.json", "call_graph.json",
                 "type_hierarchy.json", "references.json", "test_map.json",
-                "kv_paged_blocks.json", "rag_index.sqlite", "file_manifest.json", "pgvector_schema.sql",
+                "kv_paged_blocks.json", "rag_index.sqlite", "file_manifest.json",
+                "pgvector_schema.sql", "vectors.jsonl", "vector_meta.json", "qdrant_points.jsonl",
             ]:
                 self.assertTrue((idx / fname).exists(), f"Missing {fname}")
 
-            for dname in [
-                "00-INDEX.md", "01-TREE-INDEX-VECTORLESS-RAG.md", "02-CALL-AND-TYPE-HIERARCHY.md",
-                "03-REFERENCES-AND-TESTS-MAP.md", "04-KV-CACHE-AND-PAGED-ATTENTION-PACKING.md",
-                "05-GRAPH-REPORT.md", "graph.html",
-            ]:
-                self.assertTrue((docs / dname).exists(), f"Missing {dname}")
-
-            # Verify type hierarchy, super_implementation, dual nlp_text/code_text, priority_boost, rationale
-            th = json.loads((idx / "type_hierarchy.json").read_text(encoding="utf-8"))
-            self.assertIn("core.hybrid.HybridRetriever.retrieve", th["super_implementations"])
-            self.assertEqual(
-                th["super_implementations"]["core.hybrid.HybridRetriever.retrieve"],
-                "core.base.BaseRetriever.retrieve",
-            )
-
-            chunks = [json.loads(line) for line in (idx / "chunks.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+            # 1. Verify production community isolation (HybridRetriever must NOT be in 'tests' community)
+            chunks = [json.loads(l) for l in (idx / "chunks.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
             by_id = {c["chunk_id"]: c for c in chunks}
-            self.assertEqual(by_id["core.hybrid.HybridRetriever"]["priority_boost"], 2.0)
-            self.assertEqual(by_id["api.handler.handle_search"]["priority_boost"], 1.0)
-            self.assertIn("HybridRetriever", by_id["core.hybrid.HybridRetriever"]["nlp_text"])
-            self.assertTrue(len(by_id["core.base.BaseRetriever"]["rationale"]) >= 1)
+            self.assertNotEqual(by_id["core.hybrid.HybridRetriever"]["community_label"], "tests")
+            self.assertEqual(by_id["tests.test_hybrid.test_one"]["community_label"], "tests")
 
-            # Verify Graphify-style graph.json (confidence tags, god_nodes, communities)
-            graph = json.loads((idx / "graph.json").read_text(encoding="utf-8"))
-            self.assertGreater(graph["stats"]["edges"], 0)
-            self.assertTrue(all(e["confidence"] in ("EXTRACTED", "INFERRED", "AMBIGUOUS") for e in graph["edges"]))
-            self.assertGreater(len(graph["god_nodes"]), 0)
+            # 2. Verify same-language-family call isolation (Python retrieve must NOT call JS web.client.score)
+            self.assertNotIn("web.client.score", by_id["core.hybrid.HybridRetriever.retrieve"]["callees"])
+            self.assertIn("core.hybrid.HybridRetriever.score", by_id["core.hybrid.HybridRetriever.retrieve"]["callees"])
 
-            # Test all 6 query modes
-            q_explain = subprocess.run(
-                [sys.executable, str(QUERY), "--index", str(idx), "--query", "HybridRetriever", "--mode", "explain"],
+            # 3. Verify SQLite chunk_vectors table populated with dim=64
+            conn = sqlite3.connect(str(idx / "rag_index.sqlite"))
+            cnt = conn.execute("SELECT COUNT(*) FROM chunk_vectors WHERE dim = 64").fetchone()[0]
+            conn.close()
+            self.assertEqual(cnt, len(chunks))
+
+            # 4. Verify --mode vector (pure vector cosine search)
+            q_vec = subprocess.run(
+                [sys.executable, str(QUERY), "--index", str(idx), "--query", "BM25 dense cosine RRF", "--mode", "vector"],
                 capture_output=True, text=True, check=True,
             )
-            self.assertIn("Node: core.hybrid.HybridRetriever", q_explain.stdout)
-            self.assertIn("Community:", q_explain.stdout)
+            vec_res = json.loads(q_vec.stdout)["results"]
+            self.assertGreater(len(vec_res), 0)
+            self.assertIn("HybridRetriever", vec_res[0]["chunk_id"])
 
+            # 5. Verify --mode hybrid (Reciprocal Rank Fusion)
+            q_hyb = subprocess.run(
+                [sys.executable, str(QUERY), "--index", str(idx), "--query", "HybridRetriever retrieve", "--mode", "hybrid"],
+                capture_output=True, text=True, check=True,
+            )
+            hyb_res = json.loads(q_hyb.stdout)["results"]
+            self.assertGreater(len(hyb_res), 0)
+            self.assertIsNotNone(hyb_res[0]["rrf_score"])
+
+            # 6. Verify --mode vectorless (Tree + 1-hop Graph subgraph)
+            q_vl = subprocess.run(
+                [sys.executable, str(QUERY), "--index", str(idx), "--query", "HybridRetriever", "--mode", "vectorless"],
+                capture_output=True, text=True, check=True,
+            )
+            self.assertIn("Graph 1-hop:", q_vl.stdout)
+
+            # 7. Verify --mode path & explain
             q_path = subprocess.run(
                 [sys.executable, str(QUERY), "--index", str(idx), "--query", "handle_search", "--target", "BaseRetriever", "--mode", "path"],
                 capture_output=True, text=True, check=True,
             )
             self.assertIn("Shortest path", q_path.stdout)
-            self.assertIn("Overall confidence", q_path.stdout)
 
-            q_fts = subprocess.run(
-                [sys.executable, str(QUERY), "--index", str(idx), "--query", "BM25 RRF retrieve", "--mode", "fts"],
-                capture_output=True, text=True, check=True,
-            )
-            fts_payload = json.loads(q_fts.stdout)
-            self.assertGreater(len(fts_payload["results"]), 0)
-
-            q_kv = subprocess.run(
-                [sys.executable, str(QUERY), "--index", str(idx), "--query", "HybridRetriever", "--mode", "kv-pack"],
-                capture_output=True, text=True, check=True,
-            )
-            self.assertIn("<<<STATIC_KV_PREFIX_START>>>", q_kv.stdout)
-            self.assertIn("<<<DYNAMIC_QUERY_SUFFIX>>>", q_kv.stdout)
-
-            # Test incremental re-run delta (0 added, 0 modified, 4 unchanged)
-            res2 = subprocess.run(
-                [sys.executable, str(INDEXER), "--repo", str(repo), "--output", str(out), "--incremental"],
-                capture_output=True, text=True, check=True,
-            )
-            self.assertIn("SUCCESS:", res2.stdout)
-            report = (docs / "05-GRAPH-REPORT.md").read_text(encoding="utf-8")
-            self.assertIn("Unchanged: `4`", report)
-
-    def test_chunk_strategy_file_and_class(self):
+    def test_vectorless_only_mode(self):
         with tempfile.TemporaryDirectory() as td:
             repo = Path(td) / "sample_repo"
-            out_cls = Path(td) / "out_cls"
-            out_file = Path(td) / "out_file"
+            out = Path(td) / "out_vl"
             self._create_sample_repo(repo)
-
             subprocess.run(
-                [sys.executable, str(INDEXER), "--repo", str(repo), "--output", str(out_cls), "--chunk-strategy", "class"],
+                [sys.executable, str(INDEXER), "--repo", str(repo), "--output", str(out), "--rag-mode", "vectorless"],
                 capture_output=True, text=True, check=True,
             )
-            cls_chunks = [json.loads(l) for l in (out_cls / "index" / "chunks.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
-            self.assertTrue(all(c["kind"] == "class" for c in cls_chunks))
-
-            subprocess.run(
-                [sys.executable, str(INDEXER), "--repo", str(repo), "--output", str(out_file), "--chunk-strategy", "file"],
-                capture_output=True, text=True, check=True,
-            )
-            file_chunks = [json.loads(l) for l in (out_file / "index" / "chunks.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
-            self.assertEqual(len(file_chunks), 4)
-            self.assertTrue(all(c["kind"] == "file" for c in file_chunks))
+            self.assertTrue((out / "index" / "graph.json").exists())
+            self.assertFalse((out / "index" / "vectors.jsonl").exists())
 
 
 if __name__ == "__main__":

@@ -176,14 +176,14 @@ def render_workflow_frame(fi: int, n_frames: int) -> Image.Image:
     # =====================================================================
     # ZONE 2 (MID-LEFT ROSE/RED): LSP SYMBOL & KNOWLEDGE GRAPH ENGINE
     # =====================================================================
-    z2 = (24, 260, 620, 444)
+    z2 = (124, 260, 720, 444)
     draw_dashed_rounded_rect(draw, z2, 14, fill=(255, 228, 230), outline=(225, 29, 72), width=4 if active_zone == 1 else 2)
-    draw.text((38, 268), "2. LSP Hierarchy & Confidence-Tagged Knowledge Graph", fill=(190, 18, 60), font=F_ZONE)
-    draw.line([(322, 294), (322, 434)], fill=(225, 29, 72), width=1)
+    draw.text((138, 268), "2. LSP Hierarchy & Confidence-Tagged Knowledge Graph", fill=(190, 18, 60), font=F_ZONE)
+    draw.line([(422, 294), (422, 434)], fill=(225, 29, 72), width=1)
 
     c2a = ["Call, Type & Test Resolution", "- Same-lang-family call filter", "- Import-constrained binding", "- super_types & sub_types", "- super_implementations (overrides)", "- type_definitions & references", "- Direct + name-match test_map"]
     c2b = ["Graph Hygiene & Analytics", "- Edge tags: EXTRACTED | INFERRED", "  | AMBIGUOUS provenance", "- Production-isolated communities", "  (tests never hijack prod modules)", "- Builtin-filtered God Nodes", "- DFS Import Cycle detector"]
-    for col_x, lines in [(38, c2a), (334, c2b)]:
+    for col_x, lines in [(138, c2a), (434, c2b)]:
         draw.text((col_x, 296), lines[0], fill=INK, font=F_SUBH)
         for i, ln in enumerate(lines[1:]):
             draw.text((col_x, 316 + i * 18), ln, fill=SUB_INK, font=F_TINY)
@@ -262,11 +262,20 @@ def render_workflow_frame(fi: int, n_frames: int) -> Image.Image:
     # =====================================================================
     sy = 562
     # Dashed connectors from Zones into Spine (routed cleanly outside zone text)
-    draw_dashed_line(draw, (650, 244), (650, 458), (217, 119, 6))
+    # Zone 1 (Yellow: AST Extraction) -> AST node (routed cleanly via left gutter around Zone 2)
+    draw_dashed_line(draw, (74, 244), (74, 492), (217, 119, 6))
+    draw_dashed_line(draw, (74, 492), (270, 492), (217, 119, 6))
+    draw_dashed_line(draw, (270, 492), (270, 540), (217, 119, 6))
+    # Zone 2 (Rose: LSP Hierarchy & Knowledge Graph) -> LSP node + Graph DB
     draw_dashed_line(draw, (370, 444), (370, 540), (225, 29, 72))
+    draw_dashed_line(draw, (650, 444), (650, 460), (225, 29, 72))
+    # Zone 3 (Blue: Dual Indexing Layer) -> RAG node + Dual Stores
+    draw_dashed_line(draw, (470, 694), (470, 584), (37, 99, 235))
     draw_dashed_line(draw, (650, 694), (650, 666), (37, 99, 235))
-    draw_dashed_line(draw, (1030, 384), (1030, 540), (22, 163, 74))
-    draw_dashed_line(draw, (1190, 694), (1190, 594), (147, 51, 234))
+    # Zone 4 (Green: 8-Mode Retrieval & Hybrid RRF) -> Hybrid RRF funnel
+    draw_dashed_line(draw, (1030, 384), (1030, 544), (22, 163, 74))
+    # Zone 5 (Purple: KV-Cache & PagedAttention) -> KV-Packed LLM brain
+    draw_dashed_line(draw, (1190, 694), (1190, 602), (147, 51, 234))
 
     # Spine nodes
     draw.rounded_rectangle([40, sy - 22, 185, sy + 22], radius=10, fill=(255, 255, 255), outline=INK, width=2)

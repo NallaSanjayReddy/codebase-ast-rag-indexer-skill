@@ -266,9 +266,8 @@ def render_workflow_frame(fi: int, n_frames: int) -> Image.Image:
     draw_dashed_line(draw, (74, 244), (74, 492), (217, 119, 6))
     draw_dashed_line(draw, (74, 492), (270, 492), (217, 119, 6))
     draw_dashed_line(draw, (270, 492), (270, 540), (217, 119, 6))
-    # Zone 2 (Rose: LSP Hierarchy & Knowledge Graph) -> LSP node + Graph DB
+    # Zone 2 (Rose: LSP Hierarchy & Knowledge Graph) -> LSP node
     draw_dashed_line(draw, (370, 444), (370, 540), (225, 29, 72))
-    draw_dashed_line(draw, (650, 444), (650, 460), (225, 29, 72))
     # Zone 3 (Blue: Dual Indexing Layer) -> RAG node + Dual Stores
     draw_dashed_line(draw, (470, 694), (470, 584), (37, 99, 235))
     draw_dashed_line(draw, (650, 694), (650, 666), (37, 99, 235))
